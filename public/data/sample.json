@@ -1,0 +1,56 @@
+{
+  "id": "sample",
+  "name": "Đề mẫu (5 câu)",
+  "exam": { "questionCount": 5, "durationMinutes": 5 },
+  "questions": [
+    {
+      "id": "sample-001",
+      "question": "Mô hình công nghiệp hóa của Nhật Bản và các nước công nghiệp mới diễn ra trong khoảng bao nhiêu năm?",
+      "options": [
+        { "text": "Từ 10 - 20 năm", "correct": false, "explain": "Sai. 10 - 20 năm là quá ngắn so với thực tế của Nhật Bản và các nước NICs." },
+        { "text": "Từ 15 - 25 năm", "correct": false, "explain": "Sai. Giáo trình không nêu khoảng 15 - 25 năm." },
+        { "text": "Từ 20 - 30 năm", "correct": true, "explain": "Đúng. Nhờ đi tắt, tiếp thu công nghệ của nước đi trước, Nhật Bản và các nước công nghiệp mới hoàn thành công nghiệp hóa trong khoảng 20 - 30 năm." },
+        { "text": "Từ 25 - 35 năm", "correct": false, "explain": "Sai. Giáo trình nêu 20 - 30 năm, không phải 25 - 35 năm." }
+      ]
+    },
+    {
+      "id": "sample-002",
+      "question": "Công thức chung của tư bản là:",
+      "options": [
+        { "text": "H-T-H", "correct": false, "explain": "Sai. H - T - H là công thức lưu thông hàng hóa giản đơn." },
+        { "text": "T-H-T", "correct": false, "explain": "Sai. T - H - T không làm tăng giá trị nên không phải công thức của tư bản." },
+        { "text": "T-H-T'", "correct": true, "explain": "Đúng. Công thức chung của tư bản là T - H - T' (tiền - hàng - tiền nhiều hơn), trong đó T' = T + giá trị thặng dư." }
+      ]
+    },
+    {
+      "id": "sample-003",
+      "question": "Sản xuất hàng hóa chỉ xuất hiện trong chủ nghĩa tư bản.",
+      "note": "Câu mẫu có 2 đáp án (đúng/sai) để thử hiển thị.",
+      "options": [
+        { "text": "Đúng", "correct": false, "explain": "Không chọn. Mệnh đề này sai vì sản xuất hàng hóa đã ra đời từ chế độ chiếm hữu nô lệ, trước chủ nghĩa tư bản rất lâu." },
+        { "text": "Sai", "correct": true, "explain": "Đúng. Sản xuất hàng hóa có từ trước chủ nghĩa tư bản và vẫn còn trong thời kỳ quá độ lên chủ nghĩa xã hội." }
+      ]
+    },
+    {
+      "id": "sample-004",
+      "question": "Tính hai mặt của lao động sản xuất hàng hóa (chọn 1 đáp án) gồm:",
+      "options": [
+        { "text": "Lao động tư nhân, lao động xã hội", "correct": false, "explain": "Sai. Đây là mâu thuẫn cơ bản của sản xuất hàng hóa, không phải hai mặt của lao động." },
+        { "text": "Lao động giản đơn, lao động phức tạp", "correct": false, "explain": "Sai. Đây là cách phân loại theo trình độ lao động." },
+        { "text": "Lao động cụ thể, lao động trừu tượng", "correct": true, "explain": "Đúng. Lao động cụ thể tạo ra giá trị sử dụng, lao động trừu tượng tạo ra giá trị." },
+        { "text": "Lao động quá khứ, lao động sống", "correct": false, "explain": "Sai. Đây là hai bộ phận của chi phí, không phải hai mặt của lao động." },
+        { "text": "Lao động trí óc, lao động chân tay", "correct": false, "explain": "Sai. Đây là cách phân loại theo tính chất công việc." }
+      ]
+    },
+    {
+      "id": "sample-005",
+      "question": "Hãy chỉ ra vai trò tích cực của chủ nghĩa tư bản. (chọn 3 đáp án)",
+      "options": [
+        { "text": "Thúc đẩy lực lượng sản xuất phát triển nhanh chóng", "correct": true, "explain": "Đúng. Chủ nghĩa tư bản thúc đẩy lực lượng sản xuất phát triển mạnh mẽ." },
+        { "text": "Nhanh chóng mở rộng thị trường sang các nước thuộc địa", "correct": false, "explain": "Không chọn. Đây là biểu hiện của bành trướng, không phải vai trò tích cực được nêu." },
+        { "text": "Chuyển nền sản xuất nhỏ thành nền sản xuất lớn hiện đại", "correct": true, "explain": "Đúng. Chủ nghĩa tư bản chuyển nền sản xuất nhỏ, phân tán thành nền sản xuất lớn, hiện đại." },
+        { "text": "Thực hiện xã hội hóa sản xuất", "correct": true, "explain": "Đúng. Chủ nghĩa tư bản thực hiện xã hội hóa sản xuất." }
+      ]
+    }
+  ]
+}

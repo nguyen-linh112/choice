@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background: #f5f6f8;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Trên điện thoại: bớt lề cho rộng chỗ */
+@media (max-width: 576px) {
+  .page {
+    padding: 12px 8px;
+  }
+}
+
+/* Tên môn dài thì cho xuống dòng thay vì bị cắt "..." trên điện thoại */
+.ant-card-head-title {
+  white-space: normal !important;
+}
+
+.option-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 8px;
+}
+
+.option-row.correct {
+  background: #f6ffed;
+  border-color: #95de64;
+}
+
+.option-row.wrong {
+  background: #fff1f0;
+  border-color: #ff7875;
+}
+
+.option-row.selected {
+  background: #e6f4ff;
+  border-color: #69b1ff;
+}
+
+.option-row.clickable {
+  cursor: pointer;
+}
+
+.option-row.clickable:hover {
+  border-color: #69b1ff;
+}
+
+.option-label {
+  font-weight: 600;
+  min-width: 20px;
+}
+
+.explain {
+  color: #595959;
+  font-size: 13px;
+  margin-top: 4px;
+}
