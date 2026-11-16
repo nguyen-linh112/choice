@@ -1,0 +1,1503 @@
+{
+  "id": "mln122-sp26",
+  "name": "MLN122 - Đề FE SP26 (C1)",
+  "exam": {
+    "questionCount": 59,
+    "durationMinutes": 90
+  },
+  "questions": [
+    {
+      "id": "mln122-sp26-002",
+      "question": "Phương thức sản xuất tư bản chủ nghĩa hình thành và thay thế cho phương thức sản xuất nào?",
+      "options": [
+        {
+          "text": "Phương thức sản xuất phong kiến",
+          "correct": true,
+          "explain": "Đúng. Theo tiến trình lịch sử: cộng sản nguyên thuỷ → chiếm hữu nô lệ → phong kiến → tư bản chủ nghĩa → cộng sản chủ nghĩa. Phương thức sản xuất tư bản chủ nghĩa ra đời ngay sau phương thức sản xuất phong kiến và thay thế nó (qua các cuộc cách mạng tư sản)."
+        },
+        {
+          "text": "Phương thức sản xuất chiếm hữu nô lệ",
+          "correct": false,
+          "explain": "Sai. Chiếm hữu nô lệ là phương thức sản xuất ra đời trước phong kiến và đã bị phong kiến thay thế từ trước, không phải cái mà tư bản chủ nghĩa thay thế trực tiếp."
+        },
+        {
+          "text": "Phương thức sản xuất cộng sản nguyên thuỷ",
+          "correct": false,
+          "explain": "Sai. Cộng sản nguyên thuỷ là hình thái đầu tiên của loài người, tồn tại rất lâu trước khi có tư bản chủ nghĩa."
+        },
+        {
+          "text": "Phương thức sản xuất cộng sản chủ nghĩa",
+          "correct": false,
+          "explain": "Sai. Cộng sản chủ nghĩa là hình thái đứng sau tư bản chủ nghĩa (là hình thái sẽ thay thế tư bản chủ nghĩa), nên nó không phải thứ mà tư bản chủ nghĩa thay thế."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-003",
+      "question": "Lý luận kinh tế chính trị của C. Mác và Ph. Ăngghen được cô đọng và tập trung trong tác phẩm nào?",
+      "options": [
+        {
+          "text": "Tư bản",
+          "correct": true,
+          "explain": "Đúng. Bộ 'Tư bản' (C. Mác, xuất bản từ năm 1867) là tác phẩm chủ yếu, nơi lý luận kinh tế chính trị của C. Mác và Ph. Ăngghen được trình bày đầy đủ, cô đọng và tập trung nhất (hàng hoá, giá trị thặng dư, tích luỹ tư bản...)."
+        },
+        {
+          "text": "Bản thảo kinh tế - triết học",
+          "correct": false,
+          "explain": "Sai. 'Bản thảo kinh tế - triết học 1844' là tác phẩm thời kì đầu của C. Mác, mới là những suy nghĩ ban đầu, chưa phải nơi lý luận kinh tế chính trị được cô đọng."
+        },
+        {
+          "text": "Lược thảo phê phán khoa kinh tế chính trị",
+          "correct": false,
+          "explain": "Sai. 'Lược thảo phê phán khoa kinh tế chính trị' (các bản thảo chuẩn bị 1857–1858) và 'Góp phần phê phán khoa kinh tế chính trị' (1859) chỉ là những bước chuẩn bị cho bộ 'Tư bản', chưa phải nơi tập trung cô đọng nhất."
+        },
+        {
+          "text": "Tuyên ngôn của Đảng Cộng sản",
+          "correct": false,
+          "explain": "Sai. 'Tuyên ngôn của Đảng Cộng sản' (1848) trình bày khái quát về chủ nghĩa cộng sản khoa học và đấu tranh giai cấp, chứ không phải tác phẩm chuyên sâu về lý luận kinh tế chính trị."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-004",
+      "question": "Chức năng nào của kinh tế chính trị Mác - Lênin thể hiện sự vận dụng đúng các quy luật kinh tế khách quan thông qua điều chỉnh hành vi cá nhân hoặc chính sách kinh tế sẽ góp phần thúc đẩy kinh tế - xã hội phát triển theo hướng tiến bộ?",
+      "options": [
+        {
+          "text": "Chức năng thực tiễn",
+          "correct": true,
+          "explain": "Đúng. Chức năng thực tiễn là chức năng vận dụng: dựa trên hiểu biết về quy luật kinh tế khách quan để điều chỉnh hành vi của cá nhân, doanh nghiệp, Nhà nước và hoạch định chính sách kinh tế, nhằm thúc đẩy kinh tế - xã hội phát triển. Từ khoá của câu hỏi là 'vận dụng đúng quy luật... thông qua điều chỉnh hành vi, chính sách'."
+        },
+        {
+          "text": "Chức năng nhận thức",
+          "correct": false,
+          "explain": "Sai. Chức năng nhận thức là chức năng giúp hiểu, giải thích bản chất và quy luật của các hiện tượng kinh tế; mới dừng ở 'biết' chứ chưa phải 'vận dụng vào chính sách'."
+        },
+        {
+          "text": "Chức năng tư tưởng",
+          "correct": false,
+          "explain": "Sai. Chức năng tư tưởng là xây dựng thế giới quan, niềm tin và bảo vệ lợi ích của giai cấp công nhân, nhân dân lao động; không phải chức năng điều chỉnh hành vi và chính sách kinh tế."
+        },
+        {
+          "text": "Chức năng phương pháp luận",
+          "correct": false,
+          "explain": "Sai. Chức năng phương pháp luận là cung cấp cơ sở lý luận và phương pháp nghiên cứu cho các khoa học kinh tế khác (kinh tế ngành, kinh tế chuyên ngành); không phải chức năng vận dụng trực tiếp vào chính sách."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-005",
+      "question": "Điền vào chỗ trống để hoàn thành câu sau: \"Chính trị kinh tế học tuyệt nhiên không nghiên cứu sự sản xuất, mà nghiên cứu những quan hệ xã hội giữa.....trong sản xuất, nghiên cứu chế độ xã hội của sản xuất\".",
+      "options": [
+        {
+          "text": "Người với người",
+          "correct": true,
+          "explain": "Đúng. Đây là câu của Ph. Ăngghen: kinh tế chính trị học không nghiên cứu bản thân việc sản xuất (đó là việc của kĩ thuật), mà nghiên cứu những quan hệ xã hội giữa người với người trong sản xuất, tức quan hệ sản xuất, và chế độ xã hội của sản xuất."
+        },
+        {
+          "text": "Con người với tiền tệ",
+          "correct": false,
+          "explain": "Sai. Tiền tệ chỉ là một hình thức, một vật trung gian trong trao đổi; kinh tế chính trị nhìn qua nó để thấy quan hệ giữa người với người đằng sau."
+        },
+        {
+          "text": "Con người với xã hội",
+          "correct": false,
+          "explain": "Sai. 'Con người với xã hội' quá chung chung; đối tượng nghiên cứu cụ thể là quan hệ giữa người với người trong sản xuất, trao đổi, phân phối, tiêu dùng."
+        },
+        {
+          "text": "Người với hàng hoá",
+          "correct": false,
+          "explain": "Sai. 'Người với hàng hoá' là quan hệ giữa con người với vật, không phải quan hệ xã hội. Kinh tế chính trị chỉ ra rằng đằng sau quan hệ giữa các hàng hoá là quan hệ giữa người với người."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-006",
+      "question": "Lao động trừu tượng tạo ra:",
+      "options": [
+        {
+          "text": "Giá trị của hàng hóa",
+          "correct": true,
+          "explain": "Đúng. Lao động trừu tượng tạo ra giá trị của hàng hóa."
+        },
+        {
+          "text": "Giá trị sử dụng của hàng hóa",
+          "correct": false,
+          "explain": "Sai. Giá trị sử dụng do lao động cụ thể tạo ra."
+        },
+        {
+          "text": "Giá trị trao đổi của hàng hóa",
+          "correct": false,
+          "explain": "Sai. Giá trị trao đổi là hình thức biểu hiện của giá trị, không phải thứ do lao động trừu tượng trực tiếp tạo ra."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-007",
+      "question": "Nhận định nào sau đây là đúng?",
+      "options": [
+        {
+          "text": "Xã hội loài người càng phát triển, sự tách biệt về sở hữu càng sâu sắc, hàng hoá được sản xuất ra càng phong phú.",
+          "correct": true,
+          "explain": "Đúng. Xã hội càng phát triển thì phân công lao động xã hội càng sâu, sự tách biệt về sở hữu (mỗi người, mỗi doanh nghiệp độc lập) càng rõ, nên sản xuất hàng hoá càng phát triển và hàng hoá được sản xuất ra càng phong phú."
+        },
+        {
+          "text": "Xã hội loài người càng phát triển, sự tách biệt về sở hữu càng sâu sắc, hàng hoá được sản xuất ra càng khan hiếm.",
+          "correct": false,
+          "explain": "Sai. Xã hội phát triển làm hàng hoá phong phú hơn chứ không khan hiếm hơn."
+        },
+        {
+          "text": "Xã hội loài người càng kém phát triển, sự tách biệt về sở hữu càng sâu sắc, hàng hoá được sản xuất ra càng kém phong phú.",
+          "correct": false,
+          "explain": "Sai. Xã hội kém phát triển thì phân công lao động và tách biệt sở hữu chưa sâu, nên sự tách biệt sâu sắc không đi cùng 'kém phát triển'."
+        },
+        {
+          "text": "Sản xuất càng phát triển, sự tách biệt về sở hữu càng sâu sắc, hàng hoá được sản xuất ra càng kém phong phú.",
+          "correct": false,
+          "explain": "Sai. Sản xuất càng phát triển thì hàng hoá càng phong phú, không phải kém phong phú; vế sau của nhận định này mâu thuẫn với vế trước."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-008",
+      "question": "Trong kinh tế hàng hóa, cạnh tranh có tác dụng:",
+      "options": [
+        {
+          "text": "Nó làm cho sản xuất thiếu tính nhân văn",
+          "correct": false,
+          "explain": "Sai. Đây không phải tác dụng tích cực mà giáo trình nêu; tác dụng của cạnh tranh là buộc người sản xuất năng động, nhạy bén."
+        },
+        {
+          "text": "Nó buộc người sản xuất phải thường xuyên năng động, nhạy bén.",
+          "correct": true,
+          "explain": "Đúng. Cạnh tranh buộc người sản xuất phải thường xuyên năng động, nhạy bén, cải tiến kỹ thuật, nâng cao năng suất để tồn tại."
+        },
+        {
+          "text": "Nó làm cho sản xuất mang tính nhân văn hơn",
+          "correct": false,
+          "explain": "Sai. Cạnh tranh không nhằm làm sản xuất 'nhân văn hơn'; nó là động lực thúc đẩy hiệu quả và đổi mới."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-009",
+      "question": "Ngoài giá trị thì giá cả của thị trường còn phụ thuộc vào:",
+      "options": [
+        {
+          "text": "Yếu tố cạnh tranh",
+          "correct": false,
+          "explain": "Sai. Thiếu cung - cầu và sức mua của đồng tiền."
+        },
+        {
+          "text": "Yếu tố cạnh tranh, sức mua của đồng tiền.",
+          "correct": false,
+          "explain": "Sai. Thiếu yếu tố cung - cầu."
+        },
+        {
+          "text": "Yếu tố cạnh tranh, cung cầu, sức mua của đồng tiền.",
+          "correct": true,
+          "explain": "Đúng. Ngoài giá trị, giá cả thị trường còn phụ thuộc vào cạnh tranh, cung - cầu và sức mua của đồng tiền."
+        },
+        {
+          "text": "Yếu tố cạnh tranh, cung cầu, sức mua của đồng tiền, giá trị.",
+          "correct": false,
+          "explain": "Sai. 'Giá trị' đã được nêu trong câu hỏi ('ngoài giá trị') nên không phải yếu tố bổ sung."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-010",
+      "question": "Chỉ có sản phẩm của những lao động tư nhân độc lập và không phụ thuộc vào nhau mới đối diện với nhau như là",
+      "options": [
+        {
+          "text": "Những hàng hóa",
+          "correct": true,
+          "explain": "Đúng. Theo C. Mác, chỉ sản phẩm của những lao động tư nhân độc lập, không phụ thuộc nhau mới đối diện nhau như những hàng hóa, tức là được đem ra trao đổi, mua bán."
+        },
+        {
+          "text": "Những sản vật trao đổi",
+          "correct": false,
+          "explain": "Sai. 'Sản vật trao đổi' không phải thuật ngữ của kinh tế chính trị Mác - Lênin; sản phẩm đem trao đổi trong điều kiện này được gọi là hàng hóa."
+        },
+        {
+          "text": "Những sản phẩm trao đổi",
+          "correct": false,
+          "explain": "Sai. 'Sản phẩm trao đổi' không nói lên bản chất của quan hệ này; khi trao đổi giữa các lao động tư nhân độc lập thì sản phẩm trở thành hàng hóa."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-011",
+      "question": "Tiền tệ có mấy chức năng?",
+      "options": [
+        {
+          "text": "Ba chức năng",
+          "correct": false,
+          "explain": "Sai. Tiền có 5 chức năng chứ không phải 3."
+        },
+        {
+          "text": "Năm chức năng",
+          "correct": true,
+          "explain": "Đúng. Năm chức năng: thước đo giá trị, phương tiện lưu thông, phương tiện cất trữ, phương tiện thanh toán, tiền tệ thế giới."
+        },
+        {
+          "text": "Sáu chức năng",
+          "correct": false,
+          "explain": "Sai. Tiền có 5 chức năng."
+        },
+        {
+          "text": "Bảy chức năng",
+          "correct": false,
+          "explain": "Sai. Tiền có 5 chức năng."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-012",
+      "question": "Lượng giá trị hàng hóa nhiều hay ít, cao hay thấp, được xác định như thế nào?",
+      "options": [
+        {
+          "text": "Xác định bằng thời gian lao động cá biệt",
+          "correct": false,
+          "explain": "Sai. Thời gian lao động cá biệt quyết định giá trị cá biệt, không phải lượng giá trị hàng hóa."
+        },
+        {
+          "text": "Xác định bằng thời gian lao động xã hội cần thiết",
+          "correct": true,
+          "explain": "Đúng. Lượng giá trị hàng hóa được xác định bằng thời gian lao động xã hội cần thiết."
+        },
+        {
+          "text": "Xác định bằng thời gian lao động giản đơn, trung bình xã hội cần thiết",
+          "correct": false,
+          "explain": "Sai. Cách diễn đạt này không phải cách diễn đạt chuẩn; lượng giá trị đo bằng thời gian lao động xã hội cần thiết (đã quy lao động phức tạp về giản đơn)."
+        },
+        {
+          "text": "Xác định bằng thời gian lao động giản đơn",
+          "correct": false,
+          "explain": "Sai. Thời gian lao động giản đơn không phải cách xác định chuẩn lượng giá trị hàng hóa."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-013",
+      "question": "Theo kinh tế - chính trị Mác - Lênin, loại tiền nào có chức năng cất trữ?",
+      "options": [
+        {
+          "text": "Tiền giấy",
+          "correct": false,
+          "explain": "Sai. Tiền giấy là tiền ký hiệu, không có giá trị thực nên không làm chức năng cất trữ."
+        },
+        {
+          "text": "Tiền điện tử",
+          "correct": false,
+          "explain": "Sai. Tiền điện tử không phải loại tiền có giá trị thực để cất trữ theo giáo trình."
+        },
+        {
+          "text": "Tiền vàng",
+          "correct": true,
+          "explain": "Đúng. Chỉ tiền vàng (có giá trị thực) mới thực hiện được chức năng cất trữ."
+        },
+        {
+          "text": "Bitcoin",
+          "correct": false,
+          "explain": "Sai. Bitcoin không phải loại tiền có chức năng cất trữ theo giáo trình."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-014",
+      "question": "Lưu thông hàng hoá dựa trên nguyên tắc ngang giá. Điều này được hiểu như thế nào là đúng?",
+      "options": [
+        {
+          "text": "Giá cả của từng hàng hoá luôn bằng giá trị của nó",
+          "correct": false,
+          "explain": "Sai. Giá cả của từng hàng hoá luôn dao động do cung - cầu và cạnh tranh, nên không phải lúc nào cũng bằng giá trị."
+        },
+        {
+          "text": "Giá trị luôn luôn bằng giá cả",
+          "correct": false,
+          "explain": "Sai. Giá trị và giá cả không luôn luôn bằng nhau; giá cả là biểu hiện bằng tiền của giá trị nên thường lệch khỏi giá trị theo thị trường."
+        },
+        {
+          "text": "Giá cả có thể tách rời giá trị và xoay quanh giá trị của nó",
+          "correct": true,
+          "explain": "Đúng. Trao đổi ngang giá nghĩa là xét trên tổng thể, giá cả xoay quanh giá trị: từng lúc giá cả có thể cao hoặc thấp hơn giá trị do cung - cầu, nhưng tổng giá cả vẫn bằng tổng giá trị. Đây là cơ chế hoạt động của quy luật giá trị."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-015",
+      "question": "Tiền công trong chủ nghĩa tư bản có mấy hình thức?",
+      "options": [
+        {
+          "text": "Hai hình thức",
+          "correct": true,
+          "explain": "Đúng. Tiền công trong chủ nghĩa tư bản có hai hình thức cơ bản: tiền công tính theo thời gian (trả theo số giờ, ngày, tháng làm việc) và tiền công tính theo sản phẩm (trả theo số sản phẩm làm ra)."
+        },
+        {
+          "text": "Ba hình thức",
+          "correct": false,
+          "explain": "Sai. Tiền công có hai hình thức cơ bản, không phải ba."
+        },
+        {
+          "text": "Bốn hình thức",
+          "correct": false,
+          "explain": "Sai. Không phải bốn hình thức."
+        },
+        {
+          "text": "Một hình thức",
+          "correct": false,
+          "explain": "Sai. Có hai hình thức nên không thể chỉ có một."
+        }
+      ],
+      "note": "Bình luận có giải thích: 2 hình thức là tiền công theo thời gian và theo sản phẩm."
+    },
+    {
+      "id": "mln122-sp26-016",
+      "question": "Những nhận xét dưới đây về phương pháp sản xuất giá trị thặng dư tuyệt đối, nhận xét nào là không đúng?",
+      "options": [
+        {
+          "text": "Chủ yếu áp dụng ở giai đoạn đầu của chủ nghĩa tư bản khi kỹ thuật còn thủ công lạc hậu",
+          "correct": false,
+          "explain": "Ý này đúng nên không chọn vì phương pháp này chủ yếu dùng ở giai đoạn đầu của chủ nghĩa tư bản, khi kỹ thuật còn thủ công, lạc hậu."
+        },
+        {
+          "text": "Giá trị sức lao động không thay đổi",
+          "correct": false,
+          "explain": "Ý này đúng nên không chọn vì giá trị sức lao động không thay đổi khi kéo dài ngày lao động."
+        },
+        {
+          "text": "Ngày lao động không thay đổi",
+          "correct": true,
+          "explain": "Đây là ý sai cần chọn vì phương pháp này tăng giá trị thặng dư bằng cách kéo dài ngày lao động, nên ngày lao động không thể không thay đổi."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-017",
+      "question": "Công thức chung của tư bản là gì?",
+      "options": [
+        {
+          "text": "T-H-T'",
+          "correct": true,
+          "explain": "Đúng. Công thức chung của tư bản là T – H – T', trong đó T là số tiền ứng ra ban đầu, H là hàng hoá (tư liệu sản xuất và sức lao động mua vào), T' = T + ΔT là số tiền thu về, với ΔT là phần dôi ra, chính là giá trị thặng dư m. Mục đích của vận động này là giá trị lớn thêm, nên nó không có giới hạn."
+        },
+        {
+          "text": "T-H-T",
+          "correct": false,
+          "explain": "Sai. T – H – T (tiền thu về bằng tiền ứng ra) vô nghĩa vì không có gì lớn thêm; không ai bỏ tiền ra mua rồi bán lại để thu cùng số tiền."
+        },
+        {
+          "text": "H-T-H",
+          "correct": false,
+          "explain": "Sai. H – T – H là công thức lưu thông hàng hoá giản đơn: bán hàng để mua hàng khác, mục đích là giá trị sử dụng, không phải công thức chung của tư bản."
+        },
+        {
+          "text": "T-H-H-T",
+          "correct": false,
+          "explain": "Sai. T – H – H – T không phải công thức nào trong giáo trình."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-018",
+      "question": "Giá trị sức lao động được đo gián tiếp bằng:",
+      "options": [
+        {
+          "text": "Giá trị của những tư liệu sản xuất để nuôi sống người lao động",
+          "correct": false,
+          "explain": "Sai. Tư liệu sản xuất không dùng để nuôi sống người lao động."
+        },
+        {
+          "text": "Giá trị của những tư liệu tiêu dùng để nuôi sống người lao động",
+          "correct": true,
+          "explain": "Đúng. Giá trị sức lao động được đo gián tiếp bằng giá trị của những tư liệu tiêu dùng để nuôi sống người lao động."
+        },
+        {
+          "text": "Giá cả của những tư liệu tiêu dùng để nuôi sống bản thân người lao động",
+          "correct": false,
+          "explain": "Sai. Phải đo bằng giá trị chứ không phải giá cả của tư liệu tiêu dùng."
+        },
+        {
+          "text": "Giá trị của những tư liệu tiêu dùng để nuôi sống nhà tư bản",
+          "correct": false,
+          "explain": "Sai. Tư liệu tiêu dùng này nuôi sống người lao động chứ không phải nhà tư bản."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-019",
+      "question": "Nếu nhà tư bản trả công theo đúng giá trị sức lao động thì có còn bóc lột giá trị thặng dư không?",
+      "options": [
+        {
+          "text": "Không còn",
+          "correct": false,
+          "explain": "Sai. Dù trả đúng giá trị sức lao động, nhà tư bản vẫn bóc lột vì giá trị mới do công nhân tạo ra lớn hơn giá trị sức lao động."
+        },
+        {
+          "text": "Tùy trường hợp cụ thể",
+          "correct": false,
+          "explain": "Sai. Không phụ thuộc trường hợp cụ thể: bản chất quan hệ làm thuê luôn có bóc lột giá trị thặng dư."
+        },
+        {
+          "text": "Vẫn còn",
+          "correct": true,
+          "explain": "Đúng. Vẫn còn bóc lột: công nhân tạo ra giá trị mới lớn hơn giá trị sức lao động mà nhà tư bản trả, phần dôi ra là giá trị thặng dư."
+        }
+      ],
+      "note": "Bình luận có giải thích: nhà tư bản trả công theo giá trị sức lao động chứ không trả toàn bộ giá trị mà người lao động tạo ra."
+    },
+    {
+      "id": "mln122-sp26-020",
+      "question": "Xu hướng chung của sản xuất tư bản chủ nghĩa là:",
+      "options": [
+        {
+          "text": "Nâng cao mức tiền công",
+          "correct": false,
+          "explain": "Sai. Nhà tư bản muốn tăng giá trị thặng dư nên có xu hướng ép tiền công xuống chứ không nâng cao."
+        },
+        {
+          "text": "Hạ thấp mức tiền công",
+          "correct": true,
+          "explain": "Đúng. Xu hướng chung của sản xuất tư bản chủ nghĩa là hạ thấp mức tiền công để tăng giá trị thặng dư."
+        },
+        {
+          "text": "Giữ nguyên mức tiền công",
+          "correct": false,
+          "explain": "Sai. Tiền công thực tế có xu hướng bị hạ thấp chứ không giữ nguyên."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-021",
+      "question": "Tích tụ và tập trung tư bản giống nhau ở:",
+      "options": [
+        {
+          "text": "Đều là tăng quy mô tư bản cá biệt",
+          "correct": true,
+          "explain": "Đúng. Tích tụ và tập trung tư bản giống nhau ở chỗ đều làm tăng quy mô tư bản cá biệt."
+        },
+        {
+          "text": "Có nguồn gốc trực tiếp giống nhau",
+          "correct": false,
+          "explain": "Sai. Nguồn gốc trực tiếp khác nhau: tích tụ từ tích lũy giá trị thặng dư, còn tập trung từ việc hợp nhất các tư bản có sẵn."
+        },
+        {
+          "text": "Đều là tăng quy mô tư bản xã hội",
+          "correct": false,
+          "explain": "Sai. Tích tụ làm tăng quy mô tư bản xã hội, còn tập trung không làm tăng quy mô tư bản xã hội."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-022",
+      "question": "Bóc lột giá trị thặng dư tương đối là hình thức:",
+      "options": [
+        {
+          "text": "Tăng thời gian ngày lao động",
+          "correct": false,
+          "explain": "Sai. Tăng thời gian ngày lao động là phương pháp sản xuất giá trị thặng dư tuyệt đối."
+        },
+        {
+          "text": "Rút ngắn thời gian lao động cần thiết và thời gian lao động thặng dư",
+          "correct": false,
+          "explain": "Sai. Rút ngắn cả hai loại thời gian làm giảm ngày lao động, không phải đặc trưng của giá trị thặng dư tương đối."
+        },
+        {
+          "text": "Rút ngắn thời gian lao động tất yếu",
+          "correct": true,
+          "explain": "Đúng. Giá trị thặng dư tương đối có được nhờ rút ngắn thời gian lao động tất yếu (do tăng năng suất lao động), kéo dài tương ứng thời gian lao động thặng dư trong khi ngày lao động không đổi."
+        },
+        {
+          "text": "Tăng thời gian lao động tất yếu",
+          "correct": false,
+          "explain": "Sai. Tăng thời gian lao động tất yếu làm giảm giá trị thặng dư."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-023",
+      "question": "Chi phí sản xuất tư bản chủ nghĩa (k) là:",
+      "options": [
+        {
+          "text": "Bao gồm m và v (k = m+v)",
+          "correct": false,
+          "explain": "Sai. Chi phí sản xuất tư bản chủ nghĩa không gồm giá trị thặng dư m."
+        },
+        {
+          "text": "Bao gồm c và m (k = c+m)",
+          "correct": false,
+          "explain": "Sai. Chi phí sản xuất gồm c và v, không gồm m."
+        },
+        {
+          "text": "Bao gồm c và v (k = c+v)",
+          "correct": true,
+          "explain": "Đúng. Chi phí sản xuất tư bản chủ nghĩa k = c + v (tư bản bất biến + tư bản khả biến)."
+        },
+        {
+          "text": "Bao gồm c, v và m (k = c + v + m)",
+          "correct": false,
+          "explain": "Sai. c + v + m là giá trị hàng hóa, không phải chi phí sản xuất tư bản chủ nghĩa."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-024",
+      "question": "Đâu không phải đặc trưng của chủ nghĩa tư bản?",
+      "options": [
+        {
+          "text": "Quyền sở hữu tư liệu sản xuất thuộc về nhà nước",
+          "correct": true,
+          "explain": "Đây là ý cần chọn vì sở hữu tư liệu sản xuất thuộc về nhà nước là đặc trưng của chủ nghĩa xã hội; chủ nghĩa tư bản dựa trên sở hữu tư nhân."
+        },
+        {
+          "text": "Tích lũy tư bản",
+          "correct": false,
+          "explain": "Ý này là đặc trưng của chủ nghĩa tư bản nên không chọn: tích lũy tư bản là động lực của sản xuất tư bản chủ nghĩa."
+        },
+        {
+          "text": "Trao đổi tự nguyện",
+          "correct": false,
+          "explain": "Ý này là đặc trưng của chủ nghĩa tư bản nên không chọn: các giao dịch dựa trên trao đổi tự nguyện giữa các chủ thể."
+        },
+        {
+          "text": "Một hệ thống giá cả và thị trường cạnh tranh",
+          "correct": false,
+          "explain": "Ý này là đặc trưng của chủ nghĩa tư bản nên không chọn: thị trường cạnh tranh và hệ thống giá cả điều tiết sản xuất."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-025",
+      "question": "Xuất khẩu giá trị ra nước ngoài nhằm mục đích thu được giá trị thặng dư và các nguồn lợi khác ở các nước mà mình đầu tư gọi là gì?",
+      "options": [
+        {
+          "text": "Xuất khẩu tư bản",
+          "correct": true,
+          "explain": "Đúng. Đó là xuất khẩu tư bản: đưa tư bản ra nước ngoài để thu giá trị thặng dư và các nguồn lợi khác."
+        },
+        {
+          "text": "Nhập khẩu tư bản",
+          "correct": false,
+          "explain": "Sai. Nhập khẩu tư bản là việc nước tiếp nhận tư bản từ nước ngoài, không phải hoạt động mang tư bản đi đầu tư."
+        },
+        {
+          "text": "Đầu tư thị trường",
+          "correct": false,
+          "explain": "Sai. 'Đầu tư thị trường' không phải thuật ngữ chỉ hoạt động này."
+        },
+        {
+          "text": "Đầu tư tiền tệ",
+          "correct": false,
+          "explain": "Sai. 'Đầu tư tiền tệ' không phải thuật ngữ chỉ hoạt động này."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-026",
+      "question": "Trong giai đoạn chủ nghĩa tư bản độc quyền, ngoài sự cạnh tranh giữa những người sản xuất nhỏ, giữa những nhà tư bản vừa và nhỏ như trong giai đoạn chủ nghĩa tư bản cạnh tranh tự do, mà còn có thêm các loại cạnh tranh nào? (chọn nhiều đáp án)",
+      "options": [
+        {
+          "text": "Cạnh tranh giữa các tổ chức độc quyền với các xí nghiệp ngoài độc quyền",
+          "correct": true,
+          "explain": "Đúng. Trong chủ nghĩa tư bản độc quyền, ngoài cạnh tranh tự do như trước còn có cạnh tranh giữa các tổ chức độc quyền với các xí nghiệp ngoài độc quyền (để chèn ép, thôn tính doanh nghiệp nhỏ)."
+        },
+        {
+          "text": "Cạnh tranh giữa các tổ chức độc quyền với nhau",
+          "correct": true,
+          "explain": "Đúng. Có cạnh tranh giữa các tổ chức độc quyền với nhau (để giành thị trường, nguồn nguyên liệu, phạm vi ảnh hưởng)."
+        },
+        {
+          "text": "Cạnh tranh trong nội bộ các tổ chức độc quyền",
+          "correct": true,
+          "explain": "Đúng. Có cạnh tranh ngay trong nội bộ một tổ chức độc quyền (giữa các thành viên về giá cả, phần chia lợi nhuận, thị phần)."
+        },
+        {
+          "text": "Cạnh tranh giữa các tổ chức tư bản độc quyền nhà nước với nhau",
+          "correct": false,
+          "explain": "Sai. 'Cạnh tranh giữa các tổ chức tư bản độc quyền nhà nước với nhau' không phải một trong ba loại cạnh tranh mới mà giáo trình nêu cho giai đoạn chủ nghĩa tư bản độc quyền."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-027",
+      "question": "Các tổ chức độc quyền hình thành trên cơ sở:",
+      "options": [
+        {
+          "text": "Liên kết dọc và liên kết ngang",
+          "correct": true,
+          "explain": "Đúng. Các tổ chức độc quyền hình thành trên cơ sở liên kết dọc và liên kết ngang."
+        },
+        {
+          "text": "Liên kết tự giác và liên kết tự phát",
+          "correct": false,
+          "explain": "Sai. 'Liên kết tự giác và tự phát' không phải cách phân loại các liên kết độc quyền."
+        },
+        {
+          "text": "Liên kết bên ngoài và liên kết bên trong",
+          "correct": false,
+          "explain": "Sai. 'Liên kết bên ngoài và bên trong' không phải cách phân loại các liên kết độc quyền."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-028",
+      "question": "Nhận định nào sau đây là sai?",
+      "options": [
+        {
+          "text": "Consortium là hình thức tổ chức độc quyền theo liên kết dọc",
+          "correct": false,
+          "explain": "Ý này đúng nên không chọn vì Consortium là hình thức liên kết dọc, liên kết nhiều ngành."
+        },
+        {
+          "text": "Trust là tổ chức độc quyền cao hơn Syndicate",
+          "correct": false,
+          "explain": "Ý này đúng nên không chọn vì Trust là hình thức cao hơn Syndicate (thống nhất cả sản xuất và tiêu thụ)."
+        },
+        {
+          "text": "Các tổ chức độc quyền mở rộng ra nhiều ngành khác nhau là phát triển theo kiểu liên kết dọc",
+          "correct": false,
+          "explain": "Ý này đúng nên không chọn vì mở rộng ra nhiều ngành khác nhau là phát triển theo kiểu liên kết dọc."
+        },
+        {
+          "text": "Các nhà tư bản tham gia Cartel vẫn độc lập về sản xuất nhưng mất độc lập về lưu thông",
+          "correct": true,
+          "explain": "Đây là ý sai cần chọn vì mô tả 'độc lập về sản xuất nhưng mất độc lập về lưu thông' là của Syndicate; ở Cartel các nhà tư bản vẫn độc lập cả về sản xuất lẫn lưu thông, chỉ thỏa thuận về giá cả, thị trường."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-029",
+      "question": "Trong giai đoạn chủ nghĩa tư bản cạnh tranh tự do, quy luật giá trị thặng dư biểu hiện thành quy luật:",
+      "options": [
+        {
+          "text": "Lợi nhuận độc quyền",
+          "correct": false,
+          "explain": "Sai. Lợi nhuận độc quyền là biểu hiện ở giai đoạn chủ nghĩa tư bản độc quyền."
+        },
+        {
+          "text": "Tỷ suất lợi nhuận bình quân",
+          "correct": true,
+          "explain": "Đúng. Ở giai đoạn cạnh tranh tự do, quy luật giá trị thặng dư biểu hiện thành quy luật tỷ suất lợi nhuận bình quân."
+        },
+        {
+          "text": "Lợi nhuận độc quyền cao",
+          "correct": false,
+          "explain": "Sai. Lợi nhuận độc quyền cao là biểu hiện ở giai đoạn độc quyền."
+        },
+        {
+          "text": "Tỷ suất giá trị thặng dư",
+          "correct": false,
+          "explain": "Sai. Tỷ suất giá trị thặng dư là nội dung của quy luật giá trị thặng dư, không phải hình thức biểu hiện ở giai đoạn này."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-030",
+      "question": "Vì sao trong chủ nghĩa tư bản độc quyền, cạnh tranh không bị thủ tiêu?",
+      "options": [
+        {
+          "text": "Vì cạnh tranh là quy luật khách quan của kinh tế hàng hoá",
+          "correct": true,
+          "explain": "Đúng. Cạnh tranh là quy luật khách quan của sản xuất và trao đổi hàng hoá. Độc quyền ra đời từ cạnh tranh nhưng không xoá bỏ được sản xuất hàng hoá, nên không thủ tiêu được cạnh tranh; trái lại cạnh tranh còn gay gắt hơn."
+        },
+        {
+          "text": "Vì tổ chức độc quyền cạnh tranh với các công ty ngoài độc quyền",
+          "correct": false,
+          "explain": "Sai. Đây là biểu hiện (một hình thức cạnh tranh) chứ không phải lí do giải thích vì sao cạnh tranh không bị thủ tiêu; câu hỏi hỏi nguyên nhân gốc."
+        },
+        {
+          "text": "Vì các xí nghiệp trong nội bộ tổ chức độc quyền cạnh tranh với nhau",
+          "correct": false,
+          "explain": "Sai. Đây cũng chỉ là một biểu hiện của cạnh tranh trong thực tế, không phải nguyên nhân gốc."
+        },
+        {
+          "text": "Không có cạnh tranh",
+          "correct": false,
+          "explain": "Sai. Thực tế vẫn có cạnh tranh, nên ý này sai."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-031",
+      "question": "Sự phát triển của tư bản tài chính dẫn đến sự hình thành của:",
+      "options": [
+        {
+          "text": "Các nhà tài phiệt",
+          "correct": true,
+          "explain": "Đúng. Sự phát triển của tư bản tài chính dẫn đến hình thành tầng lớp tài phiệt (đầu sỏ tài chính) thống trị nền kinh tế."
+        },
+        {
+          "text": "Các tập đoàn tài chính",
+          "correct": false,
+          "explain": "Sai. Tập đoàn tài chính là hình thức tổ chức, không phải kết quả đặc trưng được nêu; kết quả là tầng lớp nhà tài phiệt."
+        },
+        {
+          "text": "Các doanh nghiệp tư nhân",
+          "correct": false,
+          "explain": "Sai. Doanh nghiệp tư nhân tồn tại từ trước khi có tư bản tài chính."
+        },
+        {
+          "text": "Các công ty mẹ",
+          "correct": false,
+          "explain": "Sai. Công ty mẹ là mô hình tổ chức, không phải kết quả đặc trưng của sự phát triển tư bản tài chính."
+        }
+      ],
+      "note": "Bình luận có giải thích: sự phát triển của tư bản tài chính hình thành các nhà tài phiệt."
+    },
+    {
+      "id": "mln122-sp26-032",
+      "question": "Sự ra đời của CNTB độc quyền nhà nước nhằm mục đích:",
+      "options": [
+        {
+          "text": "Phục vụ lợi ích của tổ chức độc quyền tư nhân và cứu nguy cho chủ nghĩa tư bản",
+          "correct": true,
+          "explain": "Đúng. Sự ra đời của chủ nghĩa tư bản độc quyền nhà nước nhằm phục vụ lợi ích của tổ chức độc quyền tư nhân và cứu nguy cho chủ nghĩa tư bản."
+        },
+        {
+          "text": "Phục vụ lợi ích của tổ chức độc quyền tư nhân",
+          "correct": false,
+          "explain": "Không chọn theo đáp án của đề. Ý này đúng nhưng thiếu mục đích cứu nguy cho chủ nghĩa tư bản."
+        },
+        {
+          "text": "Phục vụ lợi ích của nhà nước tư sản",
+          "correct": false,
+          "explain": "Sai. Nhà nước tư sản phục vụ lợi ích của tổ chức độc quyền tư nhân chứ không phải lợi ích riêng của nhà nước."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-033",
+      "question": "Trong lịch sử phát triển nền sản xuất xã hội, tiền đề nào là quan trọng nhất cho sự ra đời và phát triển của nền kinh tế thị trường?",
+      "options": [
+        {
+          "text": "Sản xuất",
+          "correct": false,
+          "explain": "Sai. Chỉ có sản xuất thôi thì chưa đủ; sản xuất tự cung tự cấp không tạo ra thị trường."
+        },
+        {
+          "text": "Trao đổi hàng hóa",
+          "correct": false,
+          "explain": "Sai. Chỉ có trao đổi hàng hoá cũng chưa đủ; phải có sản xuất hàng hoá để có hàng mang ra trao đổi."
+        },
+        {
+          "text": "Thị trường",
+          "correct": false,
+          "explain": "Sai. Thị trường là kết quả của sản xuất và trao đổi hàng hoá phát triển, không phải tiền đề."
+        },
+        {
+          "text": "Sản xuất và trao đổi hàng hóa",
+          "correct": true,
+          "explain": "Đúng. Tiền đề quan trọng nhất cho sự ra đời và phát triển của kinh tế thị trường là sản xuất và trao đổi hàng hoá: khi sản xuất hàng hoá và trao đổi hàng hoá phát triển đến trình độ cao thì hình thành thị trường, rồi kinh tế thị trường."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-034",
+      "question": "Thể chế được hiểu là gì?",
+      "options": [
+        {
+          "text": "Những quy tắc, pháp luật, bộ máy quản lí và cơ chế vận hành nhằm điều chỉnh các hoạt động của con người trong 1 chế độ xã hội",
+          "correct": true,
+          "explain": "Đúng theo đáp án của đề. Thể chế là hệ thống những quy tắc, luật pháp, bộ máy quản lí và cơ chế vận hành nhằm điều chỉnh hoạt động của con người trong một chế độ xã hội."
+        },
+        {
+          "text": "Luật chơi chính thức và phi chính thức được đặt ra đối với các chủ thể tham gia hoạt động trong nền kinh tế của một quốc gia trong một giai đoạn lịch sử nhất định",
+          "correct": false,
+          "explain": "Không chọn theo đáp án của đề. Đây là cách định nghĩa gần với quan điểm của D. North ('luật chơi' chính thức và phi chính thức) và chỉ nhấn mạnh 'luật chơi', thiếu bộ máy quản lí và cơ chế vận hành nên đề không lấy làm đáp án."
+        },
+        {
+          "text": "Được cấu thành bởi hệ thống các bộ phận khác nhau mà mỗi bộ phận cũng là một hệ thống phức tạp gồm nhiều yếu tố",
+          "correct": false,
+          "explain": "Sai. Câu này mô tả cấu trúc 'hệ thống' (nhiều bộ phận, mỗi bộ phận cũng là một hệ thống) chứ không phải định nghĩa thể chế."
+        },
+        {
+          "text": "Quy luật vận động và phát triển của một cộng đồng xã hội",
+          "correct": false,
+          "explain": "Sai. 'Quy luật vận động và phát triển của một cộng đồng xã hội' là cách nói về quy luật xã hội, không phải khái niệm thể chế."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-035",
+      "question": "Về vị trí lịch sử, kinh tế thị trường có đặc điểm gì?",
+      "options": [
+        {
+          "text": "Do chủ nghĩa tư bản sinh ra",
+          "correct": false,
+          "explain": "Sai. Kinh tế thị trường có từ trước chủ nghĩa tư bản, không do chủ nghĩa tư bản sinh ra."
+        },
+        {
+          "text": "Có cùng bản chất với kinh tế hàng hóa",
+          "correct": true,
+          "explain": "Đúng. Kinh tế thị trường có cùng bản chất với kinh tế hàng hóa, là kinh tế hàng hóa ở trình độ phát triển cao."
+        },
+        {
+          "text": "Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội",
+          "correct": false,
+          "explain": "Sai. Kinh tế thị trường tồn tại khách quan (không phải chủ quan) trong thời kỳ quá độ lên chủ nghĩa xã hội."
+        },
+        {
+          "text": "Là sản phẩm riêng của chủ nghĩa tư bản",
+          "correct": false,
+          "explain": "Sai. Kinh tế thị trường không phải sản phẩm riêng của chủ nghĩa tư bản mà là thành tựu chung của nhân loại."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-036",
+      "question": "Đại hội nào của Đảng Cộng sản Việt Nam đề cập đến sự cần thiết đổi mới cơ chế quản lý kinh tế?",
+      "options": [
+        {
+          "text": "Đại hội đảng V",
+          "correct": false,
+          "explain": "Sai. Đại hội V (1982) chưa đặt vấn đề đổi mới cơ chế quản lí kinh tế một cách toàn diện."
+        },
+        {
+          "text": "Đại hội đảng VI",
+          "correct": true,
+          "explain": "Đúng. Đại hội VI (1986) mở đầu công cuộc Đổi mới: chỉ ra sự cần thiết phải xoá bỏ cơ chế tập trung quan liêu, bao cấp và đổi mới cơ chế quản lí kinh tế, thừa nhận sản xuất hàng hoá và vận dụng quan hệ hàng hoá - tiền tệ."
+        },
+        {
+          "text": "Đại hội đảng VII",
+          "correct": false,
+          "explain": "Sai. Đại hội VII (1991) thông qua Cương lĩnh xây dựng đất nước trong thời kì quá độ và Chiến lược ổn định, phát triển kinh tế - xã hội đến năm 2000; vấn đề đổi mới cơ chế quản lí đã được nêu từ Đại hội VI."
+        },
+        {
+          "text": "Đại hội đảng VIII",
+          "correct": false,
+          "explain": "Sai. Đại hội VIII (1996) đánh dấu bước chuyển sang thời kì đẩy mạnh công nghiệp hoá, hiện đại hoá."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-037",
+      "question": "Xây dựng nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam nhằm thực hiện mục tiêu gì?",
+      "options": [
+        {
+          "text": "Dân giàu, nước mạnh, dân chủ, công bằng, văn minh",
+          "correct": true,
+          "explain": "Đúng. Mục tiêu của kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là 'dân giàu, nước mạnh, dân chủ, công bằng, văn minh'. Cần nhớ đúng thứ tự trong văn kiện."
+        },
+        {
+          "text": "Dân giàu, nước mạnh, công bằng, dân chủ, văn minh",
+          "correct": false,
+          "explain": "Sai. Có đủ các cụm từ nhưng thứ tự không đúng như cụm từ chuẩn (dân chủ đứng trước công bằng)."
+        },
+        {
+          "text": "Dân giàu, nước mạnh, văn minh, công bằng, dân chủ",
+          "correct": false,
+          "explain": "Sai. Các cụm từ đúng nhưng sai thứ tự so với cụm từ chuẩn."
+        },
+        {
+          "text": "Dân giàu, nước mạnh, dân chủ, văn minh, công bằng",
+          "correct": false,
+          "explain": "Sai. Sai thứ tự so với cụm từ chuẩn: 'dân chủ, công bằng, văn minh'."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-038",
+      "question": "Công bằng trong phân phối có những quan niệm chính nào?",
+      "options": [
+        {
+          "text": "Công bằng theo mức độ và công bằng theo chức năng",
+          "correct": true,
+          "explain": "Đúng theo đáp án của đề. Công bằng trong phân phối được hiểu theo hai quan niệm chính: công bằng theo mức độ và công bằng theo chức năng."
+        },
+        {
+          "text": "Công bằng theo hưởng thụ và công bằng theo cống hiến",
+          "correct": false,
+          "explain": "Sai theo đáp án của đề. Hưởng thụ và cống hiến là các tiêu chí phân phối, không phải hai quan niệm chính về công bằng nêu trong giáo trình."
+        },
+        {
+          "text": "Công bằng theo lao động và công bằng theo hưởng thụ",
+          "correct": false,
+          "explain": "Sai theo đáp án của đề. Cặp 'theo lao động' và 'theo hưởng thụ' không phải hai quan niệm chính về công bằng."
+        },
+        {
+          "text": "Công bằng theo mức độ và công bằng theo lao động",
+          "correct": false,
+          "explain": "Sai theo đáp án của đề. Cặp 'theo mức độ' và 'theo lao động' không phải hai quan niệm chính; quan niệm đi kèm với 'mức độ' là 'chức năng'."
+        }
+      ],
+      "note": "Bộ MLN122 cũ (câu mln122-004) chọn \"Công bằng theo hưởng thụ và công bằng theo cống hiến\", nhưng bình luận trong video chọn \"theo mức độ và theo chức năng\". Nên đối chiếu lại giáo trình."
+    },
+    {
+      "id": "mln122-sp26-039",
+      "question": "Chọn câu sai khi nói về kinh tế thị trường.",
+      "options": [
+        {
+          "text": "Kinh tế thị trường đối lập với kinh tế tự nhiên",
+          "correct": false,
+          "explain": "Đây là ý đúng nên không chọn (câu hỏi tìm câu SAI). Kinh tế thị trường đối lập với kinh tế tự nhiên (tự cấp tự túc)."
+        },
+        {
+          "text": "Kinh tế thị trường đối lập với các chế độ xã hội",
+          "correct": true,
+          "explain": "Đây là ý sai cần chọn. Kinh tế thị trường không đối lập với các chế độ xã hội: nó tồn tại và được sử dụng trong nhiều chế độ khác nhau, kể cả định hướng xã hội chủ nghĩa ở Việt Nam."
+        },
+        {
+          "text": "Kinh tế thị trường là thành tựu chung của nhân loại",
+          "correct": false,
+          "explain": "Đây là ý đúng nên không chọn. Kinh tế thị trường là thành tựu chung của nhân loại."
+        },
+        {
+          "text": "Kinh tế thị trường phát triển mạnh nhất trong xã hội chủ nghĩa tư bản",
+          "correct": false,
+          "explain": "Đây là ý đúng nên không chọn. Kinh tế thị trường phát triển mạnh nhất, ở trình độ cao, trong chủ nghĩa tư bản."
+        }
+      ],
+      "note": "Bình luận chọn \"đối lập với các chế độ xã hội\" là câu sai."
+    },
+    {
+      "id": "mln122-sp26-040",
+      "question": "Phân chia theo tiêu chí cấu trúc của các tổ chức tham gia xã hội, thể chế được chia thành:",
+      "options": [
+        {
+          "text": "Thể chế công, thể chế tư",
+          "correct": true,
+          "explain": "Đúng. Phân theo cấu trúc của các tổ chức tham gia xã hội, thể chế gồm thể chế công (nhà nước, cơ quan công quyền) và thể chế tư (doanh nghiệp, tổ chức tư nhân). Từ khoá là 'cấu trúc của các tổ chức tham gia xã hội'."
+        },
+        {
+          "text": "Thể chế nhà nước, thể chế tư bản tư nhân",
+          "correct": false,
+          "explain": "Không chọn theo đáp án của đề. Cách gọi 'thể chế tư bản tư nhân' không phải thuật ngữ chuẩn trong giáo trình; xem ghi chú: bộ cũ có câu cùng nội dung chọn ý này."
+        },
+        {
+          "text": "Thể chế nước trong và ngoài nước",
+          "correct": false,
+          "explain": "Sai. Phân chia trong nước và ngoài nước là tiêu chí về phạm vi lãnh thổ, không phải cấu trúc tổ chức tham gia xã hội."
+        },
+        {
+          "text": "Thể chế chính trị và thể chế kinh tế",
+          "correct": false,
+          "explain": "Sai. Thể chế chính trị và thể chế kinh tế là cách phân loại theo lĩnh vực hoạt động, không phải theo cấu trúc tổ chức tham gia."
+        }
+      ],
+      "note": "Bộ MLN122 cũ (câu mln122-073) chọn \"Thể chế nhà nước, thể chế tư bản tư nhân\", nhưng bình luận trong video giải thích đáp án là thể chế công và thể chế tư."
+    },
+    {
+      "id": "mln122-sp26-041",
+      "question": "Quan điểm \"đổi mới phải luôn quán triệt quan điểm “dân là gốc” vì lợi ích của nhân dân, dựa vào nhân dân, phát huy vai trò làm chủ, tinh thần trách nhiệm, sức sáng tạo và mọi nguồn lực của nhân dân; phát huy sức mạnh đại đoàn kết dân tộc\" được đưa ra trong đại hội nào?",
+      "options": [
+        {
+          "text": "Đại hội đảng X",
+          "correct": false,
+          "explain": "Sai. Đại hội X (2006) nhấn mạnh hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa; quan điểm 'dân là gốc' được đề thi gắn với đại hội khác."
+        },
+        {
+          "text": "Đại hội đảng XI",
+          "correct": false,
+          "explain": "Sai. Đại hội XI (2011) thông qua Cương lĩnh bổ sung, phát triển (2011); quan điểm trích trong câu hỏi không được đề lấy ở đại hội này."
+        },
+        {
+          "text": "Đại hội đảng XII",
+          "correct": true,
+          "explain": "Đúng theo đáp án của đề. Đại hội XII (2016) nêu rõ: đổi mới phải luôn quán triệt quan điểm 'dân là gốc', vì lợi ích của nhân dân, dựa vào nhân dân, phát huy vai trò làm chủ và sức sáng tạo của nhân dân, phát huy sức mạnh đại đoàn kết dân tộc."
+        },
+        {
+          "text": "Đại hội đảng XIII",
+          "correct": false,
+          "explain": "Sai theo đáp án của đề. Đại hội XIII (2021) cũng nhấn mạnh 'dân là gốc', nhưng đề lấy đáp án là Đại hội XII."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-042",
+      "question": "Nguồn gốc nào không đúng với nguồn vốn công nghiệp hóa ở các nước tư bản cổ điển?",
+      "options": [
+        {
+          "text": "Cướp bóc thuộc địa",
+          "correct": false,
+          "explain": "Đây là ý đúng nên không chọn (câu hỏi tìm ý KHÔNG đúng). Cướp bóc thuộc địa là một trong các nguồn vốn công nghiệp hoá ở các nước tư bản cổ điển."
+        },
+        {
+          "text": "Khai thác lao động làm thuê",
+          "correct": false,
+          "explain": "Đây là ý đúng nên không chọn (câu hỏi tìm ý KHÔNG đúng). Bóc lột lao động làm thuê tạo ra giá trị thặng dư để tích luỹ vốn."
+        },
+        {
+          "text": "Làm phá sản những người sản xuất nhỏ trong nông nghiệp",
+          "correct": false,
+          "explain": "Đây là ý đúng nên không chọn (câu hỏi tìm ý KHÔNG đúng). Làm phá sản những người sản xuất nhỏ trong nông nghiệp tạo ra vốn và lao động làm thuê."
+        },
+        {
+          "text": "Đi vay nhà nước",
+          "correct": true,
+          "explain": "Đây là ý sai cần chọn. Đi vay nhà nước không phải nguồn gốc vốn công nghiệp hoá của các nước tư bản cổ điển được giáo trình nêu."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-043",
+      "question": "Nội dung cuộc đại phân công lao động xã hội lần thứ ba là gì?",
+      "options": [
+        {
+          "text": "Đại công nghiệp tách khỏi nông nghiệp",
+          "correct": false,
+          "explain": "Sai. Đại công nghiệp tách khỏi nông nghiệp không nằm trong ba lần đại phân công lao động xã hội."
+        },
+        {
+          "text": "Trồng trọt tách khỏi chăn nuôi",
+          "correct": false,
+          "explain": "Sai. Đây là lần phân công thứ nhất (chăn nuôi tách khỏi trồng trọt)."
+        },
+        {
+          "text": "Ngành thương nghiệp ra đời",
+          "correct": true,
+          "explain": "Đúng. Lần đại phân công lao động xã hội thứ ba là thương nghiệp ra đời (xuất hiện tầng lớp thương nhân chỉ chuyên lo trao đổi, mua bán)."
+        },
+        {
+          "text": "Thủ công nghiệp tách khỏi nông nghiệp",
+          "correct": false,
+          "explain": "Sai. Thủ công nghiệp tách khỏi nông nghiệp là lần phân công thứ hai."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-044",
+      "question": "Công nghiệp hoá, hiện đại hoá đất nước phải bảo đảm mục đích gì?",
+      "options": [
+        {
+          "text": "Xây dựng nền kinh tế khép kín và hướng nội",
+          "correct": false,
+          "explain": "Sai. Công nghiệp hoá, hiện đại hoá không nhằm xây dựng nền kinh tế khép kín, hướng nội mà phải mở cửa, hội nhập."
+        },
+        {
+          "text": "Xây dựng nền kinh tế độc lập tự chủ",
+          "correct": true,
+          "explain": "Đúng. Công nghiệp hoá, hiện đại hoá phải bảo đảm xây dựng nền kinh tế độc lập, tự chủ, không lệ thuộc vào bên ngoài, đồng thời chủ động hội nhập."
+        },
+        {
+          "text": "Xây dựng nền kinh tế phải dựa vào sự giúp đỡ và lệ thuộc vào các nước tư bản",
+          "correct": false,
+          "explain": "Sai. Nền kinh tế dựa vào sự giúp đỡ và lệ thuộc vào các nước tư bản trái với yêu cầu độc lập, tự chủ."
+        },
+        {
+          "text": "Xây dựng nền kinh tế mở nhưng chỉ giao lưu hợp tác với các nước xã hội chủ nghĩa",
+          "correct": false,
+          "explain": "Sai. Nền kinh tế mở nhưng chỉ hợp tác với các nước xã hội chủ nghĩa là hẹp; Việt Nam chủ trương hợp tác với tất cả các nước."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-045",
+      "question": "Tiến hành công nghiệp hoá theo kiểu rút ngắn so với các nước đi trước đặc biệt chúng ta cần thực hiện yêu cầu nào?",
+      "options": [
+        {
+          "text": "Phát triển kinh tế và công nghiệp phải có sự nhảy vọt và không cần thực hiện tuần tự",
+          "correct": false,
+          "explain": "Sai. Công nghiệp hoá rút ngắn là rút ngắn thời gian, tận dụng thành tựu của các nước đi trước, nhưng vẫn phải theo quy luật phát triển; nói 'không cần tuần tự' là tuyệt đối hoá."
+        },
+        {
+          "text": "Coi trọng phát triển giáo dục và đào tạo, khoa học và công nghệ, xem đây là nền tảng và động lực cho công nghiệp hóa, hiện đại hóa",
+          "correct": true,
+          "explain": "Đúng. Yêu cầu quan trọng của công nghiệp hoá rút ngắn là coi trọng giáo dục - đào tạo, khoa học và công nghệ làm nền tảng và động lực để tận dụng tri thức và công nghệ hiện đại."
+        },
+        {
+          "text": "Phát triển kinh tế tri thức được dời lại trong giai đoạn sau",
+          "correct": false,
+          "explain": "Sai. Phát triển kinh tế tri thức không dời lại giai đoạn sau mà cần kết hợp ngay trong quá trình công nghiệp hoá, hiện đại hoá."
+        },
+        {
+          "text": "Ưu tiên phát triển công nghiệp nặng một cách hợp lý trên cơ sở phát triển nông nghiệp và công nghiệp nhẹ",
+          "correct": false,
+          "explain": "Sai. Mô hình ưu tiên công nghiệp nặng trên cơ sở nông nghiệp và công nghiệp nhẹ là kiểu công nghiệp hoá tuần tự cổ điển, không phải yêu cầu đặc biệt của công nghiệp hoá rút ngắn."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-046",
+      "question": "Đảng Cộng sản Việt Nam luôn nhấn mạnh tầm quan trọng của việc xây dựng nền kinh tế như thế nào?",
+      "options": [
+        {
+          "text": "Mở cửa",
+          "correct": false,
+          "explain": "Sai. Mở cửa là một phương châm, nhưng điều Đảng luôn nhấn mạnh về tầm quan trọng của nền kinh tế là phải độc lập, tự chủ."
+        },
+        {
+          "text": "Độc lập, tự chủ",
+          "correct": true,
+          "explain": "Đúng. Đảng Cộng sản Việt Nam luôn nhấn mạnh xây dựng nền kinh tế độc lập, tự chủ, đồng thời chủ động hội nhập quốc tế."
+        },
+        {
+          "text": "Hội nhập kinh tế quốc tế",
+          "correct": false,
+          "explain": "Sai. Hội nhập kinh tế quốc tế là phương thức để phát triển, phải gắn với độc lập, tự chủ chứ không đứng một mình."
+        },
+        {
+          "text": "Có tính cạnh tranh",
+          "correct": false,
+          "explain": "Sai. Có tính cạnh tranh là đặc điểm của kinh tế thị trường, không phải ý nhấn mạnh trọng tâm của Đảng về xây dựng nền kinh tế."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-047",
+      "question": "Cách mạng công nghiệp lần thứ nhất diễn ra trong thời gian nào?",
+      "options": [
+        {
+          "text": "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
+          "correct": false,
+          "explain": "Sai. Giữa thế kỉ XV chưa có cách mạng công nghiệp; đó là thời kì tích luỹ nguyên thuỷ và thương mại."
+        },
+        {
+          "text": "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
+          "correct": false,
+          "explain": "Sai. Giữa thế kỉ XVI đến XVII là thời kì trọng thương, tích luỹ nguyên thuỷ; chưa phải cách mạng công nghiệp."
+        },
+        {
+          "text": "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+          "correct": true,
+          "explain": "Đúng. Cách mạng công nghiệp lần thứ nhất diễn ra từ giữa thế kỉ XVIII đến giữa thế kỉ XIX, bắt đầu ở nước Anh (cơ khí hoá bằng máy hơi nước, ngành dệt)."
+        },
+        {
+          "text": "Từ giữa thế kỷ XIX đến giữa thế kỷ XX",
+          "correct": false,
+          "explain": "Sai. Giữa thế kỉ XIX đến giữa thế kỉ XX là gần với cách mạng công nghiệp lần thứ hai (nửa cuối XIX – đầu XX)."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-048",
+      "question": "Quan điểm về \"xây dựng nền kinh tế tự chủ phải dựa trên cơ sở làm chủ công nghệ và chủ động, tích cực hội nhập, đa dạng hóa thị trường, nâng cao khả năng thích ứng của nền kinh tế\" được đưa ra trong chiến lược phát triển kinh tế - xã hội ở giai đoạn nào?",
+      "options": [
+        {
+          "text": "Chiến lược phát triển kinh tế - xã hội 2001 - 2010",
+          "correct": false,
+          "explain": "Sai. Chiến lược 2001–2010 chưa đặt vấn đề này với nội dung 'làm chủ công nghệ' như câu hỏi."
+        },
+        {
+          "text": "Chiến lược phát triển kinh tế - xã hội 2011 - 2020",
+          "correct": false,
+          "explain": "Sai. Chiến lược 2011–2020 chưa nêu quan điểm này theo cách diễn đạt trong câu hỏi."
+        },
+        {
+          "text": "Chiến lược phát triển kinh tế - xã hội 2021 - 2030",
+          "correct": true,
+          "explain": "Đúng. Quan điểm xây dựng nền kinh tế tự chủ dựa trên làm chủ công nghệ, chủ động và tích cực hội nhập, đa dạng hoá thị trường, nâng cao khả năng thích ứng được nêu trong Chiến lược phát triển kinh tế - xã hội 10 năm 2021–2030 (Đại hội XIII)."
+        },
+        {
+          "text": "Chiến lược phát triển kinh tế - xã hội 2016 - 2021",
+          "correct": false,
+          "explain": "Sai. Giai đoạn 2016–2021 là nhiệm kì Đại hội XII (kế hoạch 5 năm), không phải chiến lược 10 năm chứa quan điểm này."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-049",
+      "question": "Khi nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của các cuộc cách mạng công nghiệp qua các giai đoạn phát triển đó là gì?",
+      "options": [
+        {
+          "text": "Hiệp tác đơn giản, lao động thủ công, lao động phức tạp",
+          "correct": false,
+          "explain": "Sai. Lao động thủ công, lao động phức tạp không phải các giai đoạn phát triển mà C. Mác khái quát."
+        },
+        {
+          "text": "Hiệp tác đơn giản, công trường thủ công, công nghiệp hóa",
+          "correct": false,
+          "explain": "Sai. 'Công nghiệp hoá' không phải tên giai đoạn trong quy luật của Mác; giai đoạn cuối là đại công nghiệp."
+        },
+        {
+          "text": "Hiệp tác đơn giản, sản xuất thủ công, sản xuất hiện đại",
+          "correct": false,
+          "explain": "Sai. 'Sản xuất thủ công, sản xuất hiện đại' là cách nói chung chung, không phải ba giai đoạn Mác khái quát."
+        },
+        {
+          "text": "Hiệp tác đơn giản, công trường thủ công, đại công nghiệp",
+          "correct": true,
+          "explain": "Đúng. Theo C. Mác, tính quy luật của các cuộc cách mạng công nghiệp qua ba giai đoạn: hiệp tác giản đơn (nhiều người cùng làm một loại việc, công cụ thủ công) → công trường thủ công (phân công lao động chi tiết nhưng vẫn dùng công cụ thủ công) → đại công nghiệp (sản xuất bằng hệ thống máy móc)."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-050",
+      "question": "Nội dung cuộc đại phân công lao động xã hội lần thứ hai là gì?",
+      "options": [
+        {
+          "text": "Đại công nghiệp tách khỏi nông nghiệp",
+          "correct": false,
+          "explain": "Sai. Đại công nghiệp là sản phẩm của cách mạng công nghiệp về sau, không phải một trong ba lần đại phân công lao động xã hội."
+        },
+        {
+          "text": "Trồng trọt tách khỏi chăn nuôi",
+          "correct": false,
+          "explain": "Sai. Trồng trọt tách khỏi chăn nuôi (nói đúng hơn: chăn nuôi tách khỏi trồng trọt) là lần phân công thứ nhất."
+        },
+        {
+          "text": "Ngành thương nghiệp ra đời",
+          "correct": false,
+          "explain": "Sai. Thương nghiệp ra đời là lần phân công thứ ba."
+        },
+        {
+          "text": "Thủ công nghiệp tách khỏi nông nghiệp",
+          "correct": true,
+          "explain": "Đúng. Ba lần đại phân công lao động xã hội: (1) chăn nuôi tách khỏi trồng trọt; (2) thủ công nghiệp tách khỏi nông nghiệp; (3) thương nghiệp ra đời. Lần thứ hai là thủ công nghiệp tách khỏi nông nghiệp."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-051",
+      "question": "Ở Việt Nam cũng như trên thế giới sử dụng thuật ngữ \"cách mạng công nghiệp lần thứ tư\" với hàm ý gì?",
+      "options": [
+        {
+          "text": "Sự thay đổi về lượng trong lực lượng sản xuất của nền kinh tế thế giới",
+          "correct": false,
+          "explain": "Sai. Cách mạng công nghiệp là bước nhảy vọt về chất chứ không phải thay đổi về lượng."
+        },
+        {
+          "text": "Sự thay đổi về chất trong lực lượng sản xuất của nền kinh tế thế giới",
+          "correct": true,
+          "explain": "Đúng. Thuật ngữ 'cách mạng công nghiệp' hàm ý sự thay đổi về chất trong lực lượng sản xuất của nền kinh tế thế giới, dựa trên phát minh đột phá về kĩ thuật và công nghệ."
+        },
+        {
+          "text": "Sự thay đổi về chất trong quan hệ sản xuất của nền kinh tế thế giới",
+          "correct": false,
+          "explain": "Sai. Cách mạng công nghiệp là sự thay đổi của lực lượng sản xuất, không phải của quan hệ sản xuất."
+        },
+        {
+          "text": "Sự thay đổi căn bản, toàn diện trong đời sống, sản xuất của nền kinh tế thế giới",
+          "correct": false,
+          "explain": "Sai. Ý này mô tả tác động rộng lớn, nhưng hàm ý cốt lõi của thuật ngữ là thay đổi về chất của lực lượng sản xuất."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-052",
+      "question": "Yếu tố nào quyết định đến sự hình thành của cách mạng công nghiệp?",
+      "options": [
+        {
+          "text": "Sự phát triển vượt bậc của quan hệ sản xuất",
+          "correct": false,
+          "explain": "Sai. Quan hệ sản xuất không quyết định; ngược lại lực lượng sản xuất quyết định quan hệ sản xuất."
+        },
+        {
+          "text": "Phương thức sản xuất mới ra đời",
+          "correct": false,
+          "explain": "Sai. Phương thức sản xuất mới là kết quả của cách mạng công nghiệp chứ không phải yếu tố quyết định sự hình thành."
+        },
+        {
+          "text": "Sự phát triển nhảy vọt về trình độ của tư liệu lao động",
+          "correct": true,
+          "explain": "Đúng. Yếu tố quyết định là sự phát triển nhảy vọt về trình độ của tư liệu lao động (công cụ, máy móc), vì tư liệu lao động phản ánh trình độ của lực lượng sản xuất."
+        },
+        {
+          "text": "Các phát minh sáng chế của các nhà khoa học trên mọi lĩnh vực",
+          "correct": false,
+          "explain": "Sai. Phát minh sáng chế là điều kiện, tiền đề; chỉ khi được ứng dụng thành tư liệu lao động mới tạo ra cách mạng công nghiệp."
+        }
+      ],
+      "note": "Bình luận của câu này chưa tải kịp trong video; đáp án chọn theo bộ đề RE (cùng câu hỏi) và giáo trình."
+    },
+    {
+      "id": "mln122-sp26-053",
+      "question": "Cách mạng công nghiệp lần thứ ba diễn ra trong giai đoạn nào?",
+      "options": [
+        {
+          "text": "Từ đầu thập niên 50 của thế kỷ XX đến cuối thế kỷ XX",
+          "correct": false,
+          "explain": "Sai. Từ đầu thập niên 50 không phải mốc theo giáo trình."
+        },
+        {
+          "text": "Từ đầu thập niên 60 của thế kỷ XX đến cuối thế kỷ XX",
+          "correct": true,
+          "explain": "Đúng. Cách mạng công nghiệp lần thứ ba diễn ra từ đầu thập niên 60 của thế kỉ XX đến cuối thế kỉ XX (điện tử, tin học, tự động hoá). Nhớ: lần 1 (XVIII–XIX, hơi nước), lần 2 (nửa cuối XIX – đầu XX, điện), lần 3 (từ thập niên 60 XX, điện tử – tin học), lần 4 (đang diễn ra, AI, IoT, dữ liệu lớn)."
+        },
+        {
+          "text": "Từ đầu thập niên 70 của thế kỷ XX đến cuối thế kỷ XX",
+          "correct": false,
+          "explain": "Sai. Từ đầu thập niên 70 không phải mốc theo giáo trình."
+        },
+        {
+          "text": "Từ đầu thập niên 80 của thế kỷ XX đến cuối thế kỷ XX",
+          "correct": false,
+          "explain": "Sai. Từ đầu thập niên 80 không phải mốc theo giáo trình."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-054",
+      "question": "Điền vào chỗ trống: C. Mác và Ph. Ăngghen đã nhận xét rằng: \"Giai cấp tư sản, trong quá trình thống trị giai cấp chưa đầy một thế kỷ, đã tạo ra những… nhiều hơn và đồ sộ hơn… của tất cả các thế hệ trước gộp lại\"",
+      "options": [
+        {
+          "text": "Lực lượng sản xuất… lực lượng sản xuất",
+          "correct": true,
+          "explain": "Đúng. C. Mác và Ph. Ăngghen nhận xét trong Tuyên ngôn của Đảng Cộng sản: giai cấp tư sản trong chưa đầy một thế kỉ thống trị đã tạo ra những lực lượng sản xuất nhiều hơn và đồ sộ hơn lực lượng sản xuất của tất cả các thế hệ trước gộp lại."
+        },
+        {
+          "text": "Quan hệ sản xuất… quan hệ sản xuất",
+          "correct": false,
+          "explain": "Sai. Câu nhận xét nói về lực lượng sản xuất (khối lượng máy móc, năng lực sản xuất), không phải quan hệ sản xuất."
+        },
+        {
+          "text": "Của cải… của cải",
+          "correct": false,
+          "explain": "Sai. Câu nhận xét dùng thuật ngữ 'lực lượng sản xuất' chứ không phải 'của cải'."
+        },
+        {
+          "text": "Vật chất… vật chất",
+          "correct": false,
+          "explain": "Sai. Câu nhận xét dùng thuật ngữ 'lực lượng sản xuất' chứ không phải 'vật chất'."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-055",
+      "question": "Mỗi cuộc cách mạng công nghiệp xuất hiện đều có sự phát triển nhảy vọt về:",
+      "options": [
+        {
+          "text": "Tư liệu lao động",
+          "correct": true,
+          "explain": "Đúng. Mỗi cuộc cách mạng công nghiệp đều có bước nhảy vọt về tư liệu lao động (công cụ, máy móc), thể hiện trình độ phát triển của lực lượng sản xuất."
+        },
+        {
+          "text": "Tư liệu sinh hoạt",
+          "correct": false,
+          "explain": "Sai. Tư liệu sinh hoạt thuộc lĩnh vực tiêu dùng, không phải thước đo bước nhảy vọt của cách mạng công nghiệp."
+        },
+        {
+          "text": "Tư liệu tiêu dùng",
+          "correct": false,
+          "explain": "Sai. Tư liệu tiêu dùng thuộc lĩnh vực tiêu dùng, không phải thước đo bước nhảy vọt của cách mạng công nghiệp."
+        },
+        {
+          "text": "Các phát minh sáng chế",
+          "correct": false,
+          "explain": "Sai. Phát minh, sáng chế là tiền đề; bước nhảy vọt biểu hiện cụ thể ở tư liệu lao động."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-056",
+      "question": "Điền vào chỗ trống: Theo Karl Marx, kinh tế chính trị học tư sản cổ điển Anh bắt đầu từ… và kết thúc ở…",
+      "options": [
+        {
+          "text": "William Petty…David Ricardo",
+          "correct": true,
+          "explain": "Đúng. Theo C. Mác, kinh tế chính trị tư sản cổ điển Anh bắt đầu từ W. Petty và kết thúc ở D. Ricardo."
+        },
+        {
+          "text": "William Petty…Adam Smith",
+          "correct": false,
+          "explain": "Sai. Trường phái này kết thúc ở D. Ricardo chứ không phải A. Smith."
+        },
+        {
+          "text": "Adam Smith… David Ricardo",
+          "correct": false,
+          "explain": "Sai. Trường phái này bắt đầu từ W. Petty chứ không phải A. Smith."
+        },
+        {
+          "text": "Adam Smith…Thomas Malthus",
+          "correct": false,
+          "explain": "Sai. Trường phái này bắt đầu từ W. Petty và kết thúc ở D. Ricardo, không phải T. Malthus."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-057",
+      "question": "Đảng cộng sản Việt Nam là đảng cầm quyền do yếu tố nào sau đây quy định?",
+      "options": [
+        {
+          "text": "Lịch sử chủ quan",
+          "correct": false,
+          "explain": "Sai. Vai trò cầm quyền do lịch sử khách quan quy định, không phải lịch sử chủ quan."
+        },
+        {
+          "text": "Chính trị chủ quan",
+          "correct": false,
+          "explain": "Sai. Vai trò cầm quyền không do chính trị chủ quan quy định."
+        },
+        {
+          "text": "Lịch sử khách quan",
+          "correct": true,
+          "explain": "Đúng. Đảng Cộng sản Việt Nam là đảng cầm quyền do lịch sử khách quan quy định."
+        },
+        {
+          "text": "Do nhân dân lao động lựa chọn",
+          "correct": false,
+          "explain": "Không chọn theo đáp án của đề. Sự lựa chọn của nhân dân là biểu hiện, còn yếu tố quy định là lịch sử khách quan."
+        }
+      ],
+      "note": "Bình luận có giải thích: Đảng cầm quyền là do yêu cầu và tiến trình lịch sử khách quan, không phải do ý chí chủ quan."
+    },
+    {
+      "id": "mln122-sp26-058",
+      "question": "Mọi tư bản đều biểu hiện dưới dạng tiền, nhưng tiền không phải là tư bản. Vậy khi nào tiền trở thành tư bản?",
+      "options": [
+        {
+          "text": "Tiền biến thành tư bản khi được dùng để mang lại giá trị thặng dư.",
+          "correct": true,
+          "explain": "Đúng. Tiền biến thành tư bản khi được dùng để mang lại giá trị thặng dư."
+        },
+        {
+          "text": "Tiền biến thành tư bản khi được dùng để mang lại địa vị làm chủ nhà tư bản.",
+          "correct": false,
+          "explain": "Sai. Địa vị làm chủ không phải điều kiện để tiền thành tư bản."
+        },
+        {
+          "text": "Tiền biến thành tư bản khi được dùng để mang lại giá trị chung cho toàn xã hội.",
+          "correct": false,
+          "explain": "Sai. Tư bản nhằm giá trị thặng dư cho nhà tư bản, không phải giá trị chung cho toàn xã hội."
+        },
+        {
+          "text": "Tiền biến thành tư bản khi được dùng với vai trò là một phương tiện thanh toán.",
+          "correct": false,
+          "explain": "Sai. Tiền làm phương tiện thanh toán chưa phải là tư bản."
+        }
+      ]
+    },
+    {
+      "id": "mln122-sp26-059",
+      "question": "Các nhân tố nào sau đây ảnh hưởng đến năng suất lao động?",
+      "options": [
+        {
+          "text": "Trình độ khéo léo trung bình của người lao động; Mức độ phát triển của khoa học và trình độ áp dụng khoa học vào quy trình công nghệ; Sự kết hợp xã hội của quá trình sản xuất; Quy mô và hiệu suất của tư liệu sản xuất; Các điều kiện tự nhiên",
+          "correct": true,
+          "explain": "Đúng. Các nhân tố ảnh hưởng đến năng suất lao động gồm: trình độ khéo léo của người lao động, mức độ phát triển khoa học và ứng dụng vào công nghệ, sự kết hợp xã hội của quá trình sản xuất, quy mô và hiệu suất của tư liệu sản xuất, các điều kiện tự nhiên."
+        },
+        {
+          "text": "Các chính sách quy định từ nhà nước; Phương pháp và quy định giờ làm việc và đãi ngộ; Sự hợp tác của quá trình làm việc nhóm hiệu quả; Sự phát triển và đào tạo liên tục; Khả năng sáng tạo và đổi mới và thay đổi tư duy",
+          "correct": false,
+          "explain": "Sai. Đây là các yếu tố về chính sách, quản lý, đào tạo, không phải năm nhân tố ảnh hưởng đến năng suất lao động mà giáo trình nêu."
+        },
+        {
+          "text": "Trình độ và kỹ năng của người lao động ngày càng được nâng cao; Môi trường làm việc phù hợp phát huy hết khả năng cá nhân; Quản lý và tổ chức công việc có sự phân công rõ ràng; Sức khỏe và tình trạng thể chất của người lao động được đảm bảo; Các chuẩn mực quy tắc và thái độ của người lao động trong lao động sản xuất",
+          "correct": false,
+          "explain": "Sai. Đây là các yếu tố về môi trường làm việc, quản lý và thể chất, không phải năm nhân tố mà giáo trình nêu."
+        },
+        {
+          "text": "Chất lượng nguyên liệu và công cụ sản xuất đáp ứng nhu cầu cho quá trình sản xuất; Sự sẵn sàng của nguồn tài chính mang tính ổn định đầu tư vào máy móc; Mức độ tự chủ nhất định của người lao động trong quá trình sản xuất lao động; Sự công bằng trong quá trình lao động hoạt động sản xuất; Thời tiết và điều kiện môi trường tự nhiên",
+          "correct": false,
+          "explain": "Sai. Đây là các yếu tố về tài chính, công bằng, thời tiết, không phải năm nhân tố mà giáo trình nêu."
+        }
+      ],
+      "note": "Một bình luận chọn AC nhưng bình luận có điểm cao nhất giải thích đáp án A (năm nhân tố theo C. Mác: trình độ khéo léo trung bình của người lao động, mức độ phát triển của khoa học và trình độ áp dụng, sự kết hợp xã hội của quá trình sản xuất, quy mô và hiệu suất của tư liệu sản xuất, các điều kiện tự nhiên)."
+    },
+    {
+      "id": "mln122-sp26-060",
+      "question": "Sự vận động của tiền trong nền sản xuất hàng hóa giản đơn (H-T-H), sự vận động của tiền trong nền sản xuất hàng hóa tư bản (T-H-T'). Hãy chỉ ra điểm chung của hai hình thức vận động này? (lựa chọn hai đáp án)",
+      "options": [
+        {
+          "text": "Đều có hai thực thể vật chất là tiền và hàng.",
+          "correct": true,
+          "explain": "Đúng. Cả hai công thức đều có hai thực thể vật chất là tiền và hàng."
+        },
+        {
+          "text": "Đều bắt đầu bằng hành vi bán.",
+          "correct": false,
+          "explain": "Sai. H-T-H bắt đầu bằng hành vi bán còn T-H-T' bắt đầu bằng hành vi mua nên không giống nhau."
+        },
+        {
+          "text": "Đều có hai hành vi đối lập nhau - mua và bán.",
+          "correct": true,
+          "explain": "Đúng. Cả hai công thức đều có hai hành vi đối lập nhau là mua và bán."
+        },
+        {
+          "text": "Đều kết thúc bằng hành vi mua.",
+          "correct": false,
+          "explain": "Sai. H-T-H kết thúc bằng hành vi mua còn T-H-T' kết thúc bằng hành vi bán nên không giống nhau."
+        }
+      ]
+    }
+  ]
+}

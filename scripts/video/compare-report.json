@@ -1,0 +1,1082 @@
+[
+ {
+  "k": "c1",
+  "n": 1,
+  "status": "LECH",
+  "sim": "1.00",
+  "old": "mln122-367",
+  "oldCorrect": [
+   "Chủ nghĩa tư bản"
+  ],
+  "newCorrect": [
+   "Chủ nghĩa trọng thương"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 2,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-249",
+  "oldCorrect": [
+   "Lĩnh vực sản xuất"
+  ],
+  "newCorrect": [
+   "Lĩnh vực sản xuất"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 3,
+  "status": "khop",
+  "sim": "0.88",
+  "old": "mln122-116",
+  "oldCorrect": [
+   "Tư bản"
+  ],
+  "newCorrect": [
+   "Tư Bản"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 4,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-281",
+  "oldCorrect": [
+   "Adam Smith"
+  ],
+  "newCorrect": [
+   "Adam Smith"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 5,
+  "status": "khong-chac",
+  "sim": "1.00",
+  "old": "mln122-273",
+  "oldCorrect": [
+   "Nhằm phát hiện ra các quy luật chi phối "
+  ],
+  "newCorrect": [
+   "Phát hiện các quy luật chi phối quan hệ "
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 6,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c1",
+  "n": 7,
+  "status": "moi",
+  "pick": "ABC"
+ },
+ {
+  "k": "c1",
+  "n": 8,
+  "status": "khong-chac",
+  "sim": "0.80",
+  "old": "mln122-204",
+  "oldCorrect": [
+   "Chức năng thước đo giá trị, chức năng tí"
+  ],
+  "newCorrect": [
+   "Thước đo giá trị, phương tiện cất trữ và"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 9,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-395",
+  "oldCorrect": [
+   "Là hao phí lao động kết tinh trong hàng "
+  ],
+  "newCorrect": [
+   "Là hao phí lao động kết tinh trong hàng "
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 10,
+  "status": "khong-chac",
+  "sim": "0.79",
+  "old": "mln122-277",
+  "oldCorrect": [
+   "Hàng hóa hữu hình"
+  ],
+  "newCorrect": [
+   "Hàng hoá hữu hình"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 11,
+  "status": "khong-chac",
+  "sim": "0.72",
+  "old": "mln122-096",
+  "oldCorrect": [
+   "Giá trị 1 hàng hóa giảm 2 lần, tổng số g"
+  ],
+  "newCorrect": [
+   "Tổng số hàng hoá tăng 4 lần, giá trị 1 h"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 12,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c1",
+  "n": 13,
+  "status": "moi",
+  "pick": "D"
+ },
+ {
+  "k": "c1",
+  "n": 14,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c1",
+  "n": 15,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c1",
+  "n": 16,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c1",
+  "n": 17,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-238",
+  "oldCorrect": [
+   "Tư bản sản xuất"
+  ],
+  "newCorrect": [
+   "Tư bản sản xuất"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 18,
+  "status": "khop",
+  "sim": "0.71",
+  "old": "mln122-174",
+  "oldCorrect": [
+   "Máy móc là tiền đề vật chất cho việc tạo"
+  ],
+  "newCorrect": [
+   "Máy móc là tiền đề vật chất cho việc tạo"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 19,
+  "status": "LECH",
+  "sim": "0.70",
+  "old": "mln122-298",
+  "oldCorrect": [
+   "Sản xuất giá trị thặng dư tuyệt đối và t"
+  ],
+  "newCorrect": [
+   "Sản xuất giá trị thặng dư tuyệt đối và t"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 20,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-389",
+  "oldCorrect": [
+   "Sức lao động trở thành hàng hóa"
+  ],
+  "newCorrect": [
+   "Sức lao động trở thành hàng hoá"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 21,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c1",
+  "n": 22,
+  "status": "khop",
+  "sim": "0.73",
+  "old": "mln122-321",
+  "oldCorrect": [
+   "Tư bản cho vay là hàng hóa đặc biệt"
+  ],
+  "newCorrect": [
+   "Tư bản cho vay là hàng hoá đặc biệt"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 23,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-352",
+  "oldCorrect": [
+   "Tư bản bất biến và tư bản khả biến"
+  ],
+  "newCorrect": [
+   "Tư bản bất biến và tư bản khả biến"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 24,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c1",
+  "n": 25,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c1",
+  "n": 26,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-220",
+  "oldCorrect": [
+   "Kinh doanh chứng khóan"
+  ],
+  "newCorrect": [
+   "Kinh doanh chứng khoán"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 27,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-343",
+  "oldCorrect": [
+   "Mâu thuẫn giữa trình độ xã hội hóa cao c"
+  ],
+  "newCorrect": [
+   "Mâu thuẫn giữa trình độ xã hội hóa cao c"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 28,
+  "status": "khong-chac",
+  "sim": "0.76",
+  "old": "mln122-422",
+  "oldCorrect": [
+   "Sự kết hợp tổ chức độc quyền tư nhân và "
+  ],
+  "newCorrect": [
+   "Sự kết hợp giữa sức mạnh của các tổ chức"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 29,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c1",
+  "n": 30,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c1",
+  "n": 31,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c1",
+  "n": 32,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c1",
+  "n": 33,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c1",
+  "n": 34,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c1",
+  "n": 35,
+  "status": "khong-chac",
+  "sim": "0.73",
+  "old": "mln122-325",
+  "oldCorrect": [
+   "Tất cả phương án trên"
+  ],
+  "newCorrect": [
+   "Có sự quản lý của Nhà nước xã hội chủ ng",
+   "Thực hiện phân phối theo kết quả lao độn",
+   "Phát huy được trí tuệ và nguồn lực của t"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 36,
+  "status": "moi",
+  "pick": "ABD"
+ },
+ {
+  "k": "c1",
+  "n": 37,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c1",
+  "n": 38,
+  "status": "LECH",
+  "sim": "1.00",
+  "old": "mln122-360",
+  "oldCorrect": [
+   "Kinh tế thị trường chỉ có thể phát triển"
+  ],
+  "newCorrect": [
+   "Kinh tế thị trường chỉ có thể phát triển"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 39,
+  "status": "LECH",
+  "sim": "0.88",
+  "old": "mln122-184",
+  "oldCorrect": [
+   "Hệ thống thể chế có nhiều yếu tố thị trư"
+  ],
+  "newCorrect": [
+   "Hệ thống thể chế chưa đầy đủ"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 40,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c1",
+  "n": 41,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-309",
+  "oldCorrect": [
+   "Cuộc cách mạng công nghiệp lần thứ tư"
+  ],
+  "newCorrect": [
+   "Cuộc cách mạng công nghiệp lần thứ tư"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 42,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-134",
+  "oldCorrect": [
+   "Công nghiệp dệt"
+  ],
+  "newCorrect": [
+   "Công nghiệp dệt"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 43,
+  "status": "khop",
+  "sim": "0.76",
+  "old": "mln122-011",
+  "oldCorrect": [
+   "Tài nguyên thiên nhiên, công nhân giá rẻ"
+  ],
+  "newCorrect": [
+   "Tài nguyên thiên nhiên và lao động giá r"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 44,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-338",
+  "oldCorrect": [
+   "Đầu tư tư bản trực tiếp thu lợi nhuận ở "
+  ],
+  "newCorrect": [
+   "Đầu tư tư bản trực tiếp thu lợi nhuận ở "
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 45,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c1",
+  "n": 46,
+  "status": "khong-chac",
+  "sim": "0.60",
+  "old": "mln122-247",
+  "oldCorrect": [
+   "Quy mô giá trị thặng dư mà nhà tư bản th"
+  ],
+  "newCorrect": [
+   "Trình độ khai thác sức lao động làm thuê"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 47,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c1",
+  "n": 48,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c1",
+  "n": 49,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-420",
+  "oldCorrect": [
+   "Lợi ích"
+  ],
+  "newCorrect": [
+   "Lợi ích"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 50,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c1",
+  "n": 51,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c1",
+  "n": 52,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c1",
+  "n": 53,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c1",
+  "n": 54,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c1",
+  "n": 55,
+  "status": "moi",
+  "pick": "ABD"
+ },
+ {
+  "k": "c1",
+  "n": 56,
+  "status": "moi",
+  "pick": "D"
+ },
+ {
+  "k": "c1",
+  "n": 57,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c1",
+  "n": 58,
+  "status": "khong-chac",
+  "sim": "0.72",
+  "old": "mln122-071",
+  "oldCorrect": [
+   "Ba giai đoạn"
+  ],
+  "newCorrect": [
+   "Hiệp tác giản đơn, công trường thủ công,"
+  ]
+ },
+ {
+  "k": "c1",
+  "n": 59,
+  "status": "moi",
+  "pick": "AB"
+ },
+ {
+  "k": "c1",
+  "n": 60,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c2",
+  "n": 2,
+  "status": "LECH",
+  "sim": "1.00",
+  "old": "mln122-029",
+  "oldCorrect": [
+   "Chức năng nhận thức, chức năng thực tiễn"
+  ],
+  "newCorrect": [
+   "Chức năng nhận thức, chức năng thực tiễn"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 3,
+  "status": "khong-chac",
+  "sim": "0.81",
+  "old": "mln122-367",
+  "oldCorrect": [
+   "Chủ nghĩa tư bản"
+  ],
+  "newCorrect": [
+   "Chủ nghĩa trọng thương"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 4,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-167",
+  "oldCorrect": [
+   "Chức năng giáo dục"
+  ],
+  "newCorrect": [
+   "Chức năng giáo dục"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 5,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-463",
+  "oldCorrect": [
+   "Trừu tượng hóa khoa học"
+  ],
+  "newCorrect": [
+   "Trừu tượng hóa khoa học"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 6,
+  "status": "khop",
+  "sim": "0.64",
+  "old": "mln122-248",
+  "oldCorrect": [
+   "Người mua"
+  ],
+  "newCorrect": [
+   "Người mua"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 7,
+  "status": "khop",
+  "sim": "0.78",
+  "old": "mln122-373",
+  "oldCorrect": [
+   "Lao động trừu tượng"
+  ],
+  "newCorrect": [
+   "Lao động trừu tượng"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 8,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 9,
+  "status": "khop",
+  "sim": "0.81",
+  "old": "mln122-427",
+  "oldCorrect": [
+   "Giá trị của hàng hóa"
+  ],
+  "newCorrect": [
+   "Giá trị của hàng hoá"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 10,
+  "status": "khop",
+  "sim": "0.73",
+  "old": "mln122-170",
+  "oldCorrect": [
+   "Trao đổi và mua bán"
+  ],
+  "newCorrect": [
+   "Trao đổi và mua bán"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 11,
+  "status": "khop",
+  "sim": "0.78",
+  "old": "mln122-132",
+  "oldCorrect": [
+   "Mâu thuẫn giữa lao động tư nhân và lao đ"
+  ],
+  "newCorrect": [
+   "Mâu thuẫn giữa lao động tư nhân và lao đ"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 12,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c2",
+  "n": 13,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 14,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 15,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 16,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c2",
+  "n": 17,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 18,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c2",
+  "n": 19,
+  "status": "moi",
+  "pick": "ABD"
+ },
+ {
+  "k": "c2",
+  "n": 20,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c2",
+  "n": 21,
+  "status": "khop",
+  "sim": "0.60",
+  "old": "mln122-399",
+  "oldCorrect": [
+   "Sức lao động cho nhà tư bản"
+  ],
+  "newCorrect": [
+   "Sức lao động"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 22,
+  "status": "moi",
+  "pick": "D"
+ },
+ {
+  "k": "c2",
+  "n": 23,
+  "status": "khop",
+  "sim": "0.68",
+  "old": "mln122-323",
+  "oldCorrect": [
+   "Hao mòn hữu hình và hao mòn vô hình"
+  ],
+  "newCorrect": [
+   "Hao mòn hữu hình và hao mòn vô hình"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 24,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c2",
+  "n": 25,
+  "status": "khong-chac",
+  "sim": "0.82",
+  "old": "mln122-128",
+  "oldCorrect": [
+   "Sự xuất hiện của các công ty độc quyền x"
+  ],
+  "newCorrect": [
+   "Sự xuất hiện và phát triển của các công "
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 26,
+  "status": "moi",
+  "pick": "D"
+ },
+ {
+  "k": "c2",
+  "n": 27,
+  "status": "khop",
+  "sim": "0.68",
+  "old": "mln122-394",
+  "oldCorrect": [
+   "Một giai đoạn phát triển của phương thức"
+  ],
+  "newCorrect": [
+   "Một giai đoạn phát triển của phương thức"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 28,
+  "status": "moi",
+  "pick": "D"
+ },
+ {
+  "k": "c2",
+  "n": 29,
+  "status": "khop",
+  "sim": "0.79",
+  "old": "mln122-383",
+  "oldCorrect": [
+   "V. I. Lênin"
+  ],
+  "newCorrect": [
+   "V. I. Lênin"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 30,
+  "status": "moi",
+  "pick": "ABD"
+ },
+ {
+  "k": "c2",
+  "n": 31,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c2",
+  "n": 32,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c2",
+  "n": 33,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 34,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c2",
+  "n": 35,
+  "status": "moi",
+  "pick": "CD"
+ },
+ {
+  "k": "c2",
+  "n": 36,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-306",
+  "oldCorrect": [
+   "Thành phần kinh tế tư nhân"
+  ],
+  "newCorrect": [
+   "Thành phần kinh tế tư nhân"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 37,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 38,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c2",
+  "n": 39,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 40,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 41,
+  "status": "moi",
+  "pick": "D"
+ },
+ {
+  "k": "c2",
+  "n": 42,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c2",
+  "n": 43,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 44,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 45,
+  "status": "LECH",
+  "sim": "1.00",
+  "old": "mln122-019",
+  "oldCorrect": [
+   "Từ đầu những năm 1930"
+  ],
+  "newCorrect": [
+   "Từ đầu những năm 1930"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 46,
+  "status": "khop",
+  "sim": "0.63",
+  "old": "mln122-052",
+  "oldCorrect": [
+   "Tại Đức năm 2011"
+  ],
+  "newCorrect": [
+   "Tại Đức năm 2011"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 47,
+  "status": "moi",
+  "pick": "B"
+ },
+ {
+  "k": "c2",
+  "n": 48,
+  "status": "khop",
+  "sim": "0.75",
+  "old": "mln122-039",
+  "oldCorrect": [
+   "Chuyển từ lao động thủ công sang lao độn"
+  ],
+  "newCorrect": [
+   "Chuyển từ lao động thủ công sang lao độn"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 49,
+  "status": "khop",
+  "sim": "0.69",
+  "old": "mln122-202",
+  "oldCorrect": [
+   "Công nghiệp nhẹ"
+  ],
+  "newCorrect": [
+   "Công nghiệp nhẹ (đặc biệt là dệt may)"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 50,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-282",
+  "oldCorrect": [
+   "1995"
+  ],
+  "newCorrect": [
+   "1995"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 51,
+  "status": "khop",
+  "sim": "0.72",
+  "old": "mln122-002",
+  "oldCorrect": [
+   "Từ 20 - 30 năm"
+  ],
+  "newCorrect": [
+   "Từ 20 - 30 năm"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 52,
+  "status": "moi",
+  "pick": "C"
+ },
+ {
+  "k": "c2",
+  "n": 53,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 54,
+  "status": "khong-chac",
+  "sim": "0.74",
+  "old": "mln122-017",
+  "oldCorrect": [
+   "Đại hội IX"
+  ],
+  "newCorrect": [
+   "Đại hội lần thứ IX (2001)"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 55,
+  "status": "khop",
+  "sim": "1.00",
+  "old": "mln122-038",
+  "oldCorrect": [
+   "Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX"
+  ],
+  "newCorrect": [
+   "Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 56,
+  "status": "moi",
+  "pick": "AC"
+ },
+ {
+  "k": "c2",
+  "n": 57,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 58,
+  "status": "khong-chac",
+  "sim": "1.00",
+  "old": "mln122-391",
+  "oldCorrect": [
+   "Là tổng hòa các mối quan hệ liên quan đế"
+  ],
+  "newCorrect": [
+   "Là tổng hoà các mối quan hệ liên quan đế"
+  ]
+ },
+ {
+  "k": "c2",
+  "n": 59,
+  "status": "moi",
+  "pick": "A"
+ },
+ {
+  "k": "c2",
+  "n": 60,
+  "status": "moi",
+  "pick": "C"
+ }
+]

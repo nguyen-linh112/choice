@@ -1,4 +1,27 @@
 [
-  { "id": "sample", "name": "Đề mẫu (5 câu)", "file": "sample.json" },
-  { "id": "mln122", "name": "MLN122 - Kinh tế chính trị Mác-Lênin", "file": "mln122.json" }
+  {
+    "id": "sample",
+    "name": "Đề mẫu (5 câu)",
+    "file": "sample.json"
+  },
+  {
+    "id": "mln122",
+    "name": "MLN122 - Kinh tế chính trị Mác-Lênin",
+    "file": "mln122.json"
+  },
+  {
+    "id": "mln122-exam",
+    "name": "MLN122-exam - Đề thi thử FE (C1 + C2)",
+    "file": "mln122-exam.json"
+  },
+  {
+    "id": "mln122-re",
+    "name": "MLN122 - Đề thi lại SU26 (RE)",
+    "file": "mln122-re.json"
+  },
+  {
+    "id": "mln122-sp26",
+    "name": "MLN122 - Đề FE SP26 (C1)",
+    "file": "mln122-sp26.json"
+  }
 ]
