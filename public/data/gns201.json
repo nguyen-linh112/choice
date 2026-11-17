@@ -1,0 +1,1311 @@
+{
+  "id": "gns201",
+  "name": "GNS201 - Đề FE SU26",
+  "exam": {
+    "questionCount": 50,
+    "durationMinutes": 60
+  },
+  "questions": [
+    {
+      "id": "gns201-001",
+      "question": "What is a key benefit of using a Peer-to-Peer (P2P) network topology for a multiplayer game?",
+      "options": [
+        {
+          "text": "No requirements or costs for a dedicated host server",
+          "correct": true,
+          "explain": "Đúng. Trong mô hình Peer-to-Peer (P2P) người chơi kết nối trực tiếp với nhau nên nhà phát triển không cần thuê hay vận hành máy chủ chuyên dụng (dedicated server), tức không tốn chi phí duy trì server. Đây là ưu điểm lớn nhất của P2P; đổi lại P2P khó chống gian lận và khó bảo đảm kết nối."
+        },
+        {
+          "text": "High security against player cheating hacks",
+          "correct": false,
+          "explain": "Sai. P2P bảo mật kém trước gian lận: không có máy chủ trung tâm đóng vai trò 'trọng tài' kiểm tra, mỗi máy tự tính kết quả nên người chơi dễ chỉnh sửa dữ liệu để gian lận."
+        },
+        {
+          "text": "Absolute certainty of global connection setups",
+          "correct": false,
+          "explain": "Sai. P2P không bảo đảm chắc chắn mọi kết nối được thiết lập: các máy thường nằm sau router/NAT và tường lửa nên có thể không kết nối trực tiếp được (cần kĩ thuật như NAT punch-through hoặc relay)."
+        },
+        {
+          "text": "Centralized control of the game simulation logic",
+          "correct": false,
+          "explain": "Sai. Điều khiển tập trung toàn bộ logic mô phỏng game là đặc điểm của kiến trúc client-server (authoritative server), ngược với P2P nơi quyền được chia cho các peer."
+        }
+      ]
+    },
+    {
+      "id": "gns201-002",
+      "question": "What happens to a game data packet as it moves down the TCP/IP stack from the Application layer to the Physical layer?",
+      "options": [
+        {
+          "text": "Each layer strips away descriptive metadata to compress the payload",
+          "correct": false,
+          "explain": "Sai. Khi đi xuống (từ Application xuống Physical), các tầng không bóc bỏ hay nén gì mà thêm vào. Việc bóc header của mình là ở máy nhận khi dữ liệu đi lên (decapsulation)."
+        },
+        {
+          "text": "The payload is converted completely into text-based JSON formatting",
+          "correct": false,
+          "explain": "Sai. Việc payload là JSON hay nhị phân là do tầng Application quyết định; các tầng dưới không tự đổi payload sang JSON, chỉ coi nó là dãy byte."
+        },
+        {
+          "text": "Each layer wraps the payload with its own specific control headers",
+          "correct": true,
+          "explain": "Đúng. Đây là quá trình đóng gói (encapsulation): ở mỗi tầng, dữ liệu của tầng trên được bọc thêm header (và có thể trailer) riêng của tầng đó. Ví dụ: dữ liệu game → thêm TCP/UDP header (port) ở tầng Transport → thêm IP header (địa chỉ IP) ở tầng Network → thêm header/trailer của khung (địa chỉ MAC) ở tầng Link → gửi bit ở tầng Physical."
+        },
+        {
+          "text": "The packet size decreases exponentially to fit structural MTU",
+          "correct": false,
+          "explain": "Sai. Kích thước gói tăng lên (vì thêm header), không giảm theo cấp số mũ. MTU (Maximum Transmission Unit) là giới hạn kích thước khung; nếu gói lớn hơn MTU thì bị chia nhỏ (fragmentation) chứ không 'giảm theo hàm mũ'."
+        }
+      ]
+    },
+    {
+      "id": "gns201-003",
+      "question": "Which historical design paradigm shift enabled modern MMOs to support thousands of concurrent players in a single continuous virtual space?",
+      "options": [
+        {
+          "text": "Transitioning from client-authoritative meshes to server-side seamless zoning",
+          "correct": true,
+          "explain": "Đúng. MMO hiện đại chuyển từ mô hình client-authoritative (client quyết định, dễ gian lận, khó mở rộng) sang server-side seamless zoning: thế giới được chia thành nhiều vùng (zone) do các server khác nhau xử lý, người chơi đi qua ranh giới vùng mà không thấy màn hình tải, nhờ vậy hàng nghìn người chơi cùng tồn tại trong một không gian liên tục."
+        },
+        {
+          "text": "Replacing server-side physical verification with client-side cryptography",
+          "correct": false,
+          "explain": "Sai. Kiểm tra phía server (server-side validation) là thứ giúp chống gian lận; thay bằng mật mã phía client không giải quyết bài toán mở rộng hàng nghìn người chơi."
+        },
+        {
+          "text": "Moving all persistent data storage into local client-side volatile memory",
+          "correct": false,
+          "explain": "Sai. Dữ liệu bền vững (persistent data) như nhân vật, vật phẩm phải lưu ở cơ sở dữ liệu phía server; để trong bộ nhớ tạm của client thì mất khi thoát game và dễ bị sửa."
+        },
+        {
+          "text": "Abandoning the TCP/IP stack in favor of customized physical layer hardware",
+          "correct": false,
+          "explain": "Sai. MMO vẫn dùng bộ giao thức TCP/IP; chỉ đổi phần cứng tầng vật lí không giúp nhiều người chơi hơn."
+        }
+      ]
+    },
+    {
+      "id": "gns201-004",
+      "question": "An MMO server cluster experiences an issue where packets arrive at the machine but cannot be matched to the specific running game room process. What is the root cause?",
+      "options": [
+        {
+          "text": "Invalid destination MAC address in the Link layer",
+          "correct": false,
+          "explain": "Sai. Địa chỉ MAC ở tầng Link chỉ dùng để chuyển khung trong mạng cục bộ; nếu MAC đích sai thì gói thậm chí không tới được máy, trong khi đề nói gói đã tới máy."
+        },
+        {
+          "text": "Corrupted destination IP address in the Network layer",
+          "correct": false,
+          "explain": "Sai. Địa chỉ IP ở tầng Network quyết định gói tới đúng máy nào; gói đã tới máy nghĩa là IP đúng."
+        },
+        {
+          "text": "Malformed payload structure in the Application layer",
+          "correct": false,
+          "explain": "Sai. Cấu trúc payload ở tầng Application sai thì dữ liệu bị đọc lỗi, nhưng gói vẫn đã được giao đúng tiến trình, không phải lỗi 'không khớp tiến trình'."
+        },
+        {
+          "text": "Incorrect destination port number in the Transport layer",
+          "correct": true,
+          "explain": "Đúng. IP chọn đúng máy, còn số cổng (port) ở tầng Transport chọn đúng tiến trình (process) trên máy đó. Gói tới máy nhưng không khớp tiến trình phòng game nghĩa là port đích sai."
+        }
+      ]
+    },
+    {
+      "id": "gns201-005",
+      "question": "Which architecture requires the game developer to actively manage and pay for ongoing server compute resources?",
+      "options": [
+        {
+          "text": "Pure Peer-to-Peer mesh",
+          "correct": false,
+          "explain": "Sai. Pure Peer-to-Peer không có server của nhà phát triển, người chơi tự kết nối nên không có chi phí máy chủ."
+        },
+        {
+          "text": "Player-hosted Listen Server",
+          "correct": false,
+          "explain": "Sai. Listen Server do một người chơi vừa chơi vừa làm host, dùng chính máy của người đó nên nhà phát triển không phải trả tiền server."
+        },
+        {
+          "text": "Authoritative Dedicated Server",
+          "correct": true,
+          "explain": "Đúng. Authoritative Dedicated Server là máy chủ chuyên dụng, nắm quyền quyết định kết quả game, do nhà phát triển thuê hoặc tự vận hành (cloud, hosting) nên phải quản lí và trả tiền tài nguyên tính toán liên tục."
+        },
+        {
+          "text": "Client-side offline split-screen",
+          "correct": false,
+          "explain": "Sai. Split-screen offline là nhiều người chơi trên cùng một máy, không cần mạng hay server."
+        }
+      ]
+    },
+    {
+      "id": "gns201-006",
+      "question": "In an authoritative dedicated server architecture, when a player presses the \"move forward\" key, what is the sequence of events?",
+      "options": [
+        {
+          "text": "Client moves locally, updates the database, and forces the server to sync",
+          "correct": false,
+          "explain": "Sai. Client tự di chuyển rồi ép server đồng bộ là kiểu client-authoritative: client có quyền quyết định nên dễ gian lận. Ở server có thẩm quyền, server mới là bên quyết định."
+        },
+        {
+          "text": "Client requests permission from all other peers via a consensus voting system",
+          "correct": false,
+          "explain": "Sai. Xin phép tất cả peer bằng bỏ phiếu đồng thuận là cách làm của mô hình ngang hàng (P2P/consensus), không phải server có thẩm quyền."
+        },
+        {
+          "text": "Client sends input/intent to the server, server validates, updates state, and replicates back",
+          "correct": true,
+          "explain": "Đúng. Trình tự đúng: client chỉ gửi input/ý định (nhấn phím tiến), server kiểm tra hợp lệ (validate), tự mô phỏng và cập nhật trạng thái thế giới, rồi sao chép (replicate) trạng thái đúng về cho các client."
+        },
+        {
+          "text": "Client renders the animation and sends final 3D world coordinates directly to other clients",
+          "correct": false,
+          "explain": "Sai. Client gửi thẳng toạ độ cuối cùng cho các client khác là tin tưởng client; dễ bị sửa toạ độ để dịch chuyển tức thời hoặc gian lận."
+        }
+      ]
+    },
+    {
+      "id": "gns201-007",
+      "question": "In a multiplayer shooter utilizing a Listen Server, if the hosting player suffers from severe local hardware framerate drops (e.g., 15 FPS), how does it affect the other players?",
+      "options": [
+        {
+          "text": "Other players see no impact because their local hardware frames are high",
+          "correct": false,
+          "explain": "Sai. Ở Listen Server, máy của host chạy luôn phần server nên cấu hình yếu của host ảnh hưởng tất cả; máy mạnh của người khác không cứu được."
+        },
+        {
+          "text": "The entire game world simulation slows down or stutters for everyone because the server loop is tied to the host's frame loop",
+          "correct": true,
+          "explain": "Đúng. Listen Server: host vừa là người chơi vừa là server nên vòng lặp mô phỏng của server gắn với vòng lặp khung hình (frame loop) của host. Host tụt xuống 15 FPS thì mô phỏng toàn bộ thế giới chậm hoặc giật cho mọi người."
+        },
+        {
+          "text": "Other players are instantly disconnected from the match session by the router",
+          "correct": false,
+          "explain": "Sai. Router không ngắt kết nối chỉ vì khung hình của host thấp; đây không phải việc của router."
+        },
+        {
+          "text": "The network layer automatically upgrades the session to a Dedicated Server topology",
+          "correct": false,
+          "explain": "Sai. Mạng không tự đổi cấu trúc thành Dedicated Server; muốn dùng Dedicated Server phải có máy chủ riêng."
+        }
+      ]
+    },
+    {
+      "id": "gns201-008",
+      "question": "What is the primary function of an authoritative server's main processing loop?",
+      "options": [
+        {
+          "text": "Formatting graphic presentation layouts for users",
+          "correct": false,
+          "explain": "Sai. Định dạng giao diện đồ hoạ là việc của client (render, UI), không phải vòng lặp xử lí chính của server."
+        },
+        {
+          "text": "Simulating the game world state based on validated inputs",
+          "correct": true,
+          "explain": "Đúng. Vòng lặp chính (main loop/tick loop) của server có thẩm quyền chạy theo từng tick: nhận input đã được kiểm tra hợp lệ, mô phỏng trạng thái thế giới game (di chuyển, va chạm, sát thương...) rồi gửi kết quả về cho client."
+        },
+        {
+          "text": "Writing text logs to disk storage systems continuously",
+          "correct": false,
+          "explain": "Sai. Ghi log chỉ là tác vụ phụ, không phải chức năng chính của vòng lặp xử lí."
+        },
+        {
+          "text": "Balancing power distribution across client systems",
+          "correct": false,
+          "explain": "Sai. 'Cân bằng phân phối điện' của hệ thống client không liên quan đến mô phỏng game."
+        }
+      ]
+    },
+    {
+      "id": "gns201-009",
+      "question": "What mechanism tracks connection health between an authoritative server and a client?",
+      "options": [
+        {
+          "text": "Heavy database write cycles",
+          "correct": false,
+          "explain": "Sai. Ghi dữ liệu nặng vào cơ sở dữ liệu không dùng để theo dõi sức khoẻ kết nối."
+        },
+        {
+          "text": "Graphic layout verification passes",
+          "correct": false,
+          "explain": "Sai. Kiểm tra bố cục đồ hoạ thuộc về giao diện, không liên quan kết nối."
+        },
+        {
+          "text": "Port configuration changes",
+          "correct": false,
+          "explain": "Sai. Thay đổi cấu hình cổng không phải cơ chế theo dõi sức khoẻ kết nối."
+        },
+        {
+          "text": "Periodic ping or heartbeat messages",
+          "correct": true,
+          "explain": "Đúng. Ping hoặc heartbeat (tín hiệu 'tôi còn sống' gửi định kì) giúp server biết kết nối còn hoạt động và đo độ trễ (RTT). Nếu quá thời gian không nhận được thì server coi client đã mất kết nối (timeout)."
+        }
+      ]
+    },
+    {
+      "id": "gns201-010",
+      "question": "Why do developers use spatial partitioning data structures on game servers?",
+      "options": [
+        {
+          "text": "To optimize interest management and minimize network packets",
+          "correct": true,
+          "explain": "Đúng. Cấu trúc chia không gian (spatial partitioning) như lưới (grid), quadtree, octree chia thế giới thành ô nhỏ. Nhờ đó server làm interest management: chỉ gửi cho mỗi người chơi thông tin về những đối tượng gần họ (vùng quan tâm), giảm số gói tin và băng thông."
+        },
+        {
+          "text": "To organize visual shaders for local graphics processing",
+          "correct": false,
+          "explain": "Sai. Shader đồ hoạ là việc của client khi render, không phải mục đích của spatial partitioning trên server."
+        },
+        {
+          "text": "To compress text asset objects inside database tables",
+          "correct": false,
+          "explain": "Sai. Nén tài nguyên văn bản trong cơ sở dữ liệu không liên quan đến chia không gian."
+        },
+        {
+          "text": "To execute network connectivity commands synchronously",
+          "correct": false,
+          "explain": "Sai. Thực thi lệnh kết nối mạng đồng bộ không phải mục đích của cấu trúc này."
+        }
+      ]
+    },
+    {
+      "id": "gns201-011",
+      "question": "What is the main purpose of the MarshalAs attribute when working with strings in binary structs?",
+      "options": [
+        {
+          "text": "To convert strings to JSON",
+          "correct": false,
+          "explain": "Sai. [MarshalAs] không chuyển chuỗi sang JSON; JSON là định dạng văn bản khác hẳn, còn marshaling xử lí bố cục byte."
+        },
+        {
+          "text": "To encrypt string data",
+          "correct": false,
+          "explain": "Sai. Thuộc tính này không mã hoá dữ liệu."
+        },
+        {
+          "text": "To compress string values",
+          "correct": false,
+          "explain": "Sai. Nó không nén giá trị chuỗi."
+        },
+        {
+          "text": "To control how strings are marshaled (e.g., fixed size)",
+          "correct": true,
+          "explain": "Đúng. Attribute [MarshalAs] chỉ định cách chuỗi (string) được marshal (chuyển đổi bố cục bộ nhớ) khi struct được đổi sang/từ mảng byte, ví dụ chuỗi có độ dài cố định (fixed size) qua UnmanagedType.ByValTStr và SizeConst. Điều này cần thiết để cả hai đầu mạng hiểu cùng một cấu trúc nhị phân."
+        }
+      ]
+    },
+    {
+      "id": "gns201-012",
+      "question": "What does the deserialization process accomplish on a receiving game client machine?",
+      "options": [
+        {
+          "text": "It reconstructs a class or struct instance in memory from raw incoming bytes",
+          "correct": true,
+          "explain": "Đúng. Deserialization (giải tuần tự hoá) là quá trình dựng lại đối tượng (class hoặc struct) trong bộ nhớ từ các byte thô nhận được. Ngược lại serialization (tuần tự hoá) biến đối tượng thành byte để gửi đi."
+        },
+        {
+          "text": "It erases the local character configuration file from the operating system",
+          "correct": false,
+          "explain": "Sai. Deserialization không xoá tệp cấu hình nhân vật của hệ điều hành."
+        },
+        {
+          "text": "It measures the absolute physical round-trip time of transport layer datagrams",
+          "correct": false,
+          "explain": "Sai. Đo thời gian khứ hồi (RTT) là việc của ping/đo độ trễ, không phải của deserialization."
+        },
+        {
+          "text": "It routes network frames directly to adjacent local area network",
+          "correct": false,
+          "explain": "Sai. Định tuyến khung mạng là việc của thiết bị mạng (router/switch), không phải của deserialization."
+        }
+      ]
+    },
+    {
+      "id": "gns201-013",
+      "question": "To send JSON data over a network socket, you must:",
+      "options": [
+        {
+          "text": "Convert the JSON string to a byte array",
+          "correct": true,
+          "explain": "Đúng. Socket chỉ gửi và nhận byte. JSON là chuỗi văn bản, nên phải chuyển (mã hoá) thành mảng byte (ví dụ Encoding.UTF8.GetBytes) trước khi gửi, rồi bên nhận giải mã lại."
+        },
+        {
+          "text": "Send the string directly without conversion",
+          "correct": false,
+          "explain": "Sai. Không thể gửi trực tiếp chuỗi qua socket mà không chuyển thành byte."
+        },
+        {
+          "text": "Use Marshal.SizeOf",
+          "correct": false,
+          "explain": "Sai. Marshal.SizeOf trả về kích thước của struct trong bộ nhớ không được quản lí; nó không dùng để gửi JSON."
+        },
+        {
+          "text": "No conversion is needed",
+          "correct": false,
+          "explain": "Sai. Phải có chuyển đổi, vì socket làm việc với byte chứ không phải chuỗi."
+        }
+      ]
+    },
+    {
+      "id": "gns201-014",
+      "question": "Which of the following is a key REST principle that makes backends predictable and scalable?",
+      "options": [
+        {
+          "text": "Stateful sessions",
+          "correct": false,
+          "explain": "Sai. Phiên có trạng thái (stateful session) trái với REST: server phải nhớ client giữa các request, khó mở rộng ngang."
+        },
+        {
+          "text": "Tight coupling between client and server",
+          "correct": false,
+          "explain": "Sai. REST yêu cầu tách rời client và server (loose coupling), ghép chặt thì trái nguyên tắc."
+        },
+        {
+          "text": "Stateless communication",
+          "correct": true,
+          "explain": "Đúng. Giao tiếp phi trạng thái (stateless): mỗi request mang đủ thông tin để server xử lí mà không cần nhớ request trước. Nhờ vậy backend dễ dự đoán và dễ mở rộng (thêm server nào cũng xử lí được)."
+        },
+        {
+          "text": "Verbose XML responses only",
+          "correct": false,
+          "explain": "Sai. Chỉ trả XML dài dòng (verbose) không phải nguyên tắc REST; REST không áp đặt định dạng, thường dùng JSON."
+        }
+      ]
+    },
+    {
+      "id": "gns201-015",
+      "question": "Which verb is typically used for deleting an inventory item after use?",
+      "options": [
+        {
+          "text": "GET",
+          "correct": false,
+          "explain": "Sai. GET dùng để đọc dữ liệu, không xoá."
+        },
+        {
+          "text": "POST",
+          "correct": false,
+          "explain": "Sai. POST dùng để tạo tài nguyên mới."
+        },
+        {
+          "text": "DELETE",
+          "correct": true,
+          "explain": "Đúng. DELETE là phương thức HTTP dùng để xoá tài nguyên, ví dụ xoá vật phẩm khỏi kho đồ sau khi dùng."
+        },
+        {
+          "text": "PATCH",
+          "correct": false,
+          "explain": "Sai. PATCH dùng để cập nhật một phần tài nguyên, không phải xoá."
+        }
+      ]
+    },
+    {
+      "id": "gns201-016",
+      "question": "Client-Server separation in REST means:",
+      "options": [
+        {
+          "text": "The client and server can evolve independently",
+          "correct": true,
+          "explain": "Đúng. Tách client–server nghĩa là hai bên phát triển, thay đổi độc lập miễn giữ nguyên giao diện (API contract) giữa chúng; ví dụ đổi giao diện game mà không phải đổi server."
+        },
+        {
+          "text": "They must share the same database",
+          "correct": false,
+          "explain": "Sai. Client và server không bắt buộc dùng chung cơ sở dữ liệu; việc đó đi ngược với sự tách biệt."
+        },
+        {
+          "text": "All logic runs on the client",
+          "correct": false,
+          "explain": "Sai. Mọi logic chạy trên client là ngược lại; REST tách trách nhiệm giữa client và server."
+        },
+        {
+          "text": "No network communication is needed",
+          "correct": false,
+          "explain": "Sai. REST chính là giao tiếp qua mạng giữa client và server, nên cần giao tiếp mạng."
+        }
+      ]
+    },
+    {
+      "id": "gns201-017",
+      "question": "Cacheable responses in REST help with:",
+      "options": [
+        {
+          "text": "Real-time player positions",
+          "correct": false,
+          "explain": "Sai. Vị trí người chơi thời gian thực thay đổi liên tục nên không cache được; cache hợp với dữ liệu ít đổi."
+        },
+        {
+          "text": "Increasing latency",
+          "correct": false,
+          "explain": "Sai. Cache giảm độ trễ chứ không làm tăng."
+        },
+        {
+          "text": "Reducing server load for frequently requested data like shop items",
+          "correct": true,
+          "explain": "Đúng. Phản hồi có thể cache (cacheable) giúp giảm tải cho server với dữ liệu được hỏi thường xuyên và ít thay đổi như danh sách vật phẩm trong cửa hàng: lần sau lấy từ bộ nhớ đệm, không cần xử lí lại."
+        },
+        {
+          "text": "Making all requests stateful",
+          "correct": false,
+          "explain": "Sai. Làm mọi request có trạng thái (stateful) trái nguyên tắc REST và không liên quan cache."
+        }
+      ]
+    },
+    {
+      "id": "gns201-018",
+      "question": "In a game backend, which HTTP verb is most appropriate for purchasing an item (creating a new transaction)?",
+      "options": [
+        {
+          "text": "GET",
+          "correct": false,
+          "explain": "Sai. GET chỉ để đọc dữ liệu, không tạo giao dịch mới."
+        },
+        {
+          "text": "PUT",
+          "correct": false,
+          "explain": "Sai. PUT thường dùng để thay thế/cập nhật toàn bộ một tài nguyên đã biết và có tính idempotent (gọi nhiều lần kết quả như nhau); mua hàng tạo giao dịch mới nên không hợp."
+        },
+        {
+          "text": "PATCH",
+          "correct": false,
+          "explain": "Sai. PATCH dùng để cập nhật một phần tài nguyên có sẵn, không phải tạo giao dịch mới."
+        },
+        {
+          "text": "POST",
+          "correct": true,
+          "explain": "Đúng. POST dùng để tạo tài nguyên mới, ở đây là một giao dịch mua vật phẩm mới. POST không idempotent: mỗi lần gọi có thể tạo một giao dịch khác."
+        }
+      ]
+    },
+    {
+      "id": "gns201-019",
+      "question": "A proper REST endpoint for getting a specific player's inventory:",
+      "options": [
+        {
+          "text": "POST /getInventory",
+          "correct": false,
+          "explain": "Sai. POST /getInventory sai hai chỗ: dùng động từ trong đường dẫn (REST dùng danh từ) và dùng POST để đọc dữ liệu (phải dùng GET)."
+        },
+        {
+          "text": "PUT /inventory/all",
+          "correct": false,
+          "explain": "Sai. PUT là phương thức ghi/thay thế, không phải để lấy kho đồ của một người chơi cụ thể."
+        },
+        {
+          "text": "DELETE /player/inventory",
+          "correct": false,
+          "explain": "Sai. DELETE dùng để xoá, và đường dẫn này không xác định người chơi cụ thể."
+        },
+        {
+          "text": "GET /api/players/{playerId}/inventory",
+          "correct": true,
+          "explain": "Đúng. GET /api/players/{playerId}/inventory theo đúng chuẩn REST: dùng GET để lấy dữ liệu, đường dẫn danh từ phân cấp thể hiện rõ tài nguyên (kho đồ) của một người chơi cụ thể qua playerId."
+        }
+      ]
+    },
+    {
+      "id": "gns201-020",
+      "question": "Why is the time-to-live (TTL) or hop limit mechanism important in the context of routing game server packets across the internet?",
+      "options": [
+        {
+          "text": "It specifies how many milliseconds a packet can remain in the game server's internal queues",
+          "correct": false,
+          "explain": "Sai. TTL không tính bằng mili giây trong hàng đợi của server; nó là bộ đếm số bước nhảy (hop) qua các router."
+        },
+        {
+          "text": "It sets the threshold for maximum permissible network latency before disconnecting a client",
+          "correct": false,
+          "explain": "Sai. TTL không đặt ngưỡng độ trễ tối đa để ngắt kết nối client."
+        },
+        {
+          "text": "It dictates the maximum lifespan of a user authentication token before requiring a login",
+          "correct": false,
+          "explain": "Sai. TTL không liên quan đến thời hạn của token xác thực người dùng."
+        },
+        {
+          "text": "It prevents lost packets from circulating indefinitely in network routing loops by dropping them",
+          "correct": true,
+          "explain": "Đúng. TTL (time-to-live) hay hop limit là một con số trong header IP; mỗi router đi qua giảm 1, về 0 thì gói bị huỷ. Nhờ đó gói bị lạc hoặc quay vòng trong vòng lặp định tuyến (routing loop) không chạy mãi mà bị loại bỏ."
+        }
+      ]
+    },
+    {
+      "id": "gns201-021",
+      "question": "Which specific method of the .NET NetworkStream class should be executed to transmit buffered data bytes asynchronously to a connected game client?",
+      "options": [
+        {
+          "text": "The raw Send() method which manages underlying kernel socket data allocations",
+          "correct": false,
+          "explain": "Sai. Send() là phương thức của Socket (không phải NetworkStream) và là kiểu đồng bộ; nó cũng không phải phương thức bất đồng bộ của NetworkStream."
+        },
+        {
+          "text": "The Flush() method which forces immediate packet fragmentation across intermediate routers",
+          "correct": false,
+          "explain": "Sai. Flush() trên NetworkStream không ép phân mảnh gói qua router; phân mảnh là việc của tầng mạng."
+        },
+        {
+          "text": "The asynchronous WriteAsync() method which handles stream writing without blocking execution",
+          "correct": true,
+          "explain": "Đúng. WriteAsync() của NetworkStream ghi dữ liệu byte bất đồng bộ (dùng async/await), không chặn luồng đang chạy, phù hợp gửi dữ liệu tới client mà game vẫn chạy mượt."
+        },
+        {
+          "text": "The BeginAccept() method which hooks connection callbacks into the central system pipeline",
+          "correct": false,
+          "explain": "Sai. BeginAccept() dùng để bắt đầu chấp nhận kết nối đến, không phải để gửi dữ liệu."
+        }
+      ]
+    },
+    {
+      "id": "gns201-022",
+      "question": "What is a fundamental difference between how data is delivered to the application layer in TCP versus UDP?",
+      "options": [
+        {
+          "text": "TCP provides distinct message-based packet borders while UDP provides an infinite byte stream",
+          "correct": false,
+          "explain": "Sai. Đảo ngược: TCP không giữ ranh giới message (luồng byte), còn UDP giữ ranh giới từng gói (datagram)."
+        },
+        {
+          "text": "TCP forces data encryption onto application payloads while UDP sends plaintext binary formats",
+          "correct": false,
+          "explain": "Sai. TCP không bắt buộc mã hoá dữ liệu ứng dụng; mã hoá là việc của lớp khác (TLS)."
+        },
+        {
+          "text": "TCP limits application layer transfers to 1460 bytes while UDP enables multi-megabyte streams",
+          "correct": false,
+          "explain": "Sai. TCP không giới hạn dữ liệu tầng ứng dụng ở 1460 byte (1460 chỉ là kích thước đoạn tối đa MSS thông thường), còn gói UDP có giới hạn nhỏ hơn 'multi-megabyte'."
+        },
+        {
+          "text": "TCP delivers a continuous stream of raw bytes without borders while UDP preserves packet boundaries",
+          "correct": true,
+          "explain": "Đúng. TCP trao cho ứng dụng một luồng byte liên tục không có ranh giới (nên có thể phải tự tách message, gọi là framing), còn UDP giữ nguyên ranh giới từng datagram: mỗi lần gửi là một gói riêng khi nhận."
+        }
+      ]
+    },
+    {
+      "id": "gns201-023",
+      "question": "Which class is used to listen for incoming TCP connection requests?",
+      "options": [
+        {
+          "text": "TcpListener",
+          "correct": true,
+          "explain": "Đúng. TcpListener lắng nghe và chấp nhận các yêu cầu kết nối TCP đến."
+        },
+        {
+          "text": "NetworkStream",
+          "correct": false,
+          "explain": "Sai. NetworkStream dùng để đọc/ghi dữ liệu sau khi đã có kết nối, không dùng để lắng nghe."
+        },
+        {
+          "text": "UdpClient",
+          "correct": false,
+          "explain": "Sai. UdpClient dùng cho UDP, không phải TCP."
+        },
+        {
+          "text": "SocketAsyncEventArgs",
+          "correct": false,
+          "explain": "Sai. SocketAsyncEventArgs là đối tượng hỗ trợ thao tác socket bất đồng bộ hiệu năng cao, không phải lớp chuyên lắng nghe TCP."
+        }
+      ]
+    },
+    {
+      "id": "gns201-024",
+      "question": "What can happen if a developer forgets to implement a packet framing system (such as adding a length prefix) on a TCP game server?",
+      "options": [
+        {
+          "text": "The application layer might read fragmented or combined packets, corrupting game data",
+          "correct": true,
+          "explain": "Đúng. TCP là luồng byte không có ranh giới message. Nếu không có framing (ví dụ thêm tiền tố độ dài length prefix), tầng ứng dụng có thể đọc được một gói bị cắt dở hoặc nhiều gói dính vào nhau, làm hỏng dữ liệu game."
+        },
+        {
+          "text": "The server will reject connection handshakes due to invalid security definitions",
+          "correct": false,
+          "explain": "Sai. Việc thiếu framing không làm server từ chối bắt tay (handshake); bắt tay TCP vẫn diễn ra bình thường."
+        },
+        {
+          "text": "The underlying operating system will instantly convert TCP streams into UDP datagrams",
+          "correct": false,
+          "explain": "Sai. Hệ điều hành không tự đổi luồng TCP thành datagram UDP."
+        },
+        {
+          "text": "The underlying network socket will switch into blocking synchronous operational mode",
+          "correct": false,
+          "explain": "Sai. Thiếu framing không ép socket chuyển sang chế độ chặn đồng bộ."
+        }
+      ]
+    },
+    {
+      "id": "gns201-025",
+      "question": "What is the primary operational characteristic that makes TCP a connection-oriented protocol?",
+      "options": [
+        {
+          "text": "It relies on explicit hardware routing paths across regional internet gateways",
+          "correct": false,
+          "explain": "Sai. TCP không dựa vào đường định tuyến phần cứng cố định qua các cổng khu vực."
+        },
+        {
+          "text": "It requires a dedicated physical cable link between the game client and server",
+          "correct": false,
+          "explain": "Sai. Không cần một sợi cáp vật lí riêng; 'kết nối' của TCP là kết nối ảo ở tầng logic."
+        },
+        {
+          "text": "It encrypts all network packets using automated symmetric cryptographic keys",
+          "correct": false,
+          "explain": "Sai. TCP không tự mã hoá toàn bộ gói; mã hoá cần thêm TLS."
+        },
+        {
+          "text": "It establishes a virtual connection via a handshake before transmitting data",
+          "correct": true,
+          "explain": "Đúng. TCP hướng kết nối (connection-oriented): trước khi truyền dữ liệu phải thiết lập kết nối ảo bằng bắt tay ba bước (SYN, SYN-ACK, ACK). UDP thì không có bước này (connectionless)."
+        }
+      ]
+    },
+    {
+      "id": "gns201-026",
+      "question": "Which .NET open source library is introduced in Chapter 6 to implement a high-performance RUDP real-time game server?",
+      "options": [
+        {
+          "text": "Microsoft.AspNetCore.SignalR",
+          "correct": false,
+          "explain": "Sai. SignalR là thư viện giao tiếp thời gian thực qua web (WebSocket) của ASP.NET, không phải thư viện RUDP."
+        },
+        {
+          "text": "LiteNetLib transport framework",
+          "correct": true,
+          "explain": "Đúng. LiteNetLib là thư viện .NET mã nguồn mở triển khai UDP đáng tin cậy (RUDP, Reliable UDP) hiệu năng cao, dùng cho game server thời gian thực."
+        },
+        {
+          "text": "System.Net.Http.HttpClient",
+          "correct": false,
+          "explain": "Sai. HttpClient dùng để gọi HTTP/REST, không phải RUDP."
+        },
+        {
+          "text": "MongoDB.Driver ecosystem",
+          "correct": false,
+          "explain": "Sai. MongoDB Driver dùng để làm việc với cơ sở dữ liệu MongoDB, không liên quan mạng thời gian thực."
+        }
+      ]
+    },
+    {
+      "id": "gns201-027",
+      "question": "Which protocol layer does the User Datagram Protocol (UDP) operate within according to the TCP/IP conceptual model?",
+      "options": [
+        {
+          "text": "Network Layer which handles logical ip addressing schemes",
+          "correct": false,
+          "explain": "Sai. Tầng Network xử lí địa chỉ IP và định tuyến (giao thức IP); UDP không nằm ở tầng này."
+        },
+        {
+          "text": "Transport Layer which manages end-to-end data packet delivery",
+          "correct": true,
+          "explain": "Đúng. UDP (cũng như TCP) hoạt động ở tầng Transport: lo việc chuyển dữ liệu từ tiến trình này đến tiến trình kia (end-to-end) thông qua số cổng."
+        },
+        {
+          "text": "Application Layer which hosts game logic data interpretation",
+          "correct": false,
+          "explain": "Sai. Tầng Application chứa giao thức ứng dụng (HTTP, logic game); UDP nằm dưới nó."
+        },
+        {
+          "text": "Data Link Layer which frames raw bits for physical hardware",
+          "correct": false,
+          "explain": "Sai. Tầng Data Link đóng khung bit cho phần cứng (Ethernet, Wi-Fi), không phải UDP."
+        }
+      ]
+    },
+    {
+      "id": "gns201-028",
+      "question": "What structural risk does an online game face if its developers rely on standard UDP without implementing a packet sequencing mechanism?",
+      "options": [
+        {
+          "text": "The hosting server will run out of available local IP address profiles to assign",
+          "correct": false,
+          "explain": "Sai. Không dùng sequencing không làm server cạn địa chỉ IP."
+        },
+        {
+          "text": "The network card will automatically block incoming client communication pipelines",
+          "correct": false,
+          "explain": "Sai. Card mạng không tự chặn kênh liên lạc vì thiếu sequencing."
+        },
+        {
+          "text": "The game client may process old physics coordinates after newer ones, causing jitter",
+          "correct": true,
+          "explain": "Đúng. UDP không đảm bảo thứ tự: gói tới sau có thể là gói cũ hơn. Không có số thứ tự (sequence number) thì client có thể xử lí toạ độ vật lí cũ sau khi đã nhận toạ độ mới hơn, làm nhân vật giật (jitter) hoặc kéo ngược."
+        },
+        {
+          "text": "The application layer will fail to establish standard HTTPS REST connection states",
+          "correct": false,
+          "explain": "Sai. HTTPS REST không liên quan UDP sequencing."
+        }
+      ]
+    },
+    {
+      "id": "gns201-029",
+      "question": "What mechanism does an RUDP framework initiate when a specific packet's acknowledgment (ACK) does not arrive within a calculated time threshold?",
+      "options": [
+        {
+          "text": "It closes the client session loop and throws a fatal socket connection error",
+          "correct": false,
+          "explain": "Sai. Mất một ACK không làm RUDP đóng phiên và báo lỗi nghiêm trọng ngay; trước hết nó gửi lại."
+        },
+        {
+          "text": "It converts the transmission data layout format into a standard text JSON string",
+          "correct": false,
+          "explain": "Sai. RUDP không đổi định dạng sang JSON khi mất ACK."
+        },
+        {
+          "text": "It requests intermediate network switches to reset their physical routing states",
+          "correct": false,
+          "explain": "Sai. Switch trung gian không bị yêu cầu đặt lại trạng thái định tuyến."
+        },
+        {
+          "text": "It triggers a retransmission of that unacknowledged packet to guarantee delivery",
+          "correct": true,
+          "explain": "Đúng. RUDP (Reliable UDP) dùng ACK (xác nhận đã nhận). Nếu một gói không được ACK trong ngưỡng thời gian tính toán, nó gửi lại (retransmission) gói đó để bảo đảm gói được chuyển tới nơi."
+        }
+      ]
+    },
+    {
+      "id": "gns201-030",
+      "question": "Which event is triggered on the LiteNetLib EventBasedNetListener when an external game client establishes a network link with the server?",
+      "options": [
+        {
+          "text": "The PeerConnectedEvent communication callback",
+          "correct": true,
+          "explain": "Đúng. PeerConnectedEvent là sự kiện được gọi khi một client bên ngoài (peer) thiết lập kết nối với server."
+        },
+        {
+          "text": "The NetworkReceiveEvent callback loop",
+          "correct": false,
+          "explain": "Sai. NetworkReceiveEvent được gọi khi nhận dữ liệu, không phải khi vừa kết nối."
+        },
+        {
+          "text": "The NetworkLatencyUpdateEvent status tracker",
+          "correct": false,
+          "explain": "Sai. NetworkLatencyUpdateEvent được gọi khi độ trễ (ping) cập nhật."
+        },
+        {
+          "text": "The DeliveryMethodChangedEvent configuration signal",
+          "correct": false,
+          "explain": "Sai. DeliveryMethodChangedEvent không phải sự kiện báo kết nối."
+        }
+      ]
+    },
+    {
+      "id": "gns201-031",
+      "question": "What is the direct consequence if a developer makes an RPC call to a Server function from a game client without proper authorization checks?",
+      "options": [
+        {
+          "text": "The client application will instantly trigger a fatal hardware graphics compilation fault",
+          "correct": false,
+          "explain": "Sai. Thiếu kiểm tra quyền không gây lỗi biên dịch đồ hoạ phần cứng."
+        },
+        {
+          "text": "The underlying transport driver will automatically transform the packet stream into JSON text",
+          "correct": false,
+          "explain": "Sai. Trình điều khiển truyền tải không tự chuyển gói sang JSON."
+        },
+        {
+          "text": "It introduces a severe vulnerability where clients can cheat by triggering unauthorized actions",
+          "correct": true,
+          "explain": "Đúng. Nếu client gọi RPC (Remote Procedure Call) lên server mà server không kiểm tra quyền (authorization), người chơi có thể kích hoạt những hành động trái phép như cộng tiền, đổi vật phẩm. Đó là lỗ hổng cho phép gian lận."
+        },
+        {
+          "text": "The global matchmaking cluster service will permanently close the active local port link",
+          "correct": false,
+          "explain": "Sai. Dịch vụ ghép trận toàn cục không đóng cổng cục bộ vì thiếu kiểm tra quyền."
+        }
+      ]
+    },
+    {
+      "id": "gns201-032",
+      "question": "What specific problem does the \"Dirty Flag\" pattern resolve within an authoritative Object Replication lifecycle?",
+      "options": [
+        {
+          "text": "It prevents malicious clients from executing unauthorized controller methods on backend routers",
+          "correct": false,
+          "explain": "Sai. Dirty Flag không ngăn client độc hại gọi phương thức trái phép; việc này cần kiểm tra quyền."
+        },
+        {
+          "text": "It minimizes bandwidth usage by ensuring only modified object properties are sent over the network",
+          "correct": true,
+          "explain": "Đúng. Dirty Flag là cờ đánh dấu thuộc tính của đối tượng đã thay đổi. Server chỉ gửi những thuộc tính được đánh dấu (delta) thay vì toàn bộ đối tượng, nên tiết kiệm băng thông trong sao chép đối tượng (Object Replication)."
+        },
+        {
+          "text": "It compresses large asset configuration arrays before they cross public intermediate routes",
+          "correct": false,
+          "explain": "Sai. Dirty Flag không nén cấu hình tài sản lớn."
+        },
+        {
+          "text": "It forces background synchronization processes to complete before the game thread updates physics",
+          "correct": false,
+          "explain": "Sai. Dirty Flag không ép các tiến trình đồng bộ nền hoàn tất trước khi cập nhật vật lí."
+        }
+      ]
+    },
+    {
+      "id": "gns201-033",
+      "question": "In an authoritative game server system utilizing State Synchronization, how is a player's character movement processed?",
+      "options": [
+        {
+          "text": "The client sends intended inputs, the server simulates them, and replicates the true state back",
+          "correct": true,
+          "explain": "Đúng. Với State Synchronization có thẩm quyền, client chỉ gửi input (ý định), server mô phỏng và quyết định, rồi sao chép trạng thái thật (true state) về các client."
+        },
+        {
+          "text": "The client sends updated coordinates directly, and the server blindly accepts them as true",
+          "correct": false,
+          "explain": "Sai. Server tin mù quáng toạ độ client gửi là mô hình client-authoritative, dễ gian lận."
+        },
+        {
+          "text": "The client bypasses the transport socket and writes the spatial location straight to MongoDB",
+          "correct": false,
+          "explain": "Sai. Client không ghi thẳng vị trí vào MongoDB bỏ qua socket truyền tải; dữ liệu phải qua server."
+        },
+        {
+          "text": "The client triggers a global RPC that forces all other network peers to render the rotation",
+          "correct": false,
+          "explain": "Sai. Client không phát RPC toàn cục ép các peer khác vẽ xoay; server chịu trách nhiệm đồng bộ trạng thái."
+        }
+      ]
+    },
+    {
+      "id": "gns201-034",
+      "question": "Why is the State Synchronization model considered more flexible and robust against network latency than Deterministic Lockstep?",
+      "options": [
+        {
+          "text": "It allows clients to process gameplay updates without requiring any central port configuration",
+          "correct": false,
+          "explain": "Sai. State Synchronization vẫn cần cấu hình cổng và kết nối như mọi mô hình mạng."
+        },
+        {
+          "text": "It eliminates the need to perform binary serialization operations across transport sockets",
+          "correct": false,
+          "explain": "Sai. State Synchronization vẫn cần tuần tự hoá nhị phân để gửi dữ liệu."
+        },
+        {
+          "text": "It allows clients to continue rendering and simulating locally even if a packet drop occurs",
+          "correct": true,
+          "explain": "Đúng. Với State Synchronization, client vẫn tiếp tục hiển thị và mô phỏng cục bộ (dự đoán) kể cả khi mất gói; khi có trạng thái mới từ server thì chỉnh lại. Còn Deterministic Lockstep phải đợi input của mọi người mỗi bước nên một gói bị mất hoặc trễ làm cả trận chờ. Do đó State Sync linh hoạt và chịu trễ mạng tốt hơn."
+        },
+        {
+          "text": "It automatically shifts the authority of physics simulation variables directly onto clients",
+          "correct": false,
+          "explain": "Sai. Mô hình này giữ quyền ở server chứ không chuyển quyền vật lí sang client."
+        }
+      ]
+    },
+    {
+      "id": "gns201-035",
+      "question": "What is the main goal of using latency management techniques in multiplayer games?",
+      "options": [
+        {
+          "text": "To expand the maximum character storage limits inside database tables",
+          "correct": false,
+          "explain": "Sai. Mở rộng giới hạn lưu trữ nhân vật trong bảng dữ liệu không phải mục tiêu của quản lí độ trễ."
+        },
+        {
+          "text": "To completely eliminate the need to register dynamic ports on hosts",
+          "correct": false,
+          "explain": "Sai. Quản lí độ trễ không nhằm loại bỏ việc đăng kí cổng động."
+        },
+        {
+          "text": "To display developer documentation panels via web browser shortcuts",
+          "correct": false,
+          "explain": "Sai. Hiển thị tài liệu cho nhà phát triển không liên quan."
+        },
+        {
+          "text": "To turn a laggy connection into a smooth and responsive experience",
+          "correct": true,
+          "explain": "Đúng. Các kĩ thuật quản lí độ trễ (client prediction, interpolation, lag compensation...) có mục tiêu biến kết nối chập chờn (laggy) thành trải nghiệm mượt và phản hồi nhanh cho người chơi."
+        }
+      ]
+    },
+    {
+      "id": "gns201-036",
+      "question": "What kind of network protocol is best suited for broadcasting high-frequency world snapshots from a server?",
+      "options": [
+        {
+          "text": "Stateful connection-oriented TCP streams that guarantee every delivery sequence",
+          "correct": false,
+          "explain": "Sai. TCP đảm bảo thứ tự và gửi lại gói mất, nhưng với ảnh chụp thế giới (snapshot) tần suất cao, gói cũ vô giá trị nên chờ gửi lại làm trễ thêm (head-of-line blocking)."
+        },
+        {
+          "text": "Text-based relational transaction structures requiring separate endpoint validation loops",
+          "correct": false,
+          "explain": "Sai. Giao dịch quan hệ dạng văn bản không phải giao thức mạng phát snapshot."
+        },
+        {
+          "text": "Connectionless fast transport datagrams like UDP or Unreliable RUDP channels",
+          "correct": true,
+          "explain": "Đúng. Snapshot tần suất cao cần tốc độ, gói nào mất thì bỏ vì sẽ có snapshot mới ngay sau. Vì vậy dùng datagram không kết nối như UDP hoặc kênh không tin cậy của RUDP."
+        },
+        {
+          "text": "Monolithic web application archive deployment packages handled via secure HTTPS routes",
+          "correct": false,
+          "explain": "Sai. Gói triển khai ứng dụng web qua HTTPS không phù hợp truyền snapshot thời gian thực."
+        }
+      ]
+    },
+    {
+      "id": "gns201-037",
+      "question": "In latency management, what basic rule ensures that game results remain secure against cheat modifications?",
+      "options": [
+        {
+          "text": "The client machine must act as the primary definitive authority for physics logic",
+          "correct": false,
+          "explain": "Sai. Nếu client là thẩm quyền vật lí thì dễ gian lận (sửa vị trí, sát thương)."
+        },
+        {
+          "text": "The system must store all real-time movement positions directly inside the MongoDB cluster",
+          "correct": false,
+          "explain": "Sai. Lưu mọi vị trí thời gian thực vào MongoDB không bảo vệ trước gian lận và quá chậm cho tính toán thời gian thực."
+        },
+        {
+          "text": "The communication network must use text JSON serialization arrays for position streams",
+          "correct": false,
+          "explain": "Sai. Dùng JSON dạng văn bản không làm kết quả an toàn hơn trước gian lận."
+        },
+        {
+          "text": "The server must act as the absolute authority and validate all received client requests",
+          "correct": true,
+          "explain": "Đúng. Quy tắc cơ bản: server phải là thẩm quyền tuyệt đối (authoritative) và kiểm tra hợp lệ mọi yêu cầu của client. Client chỉ gửi ý định, không được quyết định kết quả."
+        }
+      ]
+    },
+    {
+      "id": "gns201-038",
+      "question": "Why is event-driven communication via an event broker helpful for decoupling microservices?",
+      "options": [
+        {
+          "text": "It automatically applies high-level compression algorithms to minimize bandwidth usage across public internet lines",
+          "correct": false,
+          "explain": "Sai. Nén dữ liệu không phải lợi ích chính của event-driven communication hay event broker."
+        },
+        {
+          "text": "It permits services to send event messages asynchronously without blocking their execution threads to wait for a response",
+          "correct": true,
+          "explain": "Đúng. Với giao tiếp hướng sự kiện qua event broker (nơi trung gian nhận và phân phối sự kiện), một dịch vụ chỉ cần gửi sự kiện rồi tiếp tục làm việc mà không chặn luồng để chờ phản hồi. Các microservice không phụ thuộc trực tiếp nhau (decoupling)."
+        },
+        {
+          "text": "It requires all separate backend microservice apps to run on a single synchronized processor core",
+          "correct": false,
+          "explain": "Sai. Các microservice chạy độc lập, không cần chung một nhân bộ xử lí; việc này trái với tinh thần tách rời."
+        },
+        {
+          "text": "It allows the game client to modify authoritative server coordinates without triggering validation checks",
+          "correct": false,
+          "explain": "Sai. Client sửa toạ độ server mà không qua kiểm tra là lỗ hổng bảo mật, không phải lợi ích."
+        }
+      ]
+    },
+    {
+      "id": "gns201-039",
+      "question": "What component acts as the single point of entry for client requests to be routed to internal microservices?",
+      "options": [
+        {
+          "text": "An independent MongoDB storage instance",
+          "correct": false,
+          "explain": "Sai. MongoDB là nơi lưu dữ liệu, không phải cổng vào định tuyến yêu cầu."
+        },
+        {
+          "text": "A local hardware link layer switch unit",
+          "correct": false,
+          "explain": "Sai. Switch lớp liên kết là thiết bị mạng, không định tuyến yêu cầu tới microservice."
+        },
+        {
+          "text": "An API Gateway management layer node",
+          "correct": true,
+          "explain": "Đúng. API Gateway là điểm vào duy nhất cho yêu cầu của client; nó nhận yêu cầu rồi định tuyến tới đúng microservice nội bộ, đồng thời có thể xử lí xác thực, giới hạn tốc độ."
+        },
+        {
+          "text": "A custom binary serialization pipeline",
+          "correct": false,
+          "explain": "Sai. Đường ống tuần tự hoá nhị phân chỉ chuyển dữ liệu, không định tuyến."
+        }
+      ]
+    },
+    {
+      "id": "gns201-040",
+      "question": "What primary benefit does \"Fault Isolation\" offer to a microservices-based game backend architecture?",
+      "options": [
+        {
+          "text": "A crash in one independent service does not automatically take down other active services",
+          "correct": true,
+          "explain": "Đúng. Cô lập lỗi (fault isolation): một dịch vụ độc lập gặp sự cố không tự động kéo sập các dịch vụ khác, nên hệ thống còn lại vẫn hoạt động."
+        },
+        {
+          "text": "It completely shields public API endpoints from distributed denial of service attacks",
+          "correct": false,
+          "explain": "Sai. Cô lập lỗi không bảo vệ hoàn toàn trước tấn công DDoS."
+        },
+        {
+          "text": "It removes the technical requirement of calculating error verification packet checksums",
+          "correct": false,
+          "explain": "Sai. Cô lập lỗi không loại bỏ việc tính checksum kiểm tra lỗi gói tin."
+        },
+        {
+          "text": "It ensures that remote client devices render graphic animation frames at matching speeds",
+          "correct": false,
+          "explain": "Sai. Tốc độ vẽ hình ở client không liên quan đến cô lập lỗi của backend."
+        }
+      ]
+    },
+    {
+      "id": "gns201-041",
+      "question": "Which open source platform is designed to automate the deployment, scaling, and management of containerized units?",
+      "options": [
+        {
+          "text": "Postman environment",
+          "correct": false,
+          "explain": "Sai. Postman là công cụ kiểm thử API, không phải nền tảng triển khai container."
+        },
+        {
+          "text": "Wireshark inspector",
+          "correct": false,
+          "explain": "Sai. Wireshark là công cụ bắt và phân tích gói tin mạng."
+        },
+        {
+          "text": "Clumsy simulator",
+          "correct": false,
+          "explain": "Sai. Clumsy là công cụ giả lập điều kiện mạng xấu (trễ, mất gói) để thử game."
+        },
+        {
+          "text": "Docker engine",
+          "correct": true,
+          "explain": "Đúng theo đáp án của đề. Docker engine là nền tảng container mã nguồn mở, đóng gói ứng dụng thành container để triển khai. (Lưu ý: mô tả 'tự động hoá triển khai, mở rộng và quản lí container' thường nói tới Kubernetes, nhưng trong các đáp án chỉ có Docker nằm trong nhóm công cụ container.)"
+        }
+      ],
+      "note": "Chữ trong video nhỏ và mờ. Mô tả \"tự động hóa triển khai, mở rộng và quản lý container\" thường là của Kubernetes, nhưng trong 4 đáp án không có Kubernetes; bình luận chọn Docker engine."
+    },
+    {
+      "id": "gns201-042",
+      "question": "What security mechanism prevents a malicious player from capturing a legitimate user's network traffic and resending it to execute duplicate actions?",
+      "options": [
+        {
+          "text": "Forcing the application architecture to run exclusively inside a single-threaded synchronous loop pool",
+          "correct": false,
+          "explain": "Sai. Chạy trong một vòng lặp đơn luồng đồng bộ không ngăn việc bắt và gửi lại gói."
+        },
+        {
+          "text": "Appending unique packet sequence numbers, timestamps, and cryptographic nonces to each payload",
+          "correct": true,
+          "explain": "Đúng. Đây là chống tấn công phát lại (replay attack). Thêm số thứ tự gói (sequence number), dấu thời gian (timestamp) và nonce mật mã (giá trị dùng một lần) vào mỗi payload để server phát hiện gói cũ hoặc trùng và từ chối."
+        },
+        {
+          "text": "Bypassing standard internet firewalls by routing data packets to alternative hidden public ports",
+          "correct": false,
+          "explain": "Sai. Vượt tường lửa bằng cổng công khai ẩn không bảo vệ khỏi tấn công phát lại, còn làm giảm an toàn."
+        },
+        {
+          "text": "Clearing out temporary memory cache allocations inside the central processor hardware core regularly",
+          "correct": false,
+          "explain": "Sai. Xoá cache bộ nhớ của CPU không liên quan đến tấn công phát lại."
+        }
+      ]
+    },
+    {
+      "id": "gns201-043",
+      "question": "What type of attack involves an adversary analyzing compiled game binary files using decompilers to discover internal API routes?",
+      "options": [
+        {
+          "text": "Layer 4 SYN Reflection Flooding",
+          "correct": false,
+          "explain": "Sai. SYN Reflection Flooding là tấn công từ chối dịch vụ ở tầng 4, không phải phân tích tệp nhị phân."
+        },
+        {
+          "text": "Distributed Memory Expose Sequence",
+          "correct": false,
+          "explain": "Sai. 'Distributed Memory Expose Sequence' không phải tên một kiểu tấn công chuẩn."
+        },
+        {
+          "text": "Structure Padding Data Corruption",
+          "correct": false,
+          "explain": "Sai. Structure Padding Data Corruption liên quan tới đệm cấu trúc dữ liệu, không phải phân tích tệp nhị phân."
+        },
+        {
+          "text": "Reverse Engineering and Static Analysis",
+          "correct": true,
+          "explain": "Đúng. Dùng decompiler để phân tích tệp nhị phân game đã biên dịch nhằm tìm đường API nội bộ gọi là kĩ nghệ đảo ngược và phân tích tĩnh (Reverse Engineering and Static Analysis): đọc mã mà không cần chạy chương trình."
+        }
+      ]
+    },
+    {
+      "id": "gns201-044",
+      "question": "What is the primary operational role of a Load Balancer situated in front of a game server cluster?",
+      "options": [
+        {
+          "text": "Distributing incoming player connections across multiple backend server units to optimize resource load",
+          "correct": true,
+          "explain": "Đúng. Load Balancer đứng trước cụm game server, phân phối kết nối của người chơi đến nhiều server phía sau để cân bằng tải và dùng tài nguyên hợp lí."
+        },
+        {
+          "text": "Compressing large 3D map texture configurations before they are transmitted over transport sockets",
+          "correct": false,
+          "explain": "Sai. Nén texture bản đồ 3D không phải vai trò của load balancer."
+        },
+        {
+          "text": "Encrypting public REST API endpoints using automated symmetric cryptographic token cipher keys",
+          "correct": false,
+          "explain": "Sai. Mã hoá endpoint REST bằng khoá đối xứng không phải vai trò chính của load balancer."
+        },
+        {
+          "text": "Clearing out inactive profile collections inside the persistent MongoDB storage infrastructure",
+          "correct": false,
+          "explain": "Sai. Dọn dẹp dữ liệu hồ sơ không hoạt động trong MongoDB là việc quản trị cơ sở dữ liệu."
+        }
+      ]
+    },
+    {
+      "id": "gns201-045",
+      "question": "What risk is introduced if a game developer stores database passwords and API keys as plaintext inside a public GitHub repository?",
+      "options": [
+        {
+          "text": "The compiled server binary will automatically double the structural header sizes of all transport packets",
+          "correct": false,
+          "explain": "Sai. Lưu mật khẩu trong mã nguồn không làm tăng kích thước header của gói tin."
+        },
+        {
+          "text": "Attackers can scan repositories, steal credentials, and gain unauthorized access to cloud systems and player data",
+          "correct": true,
+          "explain": "Đúng. Mật khẩu cơ sở dữ liệu và khoá API để dạng văn bản thường trong kho GitHub công khai có thể bị kẻ tấn công quét (scan), lấy cắp thông tin xác thực, rồi truy cập trái phép vào hệ thống đám mây và dữ liệu người chơi. Nên dùng biến môi trường hoặc trình quản lí bí mật (secret manager)."
+        },
+        {
+          "text": "The network card adapter will forcefully transition active socket connections into blocking synchronous states",
+          "correct": false,
+          "explain": "Sai. Lộ khoá không làm card mạng chuyển kết nối sang chế độ chặn."
+        },
+        {
+          "text": "The game client software framework will fail to predict local character movements during intense match scenes",
+          "correct": false,
+          "explain": "Sai. Lộ khoá không ảnh hưởng đến việc dự đoán chuyển động ở client."
+        }
+      ]
+    },
+    {
+      "id": "gns201-046",
+      "question": "What is the main benefit of using ASP.NET Core Minimal APIs or Controllers for game backends?",
+      "options": [
+        {
+          "text": "To strictly limit the system architecture to client-side frontend rendering",
+          "correct": false,
+          "explain": "Sai. Minimal APIs/Controllers dùng để xây backend phía server, không giới hạn vào render phía client."
+        },
+        {
+          "text": "To bypass the necessity of defining connection strings for database clusters",
+          "correct": false,
+          "explain": "Sai. Vẫn phải định nghĩa chuỗi kết nối (connection string) tới cơ sở dữ liệu."
+        },
+        {
+          "text": "To natively process high-frequency real-time UDP game state synchronization",
+          "correct": false,
+          "explain": "Sai. Việc đồng bộ trạng thái game UDP thời gian thực tần suất cao không phải thế mạnh của ASP.NET Core Minimal APIs/Controllers (chúng làm HTTP/REST)."
+        },
+        {
+          "text": "High performance, built-in dependency injection, and easy integration with MongoDB",
+          "correct": true,
+          "explain": "Đúng. ASP.NET Core Minimal APIs hoặc Controllers có hiệu năng cao, có sẵn dependency injection (DI) và tích hợp dễ với MongoDB, nên rất hợp làm backend REST cho game."
+        }
+      ]
+    },
+    {
+      "id": "gns201-047",
+      "question": "What is the role of the Services layer in the 3-Layer Architecture?",
+      "options": [
+        {
+          "text": "Handle incoming HTTP requests directly from external network clients",
+          "correct": false,
+          "explain": "Sai. Nhận yêu cầu HTTP trực tiếp từ client là việc của tầng Controller, không phải Services."
+        },
+        {
+          "text": "Contain business logic between Controller and Repository",
+          "correct": true,
+          "explain": "Đúng. Trong kiến trúc 3 lớp (3-Layer Architecture), lớp Services chứa logic nghiệp vụ (business logic), nằm giữa Controller (nhận yêu cầu) và Repository (truy cập dữ liệu)."
+        },
+        {
+          "text": "Store persistent database models and schema definitions for the system",
+          "correct": false,
+          "explain": "Sai. Lưu mô hình dữ liệu và định nghĩa schema thuộc về lớp Model/Repository, không phải Services."
+        },
+        {
+          "text": "Configure global routing tables and endpoint middleware for the application",
+          "correct": false,
+          "explain": "Sai. Cấu hình bảng định tuyến toàn cục và middleware là việc cấu hình ứng dụng, không phải của lớp Services."
+        }
+      ]
+    },
+    {
+      "id": "gns201-048",
+      "question": "What is the recommended way to register MongoDB services in an ASP.NET Core application?",
+      "options": [
+        {
+          "text": "Using Dependency Injection in Program.cs with AddSingleton",
+          "correct": true,
+          "explain": "Đúng. Cách khuyến nghị: đăng kí dịch vụ MongoDB bằng Dependency Injection trong Program.cs với AddSingleton, để cả ứng dụng dùng chung một thể hiện."
+        },
+        {
+          "text": "Directly in each Controller using new keyword",
+          "correct": false,
+          "explain": "Sai. Tạo mới bằng từ khoá new trong từng Controller làm tạo nhiều kết nối, khó kiểm thử, trái với DI."
+        },
+        {
+          "text": "Only through appsettings.json without any service registration",
+          "correct": false,
+          "explain": "Sai. appsettings.json chỉ chứa cấu hình, vẫn phải đăng kí dịch vụ trong code."
+        },
+        {
+          "text": "By creating a new instance in every service method",
+          "correct": false,
+          "explain": "Sai. Tạo thể hiện mới trong mỗi phương thức service làm lãng phí tài nguyên kết nối."
+        }
+      ]
+    },
+    {
+      "id": "gns201-049",
+      "question": "In the InventoryItem model, what do the attributes [BsonId] and [BsonRepresentation(BsonType.ObjectId)] do?",
+      "options": [
+        {
+          "text": "Map the C# string Id property to MongoDB ObjectId type",
+          "correct": true,
+          "explain": "Đúng. [BsonId] đánh dấu thuộc tính là khoá chính (_id) của tài liệu MongoDB, còn [BsonRepresentation(BsonType.ObjectId)] cho phép thuộc tính Id kiểu string trong C# được ánh xạ sang kiểu ObjectId của MongoDB."
+        },
+        {
+          "text": "Enforce the primary key identifier to be stored as a 32-bit standard integer",
+          "correct": false,
+          "explain": "Sai. Thuộc tính này ánh xạ sang ObjectId chứ không ép lưu số nguyên 32-bit."
+        },
+        {
+          "text": "Disable automatic unique identifier generation behavior within the database",
+          "correct": false,
+          "explain": "Sai. Chúng không tắt việc tự sinh định danh duy nhất của cơ sở dữ liệu."
+        },
+        {
+          "text": "Convert the targeted field structure exclusively into a flat JSON format",
+          "correct": false,
+          "explain": "Sai. Chúng không chuyển trường sang dạng JSON phẳng."
+        }
+      ]
+    },
+    {
+      "id": "gns201-050",
+      "question": "Which Dependency Injection lifetime is most appropriate for IMongoDatabase in this project?",
+      "options": [
+        {
+          "text": "Transient",
+          "correct": false,
+          "explain": "Sai. Transient tạo thể hiện mới mỗi lần được yêu cầu, gây tốn tài nguyên và nhiều kết nối không cần thiết cho IMongoDatabase."
+        },
+        {
+          "text": "Scoped",
+          "correct": false,
+          "explain": "Sai. Scoped tạo mới cho mỗi yêu cầu HTTP; với IMongoDatabase không cần thiết vì thể hiện này an toàn khi dùng chung."
+        },
+        {
+          "text": "Singleton",
+          "correct": true,
+          "explain": "Đúng. Singleton (một thể hiện duy nhất cho cả vòng đời ứng dụng) là phù hợp nhất: MongoClient/IMongoDatabase an toàn khi dùng đồng thời (thread-safe) và quản lí connection pool, nên nên tái sử dụng một thể hiện."
+        },
+        {
+          "text": "Both Transient and Scoped are equally good",
+          "correct": false,
+          "explain": "Sai. Transient và Scoped không bằng nhau và không phù hợp bằng Singleton."
+        }
+      ]
+    }
+  ]
+}

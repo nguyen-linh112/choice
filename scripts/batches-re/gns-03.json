@@ -1,0 +1,80 @@
+{
+"038": {"e": [
+"Sai. Nén dữ liệu không phải lợi ích chính của event-driven communication hay event broker.",
+"Đúng. Với giao tiếp hướng sự kiện qua event broker (nơi trung gian nhận và phân phối sự kiện), một dịch vụ chỉ cần gửi sự kiện rồi tiếp tục làm việc mà không chặn luồng để chờ phản hồi. Các microservice không phụ thuộc trực tiếp nhau (decoupling).",
+"Sai. Các microservice chạy độc lập, không cần chung một nhân bộ xử lí; việc này trái với tinh thần tách rời.",
+"Sai. Client sửa toạ độ server mà không qua kiểm tra là lỗ hổng bảo mật, không phải lợi ích."
+]},
+"039": {"e": [
+"Sai. MongoDB là nơi lưu dữ liệu, không phải cổng vào định tuyến yêu cầu.",
+"Sai. Switch lớp liên kết là thiết bị mạng, không định tuyến yêu cầu tới microservice.",
+"Đúng. API Gateway là điểm vào duy nhất cho yêu cầu của client; nó nhận yêu cầu rồi định tuyến tới đúng microservice nội bộ, đồng thời có thể xử lí xác thực, giới hạn tốc độ.",
+"Sai. Đường ống tuần tự hoá nhị phân chỉ chuyển dữ liệu, không định tuyến."
+]},
+"040": {"e": [
+"Đúng. Cô lập lỗi (fault isolation): một dịch vụ độc lập gặp sự cố không tự động kéo sập các dịch vụ khác, nên hệ thống còn lại vẫn hoạt động.",
+"Sai. Cô lập lỗi không bảo vệ hoàn toàn trước tấn công DDoS.",
+"Sai. Cô lập lỗi không loại bỏ việc tính checksum kiểm tra lỗi gói tin.",
+"Sai. Tốc độ vẽ hình ở client không liên quan đến cô lập lỗi của backend."
+]},
+"041": {"e": [
+"Sai. Postman là công cụ kiểm thử API, không phải nền tảng triển khai container.",
+"Sai. Wireshark là công cụ bắt và phân tích gói tin mạng.",
+"Sai. Clumsy là công cụ giả lập điều kiện mạng xấu (trễ, mất gói) để thử game.",
+"Đúng theo đáp án của đề. Docker engine là nền tảng container mã nguồn mở, đóng gói ứng dụng thành container để triển khai. (Lưu ý: mô tả 'tự động hoá triển khai, mở rộng và quản lí container' thường nói tới Kubernetes, nhưng trong các đáp án chỉ có Docker nằm trong nhóm công cụ container.)"
+]},
+"042": {"e": [
+"Sai. Chạy trong một vòng lặp đơn luồng đồng bộ không ngăn việc bắt và gửi lại gói.",
+"Đúng. Đây là chống tấn công phát lại (replay attack). Thêm số thứ tự gói (sequence number), dấu thời gian (timestamp) và nonce mật mã (giá trị dùng một lần) vào mỗi payload để server phát hiện gói cũ hoặc trùng và từ chối.",
+"Sai. Vượt tường lửa bằng cổng công khai ẩn không bảo vệ khỏi tấn công phát lại, còn làm giảm an toàn.",
+"Sai. Xoá cache bộ nhớ của CPU không liên quan đến tấn công phát lại."
+]},
+"043": {"e": [
+"Sai. SYN Reflection Flooding là tấn công từ chối dịch vụ ở tầng 4, không phải phân tích tệp nhị phân.",
+"Sai. 'Distributed Memory Expose Sequence' không phải tên một kiểu tấn công chuẩn.",
+"Sai. Structure Padding Data Corruption liên quan tới đệm cấu trúc dữ liệu, không phải phân tích tệp nhị phân.",
+"Đúng. Dùng decompiler để phân tích tệp nhị phân game đã biên dịch nhằm tìm đường API nội bộ gọi là kĩ nghệ đảo ngược và phân tích tĩnh (Reverse Engineering and Static Analysis): đọc mã mà không cần chạy chương trình."
+]},
+"044": {"e": [
+"Đúng. Load Balancer đứng trước cụm game server, phân phối kết nối của người chơi đến nhiều server phía sau để cân bằng tải và dùng tài nguyên hợp lí.",
+"Sai. Nén texture bản đồ 3D không phải vai trò của load balancer.",
+"Sai. Mã hoá endpoint REST bằng khoá đối xứng không phải vai trò chính của load balancer.",
+"Sai. Dọn dẹp dữ liệu hồ sơ không hoạt động trong MongoDB là việc quản trị cơ sở dữ liệu."
+]},
+"045": {"e": [
+"Sai. Lưu mật khẩu trong mã nguồn không làm tăng kích thước header của gói tin.",
+"Đúng. Mật khẩu cơ sở dữ liệu và khoá API để dạng văn bản thường trong kho GitHub công khai có thể bị kẻ tấn công quét (scan), lấy cắp thông tin xác thực, rồi truy cập trái phép vào hệ thống đám mây và dữ liệu người chơi. Nên dùng biến môi trường hoặc trình quản lí bí mật (secret manager).",
+"Sai. Lộ khoá không làm card mạng chuyển kết nối sang chế độ chặn.",
+"Sai. Lộ khoá không ảnh hưởng đến việc dự đoán chuyển động ở client."
+]},
+"046": {"e": [
+"Sai. Minimal APIs/Controllers dùng để xây backend phía server, không giới hạn vào render phía client.",
+"Sai. Vẫn phải định nghĩa chuỗi kết nối (connection string) tới cơ sở dữ liệu.",
+"Sai. Việc đồng bộ trạng thái game UDP thời gian thực tần suất cao không phải thế mạnh của ASP.NET Core Minimal APIs/Controllers (chúng làm HTTP/REST).",
+"Đúng. ASP.NET Core Minimal APIs hoặc Controllers có hiệu năng cao, có sẵn dependency injection (DI) và tích hợp dễ với MongoDB, nên rất hợp làm backend REST cho game."
+]},
+"047": {"e": [
+"Sai. Nhận yêu cầu HTTP trực tiếp từ client là việc của tầng Controller, không phải Services.",
+"Đúng. Trong kiến trúc 3 lớp (3-Layer Architecture), lớp Services chứa logic nghiệp vụ (business logic), nằm giữa Controller (nhận yêu cầu) và Repository (truy cập dữ liệu).",
+"Sai. Lưu mô hình dữ liệu và định nghĩa schema thuộc về lớp Model/Repository, không phải Services.",
+"Sai. Cấu hình bảng định tuyến toàn cục và middleware là việc cấu hình ứng dụng, không phải của lớp Services."
+]},
+"048": {"e": [
+"Đúng. Cách khuyến nghị: đăng kí dịch vụ MongoDB bằng Dependency Injection trong Program.cs với AddSingleton, để cả ứng dụng dùng chung một thể hiện.",
+"Sai. Tạo mới bằng từ khoá new trong từng Controller làm tạo nhiều kết nối, khó kiểm thử, trái với DI.",
+"Sai. appsettings.json chỉ chứa cấu hình, vẫn phải đăng kí dịch vụ trong code.",
+"Sai. Tạo thể hiện mới trong mỗi phương thức service làm lãng phí tài nguyên kết nối."
+]},
+"049": {"e": [
+"Đúng. [BsonId] đánh dấu thuộc tính là khoá chính (_id) của tài liệu MongoDB, còn [BsonRepresentation(BsonType.ObjectId)] cho phép thuộc tính Id kiểu string trong C# được ánh xạ sang kiểu ObjectId của MongoDB.",
+"Sai. Thuộc tính này ánh xạ sang ObjectId chứ không ép lưu số nguyên 32-bit.",
+"Sai. Chúng không tắt việc tự sinh định danh duy nhất của cơ sở dữ liệu.",
+"Sai. Chúng không chuyển trường sang dạng JSON phẳng."
+]},
+"050": {"e": [
+"Sai. Transient tạo thể hiện mới mỗi lần được yêu cầu, gây tốn tài nguyên và nhiều kết nối không cần thiết cho IMongoDatabase.",
+"Sai. Scoped tạo mới cho mỗi yêu cầu HTTP; với IMongoDatabase không cần thiết vì thể hiện này an toàn khi dùng chung.",
+"Đúng. Singleton (một thể hiện duy nhất cho cả vòng đời ứng dụng) là phù hợp nhất: MongoClient/IMongoDatabase an toàn khi dùng đồng thời (thread-safe) và quản lí connection pool, nên nên tái sử dụng một thể hiện.",
+"Sai. Transient và Scoped không bằng nhau và không phù hợp bằng Singleton."
+]}
+}

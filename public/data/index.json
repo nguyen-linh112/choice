@@ -23,5 +23,10 @@
     "id": "mln122-sp26",
     "name": "MLN122 - Đề FE SP26 (C1)",
     "file": "mln122-sp26.json"
+  },
+  {
+    "id": "gns201",
+    "name": "GNS201 - Đề FE SU26",
+    "file": "gns201.json"
   }
 ]

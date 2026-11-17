@@ -1,0 +1,110 @@
+{
+"020": {"e": [
+"Sai. TTL không tính bằng mili giây trong hàng đợi của server; nó là bộ đếm số bước nhảy (hop) qua các router.",
+"Sai. TTL không đặt ngưỡng độ trễ tối đa để ngắt kết nối client.",
+"Sai. TTL không liên quan đến thời hạn của token xác thực người dùng.",
+"Đúng. TTL (time-to-live) hay hop limit là một con số trong header IP; mỗi router đi qua giảm 1, về 0 thì gói bị huỷ. Nhờ đó gói bị lạc hoặc quay vòng trong vòng lặp định tuyến (routing loop) không chạy mãi mà bị loại bỏ."
+]},
+"021": {"e": [
+"Sai. Send() là phương thức của Socket (không phải NetworkStream) và là kiểu đồng bộ; nó cũng không phải phương thức bất đồng bộ của NetworkStream.",
+"Sai. Flush() trên NetworkStream không ép phân mảnh gói qua router; phân mảnh là việc của tầng mạng.",
+"Đúng. WriteAsync() của NetworkStream ghi dữ liệu byte bất đồng bộ (dùng async/await), không chặn luồng đang chạy, phù hợp gửi dữ liệu tới client mà game vẫn chạy mượt.",
+"Sai. BeginAccept() dùng để bắt đầu chấp nhận kết nối đến, không phải để gửi dữ liệu."
+]},
+"022": {"e": [
+"Sai. Đảo ngược: TCP không giữ ranh giới message (luồng byte), còn UDP giữ ranh giới từng gói (datagram).",
+"Sai. TCP không bắt buộc mã hoá dữ liệu ứng dụng; mã hoá là việc của lớp khác (TLS).",
+"Sai. TCP không giới hạn dữ liệu tầng ứng dụng ở 1460 byte (1460 chỉ là kích thước đoạn tối đa MSS thông thường), còn gói UDP có giới hạn nhỏ hơn 'multi-megabyte'.",
+"Đúng. TCP trao cho ứng dụng một luồng byte liên tục không có ranh giới (nên có thể phải tự tách message, gọi là framing), còn UDP giữ nguyên ranh giới từng datagram: mỗi lần gửi là một gói riêng khi nhận."
+]},
+"023": {"e": [
+"Đúng. TcpListener lắng nghe và chấp nhận các yêu cầu kết nối TCP đến.",
+"Sai. NetworkStream dùng để đọc/ghi dữ liệu sau khi đã có kết nối, không dùng để lắng nghe.",
+"Sai. UdpClient dùng cho UDP, không phải TCP.",
+"Sai. SocketAsyncEventArgs là đối tượng hỗ trợ thao tác socket bất đồng bộ hiệu năng cao, không phải lớp chuyên lắng nghe TCP."
+]},
+"024": {"e": [
+"Đúng. TCP là luồng byte không có ranh giới message. Nếu không có framing (ví dụ thêm tiền tố độ dài length prefix), tầng ứng dụng có thể đọc được một gói bị cắt dở hoặc nhiều gói dính vào nhau, làm hỏng dữ liệu game.",
+"Sai. Việc thiếu framing không làm server từ chối bắt tay (handshake); bắt tay TCP vẫn diễn ra bình thường.",
+"Sai. Hệ điều hành không tự đổi luồng TCP thành datagram UDP.",
+"Sai. Thiếu framing không ép socket chuyển sang chế độ chặn đồng bộ."
+]},
+"025": {"e": [
+"Sai. TCP không dựa vào đường định tuyến phần cứng cố định qua các cổng khu vực.",
+"Sai. Không cần một sợi cáp vật lí riêng; 'kết nối' của TCP là kết nối ảo ở tầng logic.",
+"Sai. TCP không tự mã hoá toàn bộ gói; mã hoá cần thêm TLS.",
+"Đúng. TCP hướng kết nối (connection-oriented): trước khi truyền dữ liệu phải thiết lập kết nối ảo bằng bắt tay ba bước (SYN, SYN-ACK, ACK). UDP thì không có bước này (connectionless)."
+]},
+"026": {"e": [
+"Sai. SignalR là thư viện giao tiếp thời gian thực qua web (WebSocket) của ASP.NET, không phải thư viện RUDP.",
+"Đúng. LiteNetLib là thư viện .NET mã nguồn mở triển khai UDP đáng tin cậy (RUDP, Reliable UDP) hiệu năng cao, dùng cho game server thời gian thực.",
+"Sai. HttpClient dùng để gọi HTTP/REST, không phải RUDP.",
+"Sai. MongoDB Driver dùng để làm việc với cơ sở dữ liệu MongoDB, không liên quan mạng thời gian thực."
+]},
+"027": {"e": [
+"Sai. Tầng Network xử lí địa chỉ IP và định tuyến (giao thức IP); UDP không nằm ở tầng này.",
+"Đúng. UDP (cũng như TCP) hoạt động ở tầng Transport: lo việc chuyển dữ liệu từ tiến trình này đến tiến trình kia (end-to-end) thông qua số cổng.",
+"Sai. Tầng Application chứa giao thức ứng dụng (HTTP, logic game); UDP nằm dưới nó.",
+"Sai. Tầng Data Link đóng khung bit cho phần cứng (Ethernet, Wi-Fi), không phải UDP."
+]},
+"028": {"e": [
+"Sai. Không dùng sequencing không làm server cạn địa chỉ IP.",
+"Sai. Card mạng không tự chặn kênh liên lạc vì thiếu sequencing.",
+"Đúng. UDP không đảm bảo thứ tự: gói tới sau có thể là gói cũ hơn. Không có số thứ tự (sequence number) thì client có thể xử lí toạ độ vật lí cũ sau khi đã nhận toạ độ mới hơn, làm nhân vật giật (jitter) hoặc kéo ngược.",
+"Sai. HTTPS REST không liên quan UDP sequencing."
+]},
+"029": {"e": [
+"Sai. Mất một ACK không làm RUDP đóng phiên và báo lỗi nghiêm trọng ngay; trước hết nó gửi lại.",
+"Sai. RUDP không đổi định dạng sang JSON khi mất ACK.",
+"Sai. Switch trung gian không bị yêu cầu đặt lại trạng thái định tuyến.",
+"Đúng. RUDP (Reliable UDP) dùng ACK (xác nhận đã nhận). Nếu một gói không được ACK trong ngưỡng thời gian tính toán, nó gửi lại (retransmission) gói đó để bảo đảm gói được chuyển tới nơi."
+]},
+"030": {"e": [
+"Đúng. PeerConnectedEvent là sự kiện được gọi khi một client bên ngoài (peer) thiết lập kết nối với server.",
+"Sai. NetworkReceiveEvent được gọi khi nhận dữ liệu, không phải khi vừa kết nối.",
+"Sai. NetworkLatencyUpdateEvent được gọi khi độ trễ (ping) cập nhật.",
+"Sai. DeliveryMethodChangedEvent không phải sự kiện báo kết nối."
+]},
+"031": {"e": [
+"Sai. Thiếu kiểm tra quyền không gây lỗi biên dịch đồ hoạ phần cứng.",
+"Sai. Trình điều khiển truyền tải không tự chuyển gói sang JSON.",
+"Đúng. Nếu client gọi RPC (Remote Procedure Call) lên server mà server không kiểm tra quyền (authorization), người chơi có thể kích hoạt những hành động trái phép như cộng tiền, đổi vật phẩm. Đó là lỗ hổng cho phép gian lận.",
+"Sai. Dịch vụ ghép trận toàn cục không đóng cổng cục bộ vì thiếu kiểm tra quyền."
+]},
+"032": {"e": [
+"Sai. Dirty Flag không ngăn client độc hại gọi phương thức trái phép; việc này cần kiểm tra quyền.",
+"Đúng. Dirty Flag là cờ đánh dấu thuộc tính của đối tượng đã thay đổi. Server chỉ gửi những thuộc tính được đánh dấu (delta) thay vì toàn bộ đối tượng, nên tiết kiệm băng thông trong sao chép đối tượng (Object Replication).",
+"Sai. Dirty Flag không nén cấu hình tài sản lớn.",
+"Sai. Dirty Flag không ép các tiến trình đồng bộ nền hoàn tất trước khi cập nhật vật lí."
+]},
+"033": {"e": [
+"Đúng. Với State Synchronization có thẩm quyền, client chỉ gửi input (ý định), server mô phỏng và quyết định, rồi sao chép trạng thái thật (true state) về các client.",
+"Sai. Server tin mù quáng toạ độ client gửi là mô hình client-authoritative, dễ gian lận.",
+"Sai. Client không ghi thẳng vị trí vào MongoDB bỏ qua socket truyền tải; dữ liệu phải qua server.",
+"Sai. Client không phát RPC toàn cục ép các peer khác vẽ xoay; server chịu trách nhiệm đồng bộ trạng thái."
+]},
+"034": {"e": [
+"Sai. State Synchronization vẫn cần cấu hình cổng và kết nối như mọi mô hình mạng.",
+"Sai. State Synchronization vẫn cần tuần tự hoá nhị phân để gửi dữ liệu.",
+"Đúng. Với State Synchronization, client vẫn tiếp tục hiển thị và mô phỏng cục bộ (dự đoán) kể cả khi mất gói; khi có trạng thái mới từ server thì chỉnh lại. Còn Deterministic Lockstep phải đợi input của mọi người mỗi bước nên một gói bị mất hoặc trễ làm cả trận chờ. Do đó State Sync linh hoạt và chịu trễ mạng tốt hơn.",
+"Sai. Mô hình này giữ quyền ở server chứ không chuyển quyền vật lí sang client."
+]},
+"035": {"e": [
+"Sai. Mở rộng giới hạn lưu trữ nhân vật trong bảng dữ liệu không phải mục tiêu của quản lí độ trễ.",
+"Sai. Quản lí độ trễ không nhằm loại bỏ việc đăng kí cổng động.",
+"Sai. Hiển thị tài liệu cho nhà phát triển không liên quan.",
+"Đúng. Các kĩ thuật quản lí độ trễ (client prediction, interpolation, lag compensation...) có mục tiêu biến kết nối chập chờn (laggy) thành trải nghiệm mượt và phản hồi nhanh cho người chơi."
+]},
+"036": {"e": [
+"Sai. TCP đảm bảo thứ tự và gửi lại gói mất, nhưng với ảnh chụp thế giới (snapshot) tần suất cao, gói cũ vô giá trị nên chờ gửi lại làm trễ thêm (head-of-line blocking).",
+"Sai. Giao dịch quan hệ dạng văn bản không phải giao thức mạng phát snapshot.",
+"Đúng. Snapshot tần suất cao cần tốc độ, gói nào mất thì bỏ vì sẽ có snapshot mới ngay sau. Vì vậy dùng datagram không kết nối như UDP hoặc kênh không tin cậy của RUDP.",
+"Sai. Gói triển khai ứng dụng web qua HTTPS không phù hợp truyền snapshot thời gian thực."
+]},
+"037": {"e": [
+"Sai. Nếu client là thẩm quyền vật lí thì dễ gian lận (sửa vị trí, sát thương).",
+"Sai. Lưu mọi vị trí thời gian thực vào MongoDB không bảo vệ trước gian lận và quá chậm cho tính toán thời gian thực.",
+"Sai. Dùng JSON dạng văn bản không làm kết quả an toàn hơn trước gian lận.",
+"Đúng. Quy tắc cơ bản: server phải là thẩm quyền tuyệt đối (authoritative) và kiểm tra hợp lệ mọi yêu cầu của client. Client chỉ gửi ý định, không được quyết định kết quả."
+]}
+}

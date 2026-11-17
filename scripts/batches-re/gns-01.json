@@ -1,0 +1,116 @@
+{
+"001": {"e": [
+"Đúng. Trong mô hình Peer-to-Peer (P2P) người chơi kết nối trực tiếp với nhau nên nhà phát triển không cần thuê hay vận hành máy chủ chuyên dụng (dedicated server), tức không tốn chi phí duy trì server. Đây là ưu điểm lớn nhất của P2P; đổi lại P2P khó chống gian lận và khó bảo đảm kết nối.",
+"Sai. P2P bảo mật kém trước gian lận: không có máy chủ trung tâm đóng vai trò 'trọng tài' kiểm tra, mỗi máy tự tính kết quả nên người chơi dễ chỉnh sửa dữ liệu để gian lận.",
+"Sai. P2P không bảo đảm chắc chắn mọi kết nối được thiết lập: các máy thường nằm sau router/NAT và tường lửa nên có thể không kết nối trực tiếp được (cần kĩ thuật như NAT punch-through hoặc relay).",
+"Sai. Điều khiển tập trung toàn bộ logic mô phỏng game là đặc điểm của kiến trúc client-server (authoritative server), ngược với P2P nơi quyền được chia cho các peer."
+]},
+"002": {"e": [
+"Sai. Khi đi xuống (từ Application xuống Physical), các tầng không bóc bỏ hay nén gì mà thêm vào. Việc bóc header của mình là ở máy nhận khi dữ liệu đi lên (decapsulation).",
+"Sai. Việc payload là JSON hay nhị phân là do tầng Application quyết định; các tầng dưới không tự đổi payload sang JSON, chỉ coi nó là dãy byte.",
+"Đúng. Đây là quá trình đóng gói (encapsulation): ở mỗi tầng, dữ liệu của tầng trên được bọc thêm header (và có thể trailer) riêng của tầng đó. Ví dụ: dữ liệu game → thêm TCP/UDP header (port) ở tầng Transport → thêm IP header (địa chỉ IP) ở tầng Network → thêm header/trailer của khung (địa chỉ MAC) ở tầng Link → gửi bit ở tầng Physical.",
+"Sai. Kích thước gói tăng lên (vì thêm header), không giảm theo cấp số mũ. MTU (Maximum Transmission Unit) là giới hạn kích thước khung; nếu gói lớn hơn MTU thì bị chia nhỏ (fragmentation) chứ không 'giảm theo hàm mũ'."
+]},
+"003": {"e": [
+"Đúng. MMO hiện đại chuyển từ mô hình client-authoritative (client quyết định, dễ gian lận, khó mở rộng) sang server-side seamless zoning: thế giới được chia thành nhiều vùng (zone) do các server khác nhau xử lý, người chơi đi qua ranh giới vùng mà không thấy màn hình tải, nhờ vậy hàng nghìn người chơi cùng tồn tại trong một không gian liên tục.",
+"Sai. Kiểm tra phía server (server-side validation) là thứ giúp chống gian lận; thay bằng mật mã phía client không giải quyết bài toán mở rộng hàng nghìn người chơi.",
+"Sai. Dữ liệu bền vững (persistent data) như nhân vật, vật phẩm phải lưu ở cơ sở dữ liệu phía server; để trong bộ nhớ tạm của client thì mất khi thoát game và dễ bị sửa.",
+"Sai. MMO vẫn dùng bộ giao thức TCP/IP; chỉ đổi phần cứng tầng vật lí không giúp nhiều người chơi hơn."
+]},
+"004": {"e": [
+"Sai. Địa chỉ MAC ở tầng Link chỉ dùng để chuyển khung trong mạng cục bộ; nếu MAC đích sai thì gói thậm chí không tới được máy, trong khi đề nói gói đã tới máy.",
+"Sai. Địa chỉ IP ở tầng Network quyết định gói tới đúng máy nào; gói đã tới máy nghĩa là IP đúng.",
+"Sai. Cấu trúc payload ở tầng Application sai thì dữ liệu bị đọc lỗi, nhưng gói vẫn đã được giao đúng tiến trình, không phải lỗi 'không khớp tiến trình'.",
+"Đúng. IP chọn đúng máy, còn số cổng (port) ở tầng Transport chọn đúng tiến trình (process) trên máy đó. Gói tới máy nhưng không khớp tiến trình phòng game nghĩa là port đích sai."
+]},
+"005": {"e": [
+"Sai. Pure Peer-to-Peer không có server của nhà phát triển, người chơi tự kết nối nên không có chi phí máy chủ.",
+"Sai. Listen Server do một người chơi vừa chơi vừa làm host, dùng chính máy của người đó nên nhà phát triển không phải trả tiền server.",
+"Đúng. Authoritative Dedicated Server là máy chủ chuyên dụng, nắm quyền quyết định kết quả game, do nhà phát triển thuê hoặc tự vận hành (cloud, hosting) nên phải quản lí và trả tiền tài nguyên tính toán liên tục.",
+"Sai. Split-screen offline là nhiều người chơi trên cùng một máy, không cần mạng hay server."
+]},
+"006": {"e": [
+"Sai. Client tự di chuyển rồi ép server đồng bộ là kiểu client-authoritative: client có quyền quyết định nên dễ gian lận. Ở server có thẩm quyền, server mới là bên quyết định.",
+"Sai. Xin phép tất cả peer bằng bỏ phiếu đồng thuận là cách làm của mô hình ngang hàng (P2P/consensus), không phải server có thẩm quyền.",
+"Đúng. Trình tự đúng: client chỉ gửi input/ý định (nhấn phím tiến), server kiểm tra hợp lệ (validate), tự mô phỏng và cập nhật trạng thái thế giới, rồi sao chép (replicate) trạng thái đúng về cho các client.",
+"Sai. Client gửi thẳng toạ độ cuối cùng cho các client khác là tin tưởng client; dễ bị sửa toạ độ để dịch chuyển tức thời hoặc gian lận."
+]},
+"007": {"e": [
+"Sai. Ở Listen Server, máy của host chạy luôn phần server nên cấu hình yếu của host ảnh hưởng tất cả; máy mạnh của người khác không cứu được.",
+"Đúng. Listen Server: host vừa là người chơi vừa là server nên vòng lặp mô phỏng của server gắn với vòng lặp khung hình (frame loop) của host. Host tụt xuống 15 FPS thì mô phỏng toàn bộ thế giới chậm hoặc giật cho mọi người.",
+"Sai. Router không ngắt kết nối chỉ vì khung hình của host thấp; đây không phải việc của router.",
+"Sai. Mạng không tự đổi cấu trúc thành Dedicated Server; muốn dùng Dedicated Server phải có máy chủ riêng."
+]},
+"008": {"e": [
+"Sai. Định dạng giao diện đồ hoạ là việc của client (render, UI), không phải vòng lặp xử lí chính của server.",
+"Đúng. Vòng lặp chính (main loop/tick loop) của server có thẩm quyền chạy theo từng tick: nhận input đã được kiểm tra hợp lệ, mô phỏng trạng thái thế giới game (di chuyển, va chạm, sát thương...) rồi gửi kết quả về cho client.",
+"Sai. Ghi log chỉ là tác vụ phụ, không phải chức năng chính của vòng lặp xử lí.",
+"Sai. 'Cân bằng phân phối điện' của hệ thống client không liên quan đến mô phỏng game."
+]},
+"009": {"e": [
+"Sai. Ghi dữ liệu nặng vào cơ sở dữ liệu không dùng để theo dõi sức khoẻ kết nối.",
+"Sai. Kiểm tra bố cục đồ hoạ thuộc về giao diện, không liên quan kết nối.",
+"Sai. Thay đổi cấu hình cổng không phải cơ chế theo dõi sức khoẻ kết nối.",
+"Đúng. Ping hoặc heartbeat (tín hiệu 'tôi còn sống' gửi định kì) giúp server biết kết nối còn hoạt động và đo độ trễ (RTT). Nếu quá thời gian không nhận được thì server coi client đã mất kết nối (timeout)."
+]},
+"010": {"e": [
+"Đúng. Cấu trúc chia không gian (spatial partitioning) như lưới (grid), quadtree, octree chia thế giới thành ô nhỏ. Nhờ đó server làm interest management: chỉ gửi cho mỗi người chơi thông tin về những đối tượng gần họ (vùng quan tâm), giảm số gói tin và băng thông.",
+"Sai. Shader đồ hoạ là việc của client khi render, không phải mục đích của spatial partitioning trên server.",
+"Sai. Nén tài nguyên văn bản trong cơ sở dữ liệu không liên quan đến chia không gian.",
+"Sai. Thực thi lệnh kết nối mạng đồng bộ không phải mục đích của cấu trúc này."
+]},
+"011": {"e": [
+"Sai. [MarshalAs] không chuyển chuỗi sang JSON; JSON là định dạng văn bản khác hẳn, còn marshaling xử lí bố cục byte.",
+"Sai. Thuộc tính này không mã hoá dữ liệu.",
+"Sai. Nó không nén giá trị chuỗi.",
+"Đúng. Attribute [MarshalAs] chỉ định cách chuỗi (string) được marshal (chuyển đổi bố cục bộ nhớ) khi struct được đổi sang/từ mảng byte, ví dụ chuỗi có độ dài cố định (fixed size) qua UnmanagedType.ByValTStr và SizeConst. Điều này cần thiết để cả hai đầu mạng hiểu cùng một cấu trúc nhị phân."
+]},
+"012": {"e": [
+"Đúng. Deserialization (giải tuần tự hoá) là quá trình dựng lại đối tượng (class hoặc struct) trong bộ nhớ từ các byte thô nhận được. Ngược lại serialization (tuần tự hoá) biến đối tượng thành byte để gửi đi.",
+"Sai. Deserialization không xoá tệp cấu hình nhân vật của hệ điều hành.",
+"Sai. Đo thời gian khứ hồi (RTT) là việc của ping/đo độ trễ, không phải của deserialization.",
+"Sai. Định tuyến khung mạng là việc của thiết bị mạng (router/switch), không phải của deserialization."
+]},
+"013": {"e": [
+"Đúng. Socket chỉ gửi và nhận byte. JSON là chuỗi văn bản, nên phải chuyển (mã hoá) thành mảng byte (ví dụ Encoding.UTF8.GetBytes) trước khi gửi, rồi bên nhận giải mã lại.",
+"Sai. Không thể gửi trực tiếp chuỗi qua socket mà không chuyển thành byte.",
+"Sai. Marshal.SizeOf trả về kích thước của struct trong bộ nhớ không được quản lí; nó không dùng để gửi JSON.",
+"Sai. Phải có chuyển đổi, vì socket làm việc với byte chứ không phải chuỗi."
+]},
+"014": {"e": [
+"Sai. Phiên có trạng thái (stateful session) trái với REST: server phải nhớ client giữa các request, khó mở rộng ngang.",
+"Sai. REST yêu cầu tách rời client và server (loose coupling), ghép chặt thì trái nguyên tắc.",
+"Đúng. Giao tiếp phi trạng thái (stateless): mỗi request mang đủ thông tin để server xử lí mà không cần nhớ request trước. Nhờ vậy backend dễ dự đoán và dễ mở rộng (thêm server nào cũng xử lí được).",
+"Sai. Chỉ trả XML dài dòng (verbose) không phải nguyên tắc REST; REST không áp đặt định dạng, thường dùng JSON."
+]},
+"015": {"e": [
+"Sai. GET dùng để đọc dữ liệu, không xoá.",
+"Sai. POST dùng để tạo tài nguyên mới.",
+"Đúng. DELETE là phương thức HTTP dùng để xoá tài nguyên, ví dụ xoá vật phẩm khỏi kho đồ sau khi dùng.",
+"Sai. PATCH dùng để cập nhật một phần tài nguyên, không phải xoá."
+]},
+"016": {"e": [
+"Đúng. Tách client–server nghĩa là hai bên phát triển, thay đổi độc lập miễn giữ nguyên giao diện (API contract) giữa chúng; ví dụ đổi giao diện game mà không phải đổi server.",
+"Sai. Client và server không bắt buộc dùng chung cơ sở dữ liệu; việc đó đi ngược với sự tách biệt.",
+"Sai. Mọi logic chạy trên client là ngược lại; REST tách trách nhiệm giữa client và server.",
+"Sai. REST chính là giao tiếp qua mạng giữa client và server, nên cần giao tiếp mạng."
+]},
+"017": {"e": [
+"Sai. Vị trí người chơi thời gian thực thay đổi liên tục nên không cache được; cache hợp với dữ liệu ít đổi.",
+"Sai. Cache giảm độ trễ chứ không làm tăng.",
+"Đúng. Phản hồi có thể cache (cacheable) giúp giảm tải cho server với dữ liệu được hỏi thường xuyên và ít thay đổi như danh sách vật phẩm trong cửa hàng: lần sau lấy từ bộ nhớ đệm, không cần xử lí lại.",
+"Sai. Làm mọi request có trạng thái (stateful) trái nguyên tắc REST và không liên quan cache."
+]},
+"018": {"e": [
+"Sai. GET chỉ để đọc dữ liệu, không tạo giao dịch mới.",
+"Sai. PUT thường dùng để thay thế/cập nhật toàn bộ một tài nguyên đã biết và có tính idempotent (gọi nhiều lần kết quả như nhau); mua hàng tạo giao dịch mới nên không hợp.",
+"Sai. PATCH dùng để cập nhật một phần tài nguyên có sẵn, không phải tạo giao dịch mới.",
+"Đúng. POST dùng để tạo tài nguyên mới, ở đây là một giao dịch mua vật phẩm mới. POST không idempotent: mỗi lần gọi có thể tạo một giao dịch khác."
+]},
+"019": {"e": [
+"Sai. POST /getInventory sai hai chỗ: dùng động từ trong đường dẫn (REST dùng danh từ) và dùng POST để đọc dữ liệu (phải dùng GET).",
+"Sai. PUT là phương thức ghi/thay thế, không phải để lấy kho đồ của một người chơi cụ thể.",
+"Sai. DELETE dùng để xoá, và đường dẫn này không xác định người chơi cụ thể.",
+"Đúng. GET /api/players/{playerId}/inventory theo đúng chuẩn REST: dùng GET để lấy dữ liệu, đường dẫn danh từ phân cấp thể hiện rõ tài nguyên (kho đồ) của một người chơi cụ thể qua playerId."
+]}
+}
