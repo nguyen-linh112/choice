@@ -76,7 +76,7 @@ function ResultView({ subject }) {
       <List
         dataSource={rows}
         locale={{ emptyText: 'Không có câu nào trong mục này.' }}
-        pagination={{ pageSize: 10, size: 'small', showSizeChanger: false, hideOnSinglePage: true }}
+        pagination={{ pageSize: 10, size: 'small', showSizeChanger: false, hideOnSinglePage: true, onChange: () => window.scrollTo({ top: 0 }) }}
         renderItem={(it) => {
           const q = materializeItem(it, byId)
           return (

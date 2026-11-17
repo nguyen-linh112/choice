@@ -148,7 +148,7 @@ export default function ImportReview({ initialQuestions, rejected, removedDuplic
       {shown.length === 0 && <Alert type="success" showIcon message="Không còn câu nào cần xem lại." />}
 
       <Space style={{ marginBottom: 16 }} wrap>
-        {shown.length > PAGE_SIZE && <Pagination size="small" current={page} pageSize={PAGE_SIZE} total={shown.length} onChange={setPage} showSizeChanger={false} />}
+        {shown.length > PAGE_SIZE && <Pagination size="small" current={page} pageSize={PAGE_SIZE} total={shown.length} onChange={(p) => { setPage(p); window.scrollTo({ top: 0 }) }} showSizeChanger={false} />}
         <Button icon={<PlusOutlined />} onClick={() => addManual()}>Thêm câu thủ công</Button>
       </Space>
 
@@ -185,7 +185,7 @@ function QuestionEditor({ q, number, onPatch, onPatchOption, onAddOption, onRemo
   return (
     <Card
       size="small"
-      style={{ marginBottom: 12, background: q.uncertain ? '#fffbe6' : undefined, borderColor: q.uncertain ? '#ffe58f' : undefined }}
+      style={{ marginBottom: 12, background: q.uncertain ? 'var(--warn-bg)' : undefined, borderColor: q.uncertain ? 'var(--warn-border)' : undefined }}
       title={<span>Câu {number}</span>}
       extra={
         <Space>

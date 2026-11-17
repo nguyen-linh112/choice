@@ -1,6 +1,39 @@
+/* Màu dùng chung. Chế độ tối đổi các biến này (data-theme="dark" đặt trên <html>). */
+:root {
+  --page-bg: #f5f6f8;
+  --opt-border: #e5e7eb;
+  --correct-bg: #f6ffed;
+  --correct-border: #95de64;
+  --wrong-bg: #fff1f0;
+  --wrong-border: #ff7875;
+  --sel-bg: #e6f4ff;
+  --sel-border: #69b1ff;
+  --muted: #595959;
+  --warn-bg: #fffbe6;
+  --warn-border: #ffe58f;
+  --ring: #000;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --page-bg: #0f1115;
+  --opt-border: #303030;
+  --correct-bg: #14271a;
+  --correct-border: #2f6b3a;
+  --wrong-bg: #2b1517;
+  --wrong-border: #8c2f33;
+  --sel-bg: #112a45;
+  --sel-border: #1d5a99;
+  --muted: #a6a6a6;
+  --warn-bg: #2b2412;
+  --warn-border: #6b5416;
+  --ring: #fff;
+  color-scheme: dark;
+}
+
 body {
   margin: 0;
-  background: #f5f6f8;
+  background: var(--page-bg);
 }
 
 .page {
@@ -27,23 +60,23 @@ body {
   align-items: flex-start;
   padding: 8px 10px;
   border-radius: 8px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--opt-border);
   margin-bottom: 8px;
 }
 
 .option-row.correct {
-  background: #f6ffed;
-  border-color: #95de64;
+  background: var(--correct-bg);
+  border-color: var(--correct-border);
 }
 
 .option-row.wrong {
-  background: #fff1f0;
-  border-color: #ff7875;
+  background: var(--wrong-bg);
+  border-color: var(--wrong-border);
 }
 
 .option-row.selected {
-  background: #e6f4ff;
-  border-color: #69b1ff;
+  background: var(--sel-bg);
+  border-color: var(--sel-border);
 }
 
 .option-row.clickable {
@@ -51,7 +84,7 @@ body {
 }
 
 .option-row.clickable:hover {
-  border-color: #69b1ff;
+  border-color: var(--sel-border);
 }
 
 .option-label {
@@ -60,7 +93,7 @@ body {
 }
 
 .explain {
-  color: #595959;
+  color: var(--muted);
   font-size: 13px;
   margin-top: 4px;
 }

@@ -1,6 +1,6 @@
 // Danh sách câu sai của 1 môn. Dạng: { [questionId]: { wrongCount, streak, lastSeen } }
-//   wrongCount: số lần sai;  streak: số lần ĐÚNG LIÊN TIẾP gần nhất trong thi thử;  lastSeen: mốc thời gian gặp gần nhất
-// Chỉ kết quả THI THỬ mới cập nhật danh sách này (ôn câu sai chỉ để xem lại, không tính).
+//   wrongCount: số lần sai;  streak: số lần ĐÚNG LIÊN TIẾP gần nhất;  lastSeen: mốc thời gian gặp gần nhất
+// Cập nhật từ kết quả THI THỬ và từ trang "Ôn câu sai" (mỗi câu tính lần trả lời đầu tiên trong 1 lượt ôn).
 
 export const STREAK_TO_LEAVE = 3 // đúng 3 lần liên tiếp mới được ra khỏi danh sách
 

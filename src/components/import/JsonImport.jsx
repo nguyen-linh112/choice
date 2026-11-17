@@ -33,7 +33,7 @@ export default function JsonImport() {
       <Upload.Dragger accept=".json,application/json" maxCount={1} showUploadList={false} beforeUpload={onFile}>
         <p className="ant-upload-drag-icon"><InboxOutlined /></p>
         <p>Bấm hoặc kéo thả file JSON của môn vào đây</p>
-        <p style={{ color: '#8c8c8c' }}>File cần đúng cấu trúc: id, name, exam, questions (xem README)</p>
+        <p style={{ color: 'var(--muted)' }}>File cần đúng cấu trúc: id, name, exam, questions (xem README)</p>
       </Upload.Dragger>
 
       {state && state.problems.length > 0 && (

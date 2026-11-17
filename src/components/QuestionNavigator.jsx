@@ -12,7 +12,7 @@ export default function QuestionNavigator({ items, answers, flagged, current, on
           let style = {}
           if (isFlagged) style = { background: '#fa8c16', borderColor: '#fa8c16', color: '#fff' }
           else if (done) style = { background: '#1677ff', borderColor: '#1677ff', color: '#fff' }
-          if (i === current) style = { ...style, boxShadow: '0 0 0 2px #000' }
+          if (i === current) style = { ...style, boxShadow: '0 0 0 2px var(--ring)' }
           return (
             <Button key={item.id} size="small" style={{ width: 38, ...style }} onClick={() => onGo(i)}>
               {i + 1}

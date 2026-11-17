@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Alert, Button, Card, Descriptions, Popconfirm, Space, Typography, Upload, message } from 'antd'
 import { useSubjects } from '../hooks/useSubjects.jsx'
 import { resetOverridesCache } from '../hooks/useOverrides.js'
@@ -51,8 +50,7 @@ export default function BackupPage() {
   return (
     <>
       {holder}
-      <Typography.Title level={3} style={{ marginBottom: 4 }}>Sao lưu và khôi phục</Typography.Title>
-      <Typography.Paragraph type="secondary"><Link to="/">Về trang chủ</Link></Typography.Paragraph>
+      <Typography.Title level={3}>Sao lưu và khôi phục</Typography.Title>
 
       <Space direction="vertical" size="middle" style={{ width: '100%' }}>
         <Card title="Sao lưu toàn bộ" size="small">

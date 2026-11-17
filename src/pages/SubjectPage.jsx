@@ -59,7 +59,7 @@ export default function SubjectPage() {
       <List
         bordered
         dataSource={subject.questions}
-        pagination={{ pageSize: 10, current: page, onChange: setPage, showSizeChanger: false, size: 'small' }}
+        pagination={{ pageSize: 10, current: page, onChange: (p) => { setPage(p); window.scrollTo({ top: 0 }) }, showSizeChanger: false, size: 'small' }}
         renderItem={(q) => (
           <List.Item>
             <div style={{ width: '100%' }}>

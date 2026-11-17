@@ -147,7 +147,7 @@ function ExamView({ subject }) {
 
   return (
     <>
-      <Space style={{ width: '100%', justifyContent: 'space-between', position: 'sticky', top: 0, zIndex: 10, background: '#f5f6f8', padding: '8px 0' }} wrap>
+      <Space style={{ width: '100%', justifyContent: 'space-between', position: 'sticky', top: 0, zIndex: 10, background: 'var(--page-bg)', padding: '8px 0' }} wrap>
         <CountdownTimer startedAt={session.startedAt} durationSeconds={session.durationSeconds} onExpire={submit} />
         <Popconfirm
           title="Nộp bài?"
