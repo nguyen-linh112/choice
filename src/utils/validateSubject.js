@@ -47,3 +47,44 @@ export function validateSubject(subject) {
 
   return errors
 }
+
+// ---- Môn dạng NHÓM: 1 môn có nhiều đề, mỗi đề chia thành các mục (vd Nghe / Trắc nghiệm / Đọc) ----
+// { id, name, sections: [{ key, label }], sets: [{ id, name, sections: { [key]: { exam?, questions: [] } } }] }
+// Mục có 0 câu là hợp lệ (chưa có đề), web hiển thị "chưa có đề".
+export const isGroupSubject = (data) => !!data && typeof data === 'object' && Array.isArray(data.sets)
+
+export function validateGroup(group) {
+  const errors = []
+  if (!isText(group?.id)) errors.push('Thiếu "id" của môn.')
+  if (!isText(group?.name)) errors.push('Thiếu "name" của môn.')
+  if (!Array.isArray(group?.sections) || group.sections.length === 0) {
+    errors.push('"sections" phải là mảng các mục, mỗi mục có "key" và "label".')
+    return errors
+  }
+  const keys = new Set()
+  group.sections.forEach((s, i) => {
+    if (!isText(s?.key)) errors.push(`Mục thứ ${i + 1}: thiếu "key".`)
+    else if (keys.has(s.key)) errors.push(`Mục "${s.key}" bị trùng.`)
+    else keys.add(s.key)
+    if (!isText(s?.label)) errors.push(`Mục thứ ${i + 1}: thiếu "label".`)
+  })
+  if (group.sets.length === 0) errors.push('"sets" phải có ít nhất 1 đề.')
+  const setIds = new Set()
+  group.sets.forEach((set, i) => {
+    const label = `Đề thứ ${i + 1}${set?.id ? ` (${set.id})` : ''}`
+    if (!isText(set?.id)) errors.push(`${label}: thiếu "id".`)
+    else if (setIds.has(set.id)) errors.push(`${label}: "id" bị trùng.`)
+    else setIds.add(set.id)
+    if (!isText(set?.name)) errors.push(`${label}: thiếu "name".`)
+    for (const [key, sec] of Object.entries(set?.sections || {})) {
+      if (!keys.has(key)) { errors.push(`${label}: mục "${key}" không có trong "sections" của môn.`); continue }
+      if (!sec?.questions?.length) continue
+      const probe = { id: `${group.id}-${set.id}-${key}`, name: `${group.name} ${set.name} ${key}`, exam: sec.exam, questions: sec.questions }
+      validateSubject(probe).forEach((m) => errors.push(`${label} / ${key}: ${m}`))
+    }
+  })
+  return errors
+}
+
+// Id của môn con (1 mục của 1 đề). Mỗi môn con có tiến độ, câu sai, lịch sử thi riêng.
+export const sectionSubjectId = (groupId, setId, key) => `${groupId}--${setId}--${key}`

@@ -28,5 +28,10 @@
     "id": "gns201",
     "name": "GNS201 - Đề FE SU26",
     "file": "gns201.json"
+  },
+  {
+    "id": "jpd326",
+    "name": "JPD326 - Tiếng Nhật trung cấp",
+    "file": "jpd326.json"
   }
 ]

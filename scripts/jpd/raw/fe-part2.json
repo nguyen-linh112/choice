@@ -1,0 +1,14 @@
+[
+{"n":8,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\nデパートのワイン（　　）でワインを買った。","options":["トラック","ペンション","コンクリート","コーナー"],"pick":"D","votes":"d,d,D"},
+{"n":9,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\nもうこの本は（　　）くなったから、友達にあげるつもりだ。","options":["気をしらな","気がならな","気にならな","気がしな"],"pick":"C","votes":"c,C,c","note":"Phần đuôi của đáp án bị cắt trong khung (…い); khi đọc ghép với くなった thì là 気にならなくなった."},
+{"n":10,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\nA町の北側に山が（　　）います。","options":["連なって","流れて","面して","恵まれて"],"pick":"A","votes":"a,a,A"},
+{"n":11,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n申し込みの時間（　　）のびる。","options":["に","が","で","を"],"pick":"B","votes":"b,b,b"},
+{"n":12,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n顔（　　）火が出るほどはずかしかった。","options":["に","で","は","から"],"pick":"D","votes":"d,d,d,d"},
+{"n":13,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n彼女は自分将来こと（　　）苦しんでいる。","options":["を","が","で","に"],"pick":"D","votes":"d, c, D, d","note":"Đề trong ảnh có vẻ thiếu chữ の (自分の将来のこと). Bình luận chia: đa số chọn に, một người chọn で; nên kiểm tra lại với đáp án chính thức."},
+{"n":14,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\nかれは多くの新種植物（　　）育成した。","options":["が","に","を","で"],"pick":"C","votes":"c,c,c,c"},
+{"n":15,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n会社に彼（　　）訪れる。","options":["に","を","で","が"],"pick":"B","votes":"d, b, B, b","note":"Câu này đề trong ảnh có vẻ bị lỗi chữ nên ngữ pháp khá lạ; theo đa số bình luận chọn を (3/4). Nên kiểm tra lại với đáp án chính thức."},
+{"n":16,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n今日（　　）荷物はまだとどかない。","options":["とどくおそれがある","とどくはずの","とどくにきまっている","とどきかねる"],"pick":"B","votes":"b,b,b"},
+{"n":17,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n大学をやめることを両親（　　）相談しないで決めた。","options":["さえ","はさえ","にさえ","でさえ"],"pick":"C","votes":"c,c,c"},
+{"n":18,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n一人暮らしを始めたころのさびしさといったら、（　　）。","options":["今忘れた","言葉にならないくらいだ","とてもさびしかった","今は思い出せない"],"pick":"B","votes":"b,b,b,b"},
+{"n":19,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\nこの小説は実話（　　）書かれた。","options":["むけに","によって","をもとにして","について"],"pick":"C","votes":"c,c,c"}
+]

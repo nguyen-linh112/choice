@@ -1,0 +1,9 @@
+[
+{"n":1,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n何を聞いても、その子は（　　）泣いているだけで、何も答えなかった。","options":["ただし","ただ","いつか","いつ"],"pick":"B","votes":"b,b,b"},
+{"n":2,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n祖母は私達（　　）が遊びに行くと、いつもいつもおいしい料理を作ってくれます。","options":["迷子","親子","まご","親"],"pick":"C","votes":"c,c,c"},
+{"n":3,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n駅前に新しいレストランができたそうだ。（　　）行ってみよう。","options":["速く","さすが","早速","心より"],"pick":"C","votes":"C,c,C"},
+{"n":4,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\nきのう（　　）入ったきっさてんで山田先生に会った。","options":["たまたま","お互いに","時々","たまに"],"pick":"A","votes":"a,偶然(=たまたま),a"},
+{"n":5,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n先週から日本語能力試験のために、（　　）勉強を始めました。","options":["ちょっとした","本気で","相変わらず","ひさしぶりに"],"pick":"B","votes":"b,b,b"},
+{"n":6,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\n（　　）ゆうしょうできるところだったのに、負けてしまってざんねんだった。","options":["少し","もう少しで","ぜんぜん","ちっとも"],"pick":"B","votes":"b,b"},
+{"n":7,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\nパソコンで映画を見ようとしたら、映像だけで、（　　）が聞こえない。","options":["気象","例年","地形","音声"],"pick":"D","votes":"d,おんせい,d"}
+]

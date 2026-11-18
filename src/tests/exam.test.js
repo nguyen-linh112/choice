@@ -84,3 +84,10 @@ describe('xáo trộn', () => {
     expect([...shuffleOptionOrder(q.options, seededRng(1))].sort()).toEqual([0, 1, 2, 3])
   })
 })
+
+describe('câu có fixedOrder (đáp án 1/2/3 của câu nghe)', () => {
+  it('shuffleOptionOrder giữ nguyên thứ tự khi fixedOrder', () => {
+    const q = { options: [{ text: '1' }, { text: '2' }, { text: '3' }] }
+    for (let seed = 1; seed <= 5; seed++) expect(shuffleOptionOrder(q.options, seededRng(seed), true)).toEqual([0, 1, 2])
+  })
+})

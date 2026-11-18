@@ -1,0 +1,218 @@
+{
+  "2": [
+    "Đúng. Ghép đúng thành câu: 桜大学の周りにはレストランや喫茶店などの【飲食店を】【中心に】【本屋や美術院など】【いろいろな店が】ある。Ô thứ 3 (★) là 本屋や美術院など. Mẫu ～を中心に = lấy ... làm trung tâm, xoay quanh ...",
+    "Sai. 中心に đứng ngay sau 飲食店を (ô thứ 2) tạo cụm 飲食店を中心に, không phải ô ★ (ô thứ 3).",
+    "Sai. 飲食店を là ô đầu tiên (ô thứ 1): 'レストランや喫茶店などの飲食店を'. Đây không phải ô ★.",
+    "Sai. いろいろな店が là ô cuối cùng (ô thứ 4), đứng ngay trước 'ある'. Không phải ô ★."
+  ],
+  "3": [
+    "Sai. 建物 (たてもの) = tòa nhà. Từ (企業) nghĩa là doanh nghiệp/công ty, không phải tòa nhà.",
+    "Sai. 事務室 (じむしつ) = phòng văn phòng, chỉ một căn phòng, không đồng nghĩa với 企業.",
+    "Sai. 旅行 (りょこう) = du lịch, không liên quan nghĩa của 企業.",
+    "Đúng. 企業 (きぎょう) = doanh nghiệp, công ty. Nghĩa gần nhất với 会社 (かいしゃ). 企業の説明会 = buổi giới thiệu của công ty (thường là buổi giới thiệu tuyển dụng)."
+  ],
+  "4": [
+    "Sai. 形を là ô thứ 2 trong câu hoàn chỉnh: 大川橋は【めがねのような】【形を】【している】【ことから】「めがね橋」とも呼ばれている. Không phải ô ★ (ô thứ 3).",
+    "Sai. ことから là ô cuối (ô thứ 4). ～ことから = vì (có đặc điểm) ..., từ chuyện ... mà (giải thích nguồn gốc của tên gọi).",
+    "Đúng. Trật tự là めがねのような → 形を → している → ことから. Ô ★ (thứ 3) là している. ～の形をしている = có hình dạng của ...",
+    "Sai. めがねのような là ô thứ nhất. N + のような = giống như N, bổ nghĩa cho 形."
+  ],
+  "5": [
+    "Sai. 新しい là ô thứ 2: 行くたびに【新しい】【メニューが】… nhưng thực tế thứ tự đúng là たびに → 新しい → メニューが → 増えている, nên 新しい đứng ô thứ 2 chứ không phải ★.",
+    "Sai. 新しい là ô thứ 2 (sau たびに): 行くたびに新しい…. Ô ★ phải là ô thứ 3.",
+    "Sai. 増えている là ô cuối (ô thứ 4) trước から.",
+    "Đúng. Câu hoàn chỉnh: あのレストラン、行くたびに新しいメニューが増えているから、いつも楽しみにしているんだ。Ô ★ (thứ 3) là メニューが. Nghĩa: mỗi lần đến nhà hàng đó đều có món mới được thêm nên lúc nào tôi cũng mong chờ."
+  ],
+  "6": [
+    "Sai. ～のかわりに = thay cho ..., thay vì ... Không hợp với ý ví dụ 'những món nhiều calo như tonkatsu'.",
+    "Sai. ～どおり = đúng như ..., theo như ... (vd 予定どおり). Không hợp nghĩa.",
+    "Sai. ～によって = tùy theo/bởi/do ... Không dùng để nêu ví dụ.",
+    "Đúng. N + のような + N' = N' giống như N, như là N (nêu ví dụ). とんかつのような高カロリーのもの = những món nhiều calo như tonkatsu."
+  ],
+  "7": [
+    "Sai. Không phải cách đọc của 破る ở đây. こわり không phải từ có nghĩa 'xé/làm rách'.",
+    "Đúng. 破る(やぶる) = xé, làm rách. 破り + とって: ページを破りとる = xé trang sách ra. 破 đọc là やぶ-/ハ.",
+    "Sai. たおり không phải cách đọc của 破る. (倒れる mới đọc たお-.)",
+    "Sai. めぐり (巡り) = vòng quanh, không phải nghĩa 'xé'."
+  ],
+  "8": [
+    "Đúng. 退く đọc là しりぞく = lùi lại, rút lui. Thể phủ định điều kiện: 退かなければならなかった = đã phải rút lui. (Một bình luận chọn phương án khác nhưng 退く đọc đúng là しりぞく.)",
+    "Sai. とどかなければ là dạng của 届く (とどく = đến nơi, với tới), không phải 退く.",
+    "Sai. とかなければ không phải cách đọc của 退く (解く = とく, tháo/giải).",
+    "Sai. しのかなければ không phải từ có nghĩa; 退く không đọc là しの-."
+  ],
+  "9": [
+    "Sai. 越えて (こえて) = vượt qua, không hợp: 地下鉄が近くまで ... くる.",
+    "Sai. 迎えて (むかえて) = đón. 地下鉄は迎えてくる không có nghĩa.",
+    "Đúng. 延びる(のびる) = kéo dài, được nối dài (tuyến đường, tàu điện). 地下鉄はこの近くまで延びてくるだろう = tàu điện ngầm có lẽ sẽ kéo dài đến gần đây.",
+    "Sai. あげて (上げて) = nâng lên, không hợp nghĩa."
+  ],
+  "10": [
+    "Sai. ほんき (本気) = nghiêm túc, thật lòng, không hợp nghĩa 'sức khỏe đối với cô ấy'.",
+    "Sai. しんせん (新鮮) = tươi mới; dùng cho thực phẩm hoặc cảm giác mới mẻ.",
+    "Đúng. きちょう (貴重) = quý giá, quan trọng. 夫の健康は彼女にとって貴重だ = sức khỏe của chồng là điều quý giá đối với cô ấy.",
+    "Sai. こうか có thể là 効果 (hiệu quả) hay 硬貨 (đồng xu), đều không hợp nghĩa."
+  ],
+  "11": [
+    "Sai. ～ようで = có vẻ như (suy đoán về chuyện của người khác), không hợp để nói lí do của chính mình.",
+    "Sai. ～そうだから không tự nhiên: そうだ chỉ dạng truyền đạt/ trông như nên không nối với 'から' ở vị trí này.",
+    "Sai. ～かわりに = thay vì/ đổi lại. 朝ごはんを食べなかったかわりに nghĩa khác (bù lại), không phải lí do 'đói bụng'.",
+    "Đúng. ～もんだから = vì (biện minh, lí do, văn nói thân mật). 朝ごはんを食べなかったもんだから、おなかすいちゃったんだよ = vì sáng chưa ăn gì nên bụng đói rồi."
+  ],
+  "12": [
+    "Sai. 渋滞 chỉ dùng cho sự tắc nghẽn giao thông. ストレスが渋滞している là sai (nên dùng ストレスがたまっている).",
+    "Sai. Công trình xây dựng bị chậm dùng 遅れている/はかどらない, không dùng 渋滞.",
+    "Đúng. 渋滞(じゅうたい) = tắc đường, kẹt xe. 事故で道が渋滞していたので、遅刻してしまった = đường bị kẹt do tai nạn nên tôi đến muộn.",
+    "Sai. Hàng ế trong kho nên dùng 在庫がたまっている, không dùng 渋滞."
+  ],
+  "13": [
+    "Sai. 取さめる không đúng: 取 không đi với cách viết này, và okurigana cũng sai.",
+    "Sai. 取める không phải chữ Hán đúng của おさめる.",
+    "Sai. 収さめる viết sai okurigana: đúng phải là 収める (không thêm さ).",
+    "Đúng. 成功を収める (せいこうをおさめる) = đạt được thành công. おさめる có nhiều chữ: 収める (thu được, đạt), 納める (nộp), 治める (cai trị), 修める (tu dưỡng); ở đây là 収める."
+  ],
+  "14": [
+    "Sai. 送らせていただく = xin phép được gửi (người nói là người gửi). Ở đây người cảm ơn là người nhận hàng nên phải nói bên kia đã gửi cho mình.",
+    "Sai. 送らせてさしあげ không đúng ngữ pháp và vô nghĩa trong ngữ cảnh.",
+    "Đúng. お送りいただき = (cảm ơn vì) đã gửi cho tôi. お + V ます + いただく là khiêm nhường ngữ: nhận được việc ai đó làm cho mình. すぐにお送りいただき、ありがとうございました = cảm ơn bạn đã gửi ngay.",
+    "Sai. ～てさしあげる = tôi làm giúp cho ai (người trên); không hợp vì người gửi hàng là bên kia."
+  ],
+  "15": [
+    "Sai. タクシーで = bằng taxi, không đồng nghĩa với 団体で.",
+    "Sai. 歩いて = đi bộ, không liên quan.",
+    "Sai. 一人で = một mình, trái nghĩa với 団体 (đoàn thể).",
+    "Đúng. 団体(だんたい) = đoàn thể, nhóm đông người. グループで = theo nhóm, gần nghĩa nhất."
+  ],
+  "16": [
+    "Sai. ～にはんして (に反して) = trái với (kỳ vọng); ở đây không có sự trái ngược về kỳ vọng.",
+    "Đúng. V ない形 + ながら (逆接) = tuy ... nhưng. 日本語が上手に話せないながら、知っている言葉を使って気持ちを伝えてくれた = tuy không nói giỏi tiếng Nhật nhưng vẫn dùng những từ biết để truyền đạt tâm ý.",
+    "Sai. ～せいで = vì lỗi (nguyên nhân tiêu cực). Không hợp mạch câu (vế sau là việc tích cực).",
+    "Sai. ～にすれば = nếu đứng ở lập trường của ... Không hợp."
+  ],
+  "17": [
+    "Sai. 個めた không phải chữ Hán của かためる.",
+    "Sai. 個ためた cũng không đúng (个/個 không dùng, okurigana sai).",
+    "Sai. 固ため viết sai okurigana, đúng phải là 固める (かためる).",
+    "Đúng. 身を固める(みをかためる) = ổn định cuộc sống (thường là lập gia đình). 彼は結婚して身を固めた = anh ấy kết hôn và ổn định cuộc sống. 固める = làm cho cứng, củng cố."
+  ],
+  "18": [
+    "Sai. Câu 名前を話しかける dùng sai; muốn gọi tên thì nói 名前を呼ぶ/呼びかける. 話しかける = bắt chuyện, hay đi với に.",
+    "Đúng. 観光客に英語で話しかけられた = bị (du khách) bắt chuyện bằng tiếng Anh. 話しかける = nói chuyện với, bắt chuyện (dùng trợ từ に cho người được nói tới).",
+    "Sai. Muốn nói 'cảm ơn' thì dùng お礼を言う; お礼を話しかける không tự nhiên.",
+    "Sai. Bàn bạc quyết định cùng gia đình nói 家族と相談して/話し合って決める, không dùng 話しかける."
+  ],
+  "19": [
+    "Sai. 縦顔 không phải từ. Khuôn mặt nhìn nghiêng là 横顔.",
+    "Sai. 横貌 không phải từ tiếng Nhật thông dụng.",
+    "Đúng. 横顔(よこがお) = khuôn mặt nhìn nghiêng. 君の横顔が好きだ = anh thích gương mặt nhìn nghiêng của em.",
+    "Sai. 横頬 không phải từ có nghĩa."
+  ],
+  "20": [
+    "Đúng. N/V た + せいで = vì (lỗi/nguyên nhân xấu). ビルができたせいで、屋上から富士山が見えなくなった = vì có tòa nhà mới mà từ sân thượng không còn thấy núi Phú Sĩ nữa (kết quả tiêu cực).",
+    "Sai. ～おかげで = nhờ ... (kết quả tốt). Kết quả ở đây là tiêu cực (không còn thấy Phú Sĩ) nên không hợp.",
+    "Sai. ～にしては = xét theo mức ... thì (kết quả trái với kỳ vọng). Không hợp.",
+    "Sai. ～ことから = từ việc ... mà suy ra/ có tên. Không hợp ngữ cảnh."
+  ],
+  "21": [
+    "Sai. ことにしている là ô cuối (ô thứ 4): 必ずノートに記録することにしている (có thói quen luôn ghi vào sổ).",
+    "Sai. ように là ô thứ 2: 忘れないように (để không quên).",
+    "Sai. 忘れない là ô thứ 1: いつ、どんな本を読んだかを忘れないように…",
+    "Đúng. Câu hoàn chỉnh: 読んだかを【忘れない】【ように】【必ずノートに記録する】【ことにしている】そうだ。★ (ô thứ 3) là 必ずノートに記録する. ～ように = để (không) ...; ～ことにしている = có thói quen/quy định riêng cho bản thân là ..."
+  ],
+  "22": [
+    "Sai. 苦者 không phải từ.",
+    "Sai. 苦物 không phải từ. (苦手 mới đọc là にがて.)",
+    "Sai. 若物 không phải từ.",
+    "Đúng. 若者(わかもの) = người trẻ, thanh niên. 目上(めうえ)の人 = người bề trên; 敬語を使えない若者が多い = nhiều thanh niên không dùng được kính ngữ."
+  ],
+  "23": [
+    "Sai. ～にしたら = nếu đứng ở vị trí ..., không hợp mạch 'nhắc đến thức ăn mùa hè'.",
+    "Sai. ～からして = xét từ ... thì. Không hợp.",
+    "Sai. ～として = với tư cách là ..., không hợp.",
+    "Đúng. ～といえば = nhắc đến ... thì (gợi liên tưởng). 夏の食べ物といえば、うなぎという人が多いだろう = nhắc đến món ăn mùa hè thì chắc nhiều người nghĩ đến lươn."
+  ],
+  "24": [
+    "Sai. じんこう (人口/人工) không hợp nghĩa; người làm bánh là しょくにん.",
+    "Sai. せだい (世代) = thế hệ, không hợp.",
+    "Đúng. しょくにん (職人) = thợ thủ công, nghệ nhân. ケーキ職人 = thợ làm bánh. ケーキ職人は小さいころからの夢でした = làm thợ bánh là ước mơ từ nhỏ. (Chữ trong ô trống bị che nên suy theo nghĩa câu.)",
+    "Sai. ねんだい (年代) = thập niên, thời kỳ, không hợp."
+  ],
+  "25": [
+    "Sai. ようろん không phải cách đọc của 世論.",
+    "Đúng. 世論 đọc là よろん (cũng đọc せろん) = dư luận. Đây là cách đọc đặc biệt, không đọc theo 'せい'.",
+    "Sai. じょろん (序論) = phần mở đầu của bài luận, không phải 世論.",
+    "Sai. じょうろん không phải cách đọc của 世論."
+  ],
+  "26": [
+    "Đúng. 苦手(にがて) = (món/ lĩnh vực) kém, không giỏi, ngại. 私はスポーツが苦手です = tôi kém thể thao.",
+    "Sai. にがいて không phải cách đọc; 苦い (にがい) là tính từ 'đắng'.",
+    "Sai. くしゅ không phải cách đọc của 苦手.",
+    "Sai. にがって không phải cách đọc đúng."
+  ],
+  "27": [
+    "Đúng. 収入(しゅうにゅう) = thu nhập. Chú ý trường âm: しゅう (nhân đôi nguyên âm う) và にゅう. 君の収入は私の収入の2倍だ = thu nhập của bạn gấp đôi của tôi.",
+    "Sai. しゅうにゅ thiếu trường âm cuối (にゅう).",
+    "Sai. しゅにゅ thiếu trường âm ở cả hai chỗ.",
+    "Sai. しゅにゅう thiếu trường âm ở phần đầu (しゅう)."
+  ],
+  "28": [
+    "Sai. まちがって (間違って) = nhầm. Không hợp nghĩa 'ăn xong rồi đi mua sắm'.",
+    "Sai. そえて (添えて) = kèm theo, không hợp.",
+    "Đúng. 食事をすませる = ăn xong, hoàn tất bữa ăn. すませて、買い物に出かけた = ăn xong rồi ra ngoài mua đồ. すませる = làm cho xong.",
+    "Sai. つたわって (伝わって) = được truyền đạt, không hợp."
+  ],
+  "29": [
+    "Sai. ねらわれやすい là ô cuối (ô thứ 4): どろぼうにねらわれやすい.",
+    "Sai. 家は là ô thứ 2: 留守がちの家は.",
+    "Đúng. Câu hoàn chỉnh: 留守【がちの】【家は】【どろぼうに】【ねらわれやすい】ようです。★ (ô thứ 3) là どろぼうに. N + がち = hay, thường xuyên ở trạng thái (không mong muốn): 留守がち = hay vắng nhà.",
+    "Sai. がちの là ô thứ 1, đứng ngay sau 留守."
+  ],
+  "30": [
+    "Đúng. N + さえ + ～ない = đến cả N cũng không (mua nổi). 財布を忘れたので、ジュースさえ買えない = quên ví nên đến cả chai nước cũng không mua được.",
+    "Sai. ～のことなんですが dùng để mở đầu chủ đề (về chuyện ...), không hợp.",
+    "Sai. ～につけ = mỗi khi ... (vd 見るにつけ). Không hợp nghĩa.",
+    "Sai. ～にしては = xét theo ... thì (kết quả khác kỳ vọng). Không hợp."
+  ],
+  "31": [
+    "Sai. 共通 là 'điểm chung của nhiều thứ'. Nói nhiệt độ giống nhau là 同じ気温, không dùng 共通.",
+    "Sai. Giờ ngủ giống như mọi khi nên nói いつもと同じ時間, không dùng 共通.",
+    "Sai. Gương mặt giống nhau dùng よく似ている/そっくり, không dùng 共通.",
+    "Đúng. 共通(きょうつう) = chung, điểm chung. 共通の趣味を持っている = có chung sở thích. 共通 dùng khi nhiều đối tượng cùng có một điểm (共通点)."
+  ],
+  "32": [
+    "Sai. ～というと = nhắc đến, nói đến. Không hợp nghĩa 'trong lúc không gặp'.",
+    "Sai. ～ようなら = nếu như có vẻ. Không hợp.",
+    "Đúng. V ない + うちに = trong lúc chưa/không ... thì (đã thay đổi). しばらく会わないうちに髪が伸びましたね = trong thời gian không gặp, tóc bạn đã mọc dài ra rồi nhỉ.",
+    "Sai. ～たびに = mỗi khi. Nghĩa khác (mỗi lần gặp)."
+  ],
+  "33": [
+    "Sai. ～ように = để/ như là. Không biểu thị 'đổi lại'.",
+    "Sai. ～にかわって = thay mặt, thay thế cho (người). Không hợp 'giúp chuyển nhà rồi đãi lại'.",
+    "Đúng. V る + かわりに = đổi lại (làm A thì đổi lại B), thay vì. 引っ越しを手伝ってあげるかわりに、今度ごちそうしてよね = mình giúp chuyển nhà, đổi lại lần sau đãi mình nhé. (Một bình luận chọn くせに nhưng không hợp nghĩa.)",
+    "Sai. ～くせに = vậy mà (trách móc). Không hợp."
+  ],
+  "34": [
+    "Đúng. たまたま = tình cờ, ngẫu nhiên. 私たちはたまたま同じバスに乗っていた = chúng tôi tình cờ đi cùng chuyến xe buýt.",
+    "Sai. わざわざ = cất công, mất công làm hẳn một việc. Không hợp 'đi cùng xe'.",
+    "Sai. いつか = một lúc nào đó (tương lai/quá khứ không rõ). Không hợp.",
+    "Sai. 思ったより = hơn mình tưởng. Không hợp."
+  ],
+  "35": [
+    "Sai. ～にかわって = thay cho ... Không hợp.",
+    "Sai. ～をはじめ = đứng đầu là ... (kể thêm ví dụ), không hợp 'quanh năm'.",
+    "Đúng. N + を通じて = suốt cả (thời gian/ khoảng thời gian), xuyên suốt. 京都は1年を通じてたくさんの観光客が訪れる = Kyoto suốt cả năm đều có nhiều du khách đến.",
+    "Sai. ～にくらべて = so với ... Không hợp."
+  ],
+  "36": [
+    "Đúng. N/V + くせに = vậy mà/ dù (trách móc, khẩu ngữ). 兄は答えを知っているくせに、「自分で考えろよ」と言って教えてくれないんだ = anh ấy biết đáp án vậy mà lại bảo 'tự nghĩ đi' không chỉ cho tôi (có ý phàn nàn).",
+    "Sai. ～せいで = vì lỗi ... (nguyên nhân). Không phải quan hệ nguyên nhân.",
+    "Sai. ～ながらも = tuy ... nhưng (văn viết, trung tính). Nó không mang sắc thái trách móc thân mật như câu này; đề chọn くせに.",
+    "Sai. ～うちに = trong lúc. Không hợp."
+  ],
+  "37": [
+    "Đúng. ～てくれたおかげです = nhờ (ai đó làm cho). Sự kiện thành công là nhờ toàn thể nhân viên cùng cố gắng.",
+    "Sai. ところ = chỗ, lúc, nơi. Không hợp.",
+    "Sai. つもり = dự định, ý định. Không hợp.",
+    "Sai. ほど = đến mức ... Không hợp."
+  ]
+}

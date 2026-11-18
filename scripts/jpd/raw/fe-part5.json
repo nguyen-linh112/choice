@@ -1,0 +1,11 @@
+[
+{"n":29,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\nプロの選手（　　）限り、努力するのは当然だ。","options":["な","です","×","である"],"pick":"D","votes":"d,d,d,D","note":"Phương án C trong ảnh là ký hiệu × (không điền gì)."},
+{"n":30,"question":"Chọn đáp án thích hợp trong A, B, C, D để điền vào ngoặc cho câu sau:\nようこさんは医学を勉強した（　　）、健康についての知識が多い。","options":["わりに","にしたら","だけあって","にしては"],"pick":"C","votes":"c,c,c"},
+{"n":31,"question":"Các từ Hiragana trong ngoặc có chữ Hán tương ứng như thế nào trong câu:\n君は私の本意を全く（ごかい）している。","options":["誤解","呉解","諜解","説解"],"pick":"A","votes":"a,a,a","note":"Một số chữ Hán gây nhiễu trong ảnh là chữ lạ, có thể đọc lệch; đáp án đúng là 誤解."},
+{"n":32,"question":"Các từ Hiragana trong ngoặc có chữ Hán tương ứng như thế nào trong câu:\n古い工場を（はかい）して新しいデパートを建てた。","options":["壊破","皮壊","壊皮","破壊"],"pick":"D","votes":"d,d,d"},
+{"n":33,"question":"Các từ Hiragana trong ngoặc có chữ Hán tương ứng như thế nào trong câu:\nその計画に（さんせい）である。","options":["賛政","鑒政","讃成","賛成"],"pick":"D","votes":"d,d,d","note":"Một số chữ Hán gây nhiễu trong ảnh là chữ lạ, có thể đọc lệch; đáp án đúng là 賛成."},
+{"n":34,"question":"Các từ Hiragana trong ngoặc có chữ Hán tương ứng như thế nào trong câu:\n（しゅっこう）停止になっている。","options":["出港","山港","出巷","山巷"],"pick":"A","votes":"a,A,a"},
+{"n":35,"question":"Các từ Hiragana trong ngoặc có chữ Hán tương ứng như thế nào trong câu:\nこの件について（めんだん）したい。","options":["面談","面歡","面訟","面炎"],"pick":"A","votes":"a,A,a","note":"Một số chữ Hán gây nhiễu trong ảnh là chữ lạ, có thể đọc lệch; đáp án đúng là 面談."},
+{"n":36,"question":"Các từ Hán trong ngoặc dưới đây có cách đọc thế nào trong câu:\nカードを（縦）に並べた。","options":["おう","じゅう","よこ","たて"],"pick":"D","votes":"d,d,D"},
+{"n":37,"question":"Các từ Hán trong ngoặc dưới đây có cách đọc thế nào trong câu:\n話が思いがけない方向へ（発展）した。","options":["はってん","てんかい","かいてん","はつてん"],"pick":"A","votes":"a,A,A"}
+]

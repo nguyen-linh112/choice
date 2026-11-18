@@ -43,6 +43,6 @@ export function pickExamQuestions({
   return shuffle(chosen, rng).map(({ q, fromWrong }) => ({
     id: q.id,
     fromWrong,
-    order: shuffleOptionOrder(q.options, rng),
+    order: shuffleOptionOrder(q.options, rng, q.fixedOrder),
   }))
 }

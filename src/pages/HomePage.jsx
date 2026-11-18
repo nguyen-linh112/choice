@@ -2,9 +2,11 @@ import { Link } from 'react-router-dom'
 import { Alert, Button, Col, Empty, Row, Space, Spin, Typography } from 'antd'
 import { useSubjects } from '../hooks/useSubjects.jsx'
 import SubjectCard from '../components/SubjectCard.jsx'
+import GroupCard from '../components/GroupCard.jsx'
 
 export default function HomePage() {
-  const { subjects, errors, loading } = useSubjects()
+  const { subjects: allSubjects, groups, errors, loading } = useSubjects()
+  const subjects = allSubjects.filter((s) => !s.hidden) // môn con của môn nhóm được ẩn khỏi danh sách
 
   if (loading) return <Spin style={{ display: 'block', marginTop: 48 }} />
 
@@ -37,10 +39,15 @@ export default function HomePage() {
         />
       ))}
 
-      {subjects.length === 0 ? (
+      {subjects.length === 0 && groups.length === 0 ? (
         <Empty description="Chưa có môn nào. Hãy thêm file vào public/data/ và index.json." />
       ) : (
         <Row gutter={[16, 16]}>
+          {groups.map((g) => (
+            <Col key={g.id} xs={24} md={12}>
+              <GroupCard group={g} />
+            </Col>
+          ))}
           {subjects.map((s) => (
             <Col key={s.id} xs={24} md={12}>
               <SubjectCard subject={s} />

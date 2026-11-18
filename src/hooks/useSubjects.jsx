@@ -5,15 +5,15 @@ import { loadAllSubjects } from '../utils/subjectsApi.js'
 const SubjectsContext = createContext(null)
 
 export function SubjectsProvider({ children }) {
-  const [state, setState] = useState({ subjects: [], errors: [], loading: true })
+  const [state, setState] = useState({ subjects: [], groups: [], errors: [], loading: true })
 
   const reload = useCallback(async () => {
     setState((s) => ({ ...s, loading: true }))
     try {
-      const { subjects, errors } = await loadAllSubjects()
-      setState({ subjects, errors, loading: false })
+      const { subjects, groups, errors } = await loadAllSubjects()
+      setState({ subjects, groups, errors, loading: false })
     } catch (e) {
-      setState({ subjects: [], errors: [{ name: 'index.json', messages: [e.message] }], loading: false })
+      setState({ subjects: [], groups: [], errors: [{ name: 'index.json', messages: [e.message] }], loading: false })
     }
   }, [])
 

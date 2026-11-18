@@ -4,6 +4,8 @@ import { optionLabel } from '../utils/stats.js'
 import { countCorrect, gradeQuestion } from '../utils/grade.js'
 import ExplanationPanel from './ExplanationPanel.jsx'
 import QuestionNote from './QuestionNote.jsx'
+import AudioPlayer from './AudioPlayer.jsx'
+import ScriptPanel from './ScriptPanel.jsx'
 
 // Thẻ làm 1 câu. Dùng ở 3 nơi:
 //  - Ôn tập: selected = mảng chỉ số đáp án đang chọn; answered = đã khóa và hiện đáp án chưa.
@@ -20,7 +22,8 @@ export default function QuestionCard({ subjectId, question, selected, answered, 
 
   return (
     <div>
-      <Typography.Paragraph strong style={{ fontSize: 16 }}>
+      {question.audio && <AudioPlayer key={question.audio} src={question.audio} label={question.audioLabel} />}
+      <Typography.Paragraph strong style={{ fontSize: 16, whiteSpace: 'pre-wrap' }}>
         {question.question}
       </Typography.Paragraph>
 
@@ -77,6 +80,8 @@ export default function QuestionCard({ subjectId, question, selected, answered, 
           message={isRight ? 'Chính xác!' : selected.length === 0 ? 'Đáp án đúng được tô xanh.' : 'Chưa đúng. Đáp án đúng được tô xanh.'}
         />
       )}
+
+      {reveal && <ScriptPanel script={question.script} note={question.scriptNote} />}
 
       {reveal && <QuestionNote subjectId={subjectId} question={question} />}
     </div>

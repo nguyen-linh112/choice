@@ -8,8 +8,10 @@ export const isAllOfAboveOption = (option) => ALL_OF_ABOVE.test(option.text.trim
 
 // Thứ tự xáo của các đáp án, dạng mảng chỉ số gốc. VD [2,0,1,3] nghĩa là đáp án hiển thị thứ nhất
 // là đáp án gốc số 2... Lưu mảng này (thay vì cả câu) giúp khôi phục đúng đề thi khi tải lại trang.
-export function shuffleOptionOrder(options, rng = Math.random) {
+// fixedOrder = true: giữ nguyên thứ tự (vd đáp án "1, 2, 3" trong câu nghe, vì số đó ứng với lời nói trong audio).
+export function shuffleOptionOrder(options, rng = Math.random, fixedOrder = false) {
   const idx = options.map((_, i) => i)
+  if (fixedOrder) return idx
   const normal = idx.filter((i) => !isAllOfAboveOption(options[i]))
   const pinned = idx.filter((i) => isAllOfAboveOption(options[i]))
   return [...shuffle(normal, rng), ...pinned]
@@ -20,7 +22,7 @@ export const applyOptionOrder = (question, order) => ({ ...question, options: or
 
 // Xáo thứ tự đáp án trong 1 câu, giữ nguyên các đáp án "tất cả..." ở cuối
 export const shuffleOptions = (question, rng = Math.random) =>
-  applyOptionOrder(question, shuffleOptionOrder(question.options, rng))
+  applyOptionOrder(question, shuffleOptionOrder(question.options, rng, question.fixedOrder))
 
 // Xáo thứ tự câu + thứ tự đáp án trong từng câu
 export function shuffleDeck(questions, rng = Math.random) {
