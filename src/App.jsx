@@ -11,6 +11,7 @@ import WrongPage from './pages/WrongPage.jsx'
 import SubjectSettingsPage from './pages/SubjectSettingsPage.jsx'
 import AddSubjectPage from './pages/AddSubjectPage.jsx'
 import BackupPage from './pages/BackupPage.jsx'
+import WritingPage from './pages/WritingPage.jsx'
 import ComingSoonPage from './pages/ComingSoonPage.jsx'
 import BackBar from './components/BackBar.jsx'
 import { useTheme } from './hooks/useTheme.jsx'
@@ -51,6 +52,7 @@ export default function App() {
           <Route path="/subject/:subjectId/history" element={<HistoryPage />} />
           <Route path="/subject/:subjectId/history/:entryId" element={<ExamResultPage />} />
           <Route path="/subject/:subjectId/settings" element={<SubjectSettingsPage />} />
+          <Route path="/writing/:groupId/:setId/:key" element={<WritingPage />} />
           <Route path="*" element={<ComingSoonPage title="Không tìm thấy trang" />} />
         </Routes>
       </Content>

@@ -38,7 +38,7 @@ export default function QuestionView({ subjectId, question, index }) {
         </div>
       ))}
 
-      <ScriptPanel script={question.script} note={question.scriptNote} />
+      <ScriptPanel script={question.script} note={question.scriptNote} translation={question.translation} />
       <QuestionNote subjectId={subjectId} question={question} />
     </div>
   )

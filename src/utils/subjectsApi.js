@@ -32,6 +32,10 @@ export function expandGroup(data, source) {
     id: set.id,
     name: set.name,
     sections: data.sections.map((sec) => {
+      if (sec.type === 'writing') {
+        const items = set.sections?.[sec.key]?.items || []
+        return { key: sec.key, label: sec.label, subjectId: null, count: items.length, writing: true, items }
+      }
       const questions = set.sections?.[sec.key]?.questions || []
       if (questions.length === 0) return { key: sec.key, label: sec.label, subjectId: null, count: 0 }
       const id = sectionSubjectId(data.id, set.id, sec.key)
@@ -50,6 +54,10 @@ export function expandGroup(data, source) {
     }),
   }))
   return { group: { id: data.id, name: data.name, source, sets }, subjects }
+}
+
+export function writingPath(groupId, setId, key) {
+  return `/writing/${groupId}/${setId}/${key}`
 }
 
 // Trả về { subjects: [môn hợp lệ], groups: [môn nhóm], errors: [{ name, messages }] }

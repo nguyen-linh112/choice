@@ -29,6 +29,20 @@ describe('môn nhóm (nhiều đề, nhiều mục)', () => {
     expect(validateGroup(bad).join(' ')).toMatch(/chưa có đáp án đúng/)
   })
 
+  it('mục Viết (type writing): kiểm tra đề bài, đáp án mẫu, giải thích; không tạo môn con', () => {
+    const g = group()
+    g.sections.push({ key: 'writing', label: 'Viết', type: 'writing' })
+    const item = { id: 'w1', question: 'Đề', answer: 'Đáp án', explain: 'Giải thích' }
+    g.sets[0].sections.writing = { items: [item] }
+    expect(validateGroup(g)).toEqual([])
+    const { group: info, subjects } = expandGroup(g, 'static')
+    expect(subjects).toHaveLength(1)
+    expect(info.sets[0].sections[2]).toMatchObject({ key: 'writing', writing: true, count: 1 })
+    g.sets[0].sections.writing = { items: [{ id: 'w1', question: 'Đề' }, { ...item, id: 'w1' }] }
+    expect(validateGroup(g).join(' ')).toMatch(/thiếu đáp án mẫu/)
+    expect(validateGroup(g).join(' ')).toMatch(/trùng/)
+  })
+
   it('expandGroup tạo môn con ẩn cho mục có câu, mục rỗng thì không', () => {
     const { group: info, subjects } = expandGroup(group(), 'static')
     expect(subjects).toHaveLength(1)

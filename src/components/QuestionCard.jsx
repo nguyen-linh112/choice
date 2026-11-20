@@ -81,7 +81,7 @@ export default function QuestionCard({ subjectId, question, selected, answered, 
         />
       )}
 
-      {reveal && <ScriptPanel script={question.script} note={question.scriptNote} />}
+      {reveal && <ScriptPanel script={question.script} note={question.scriptNote} translation={question.translation} />}
 
       {reveal && <QuestionNote subjectId={subjectId} question={question} />}
     </div>

@@ -10,6 +10,7 @@ export function backTarget(pathname) {
   if (matchPath('/subject/:subjectId', pathname)) return { to: '/', label: 'Về trang chủ' }
   const sub = matchPath('/subject/:subjectId/*', pathname)
   if (sub) return { to: `/subject/${sub.params.subjectId}`, label: 'Quay lại môn học' }
+  if (matchPath('/writing/:groupId/:setId/:key', pathname)) return { to: '/', label: 'Về trang chủ' }
   if (pathname === '/add' || pathname === '/backup') return { to: '/', label: 'Về trang chủ' }
   return null
 }

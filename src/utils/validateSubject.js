@@ -53,6 +53,27 @@ export function validateSubject(subject) {
 // Mục có 0 câu là hợp lệ (chưa có đề), web hiển thị "chưa có đề".
 export const isGroupSubject = (data) => !!data && typeof data === 'object' && Array.isArray(data.sets)
 
+// Mục dạng "Viết" (type: 'writing'): không chấm đúng/sai, mỗi mục con là 1 đề bài tự luận có đáp án mẫu + giải thích.
+// { id, question, answer, explain, part?, translation? }
+export const isWritingSection = (group, key) => group?.sections?.find((s) => s?.key === key)?.type === 'writing'
+
+export function validateWritingItems(items) {
+  if (items === undefined || (Array.isArray(items) && items.length === 0)) return []
+  if (!Array.isArray(items)) return ['"items" phải là mảng các bài viết.']
+  const errors = []
+  const seen = new Set()
+  items.forEach((it, i) => {
+    const label = `Bài viết thứ ${i + 1}${it?.id ? ` (${it.id})` : ''}`
+    if (!isText(it?.id)) errors.push(`${label}: thiếu "id".`)
+    else if (seen.has(it.id)) errors.push(`${label}: "id" bị trùng.`)
+    else seen.add(it.id)
+    if (!isText(it?.question)) errors.push(`${label}: thiếu đề bài "question".`)
+    if (!isText(it?.answer)) errors.push(`${label}: thiếu đáp án mẫu "answer".`)
+    if (!isText(it?.explain)) errors.push(`${label}: thiếu phần giải thích "explain".`)
+  })
+  return errors
+}
+
 export function validateGroup(group) {
   const errors = []
   if (!isText(group?.id)) errors.push('Thiếu "id" của môn.')
@@ -78,6 +99,10 @@ export function validateGroup(group) {
     if (!isText(set?.name)) errors.push(`${label}: thiếu "name".`)
     for (const [key, sec] of Object.entries(set?.sections || {})) {
       if (!keys.has(key)) { errors.push(`${label}: mục "${key}" không có trong "sections" của môn.`); continue }
+      if (isWritingSection(group, key)) {
+        validateWritingItems(sec?.items).forEach((m) => errors.push(`${label} / ${key}: ${m}`))
+        continue
+      }
       if (!sec?.questions?.length) continue
       const probe = { id: `${group.id}-${set.id}-${key}`, name: `${group.name} ${set.name} ${key}`, exam: sec.exam, questions: sec.questions }
       validateSubject(probe).forEach((m) => errors.push(`${label} / ${key}: ${m}`))

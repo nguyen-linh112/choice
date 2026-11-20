@@ -1,0 +1,287 @@
+// Giải thích chi tiết Đề SU24 - R - FE (44 câu + bài đọc). Mỗi câu: 4 giải thích theo đúng thứ tự đáp án trong file raw/su24r-fe.mjs.
+// Từ khó ghi kèm cách đọc hiragana (xxx) và nghĩa tiếng Việt.
+export const CHOICE = {
+  1: [
+    'Sai. お待ちになる(おまちになる) là tôn kính ngữ, dùng khi nói về hành động của khách ("quý khách chờ"). Ở đây người đang chờ là cửa hàng (người nói), nên không được tôn kính hành động của chính mình.',
+    'Sai. Động từ thuần Nhật 待つ(まつ) = chờ thì thêm お để thành お待ちする, không dùng ご. ご chỉ đi với từ gốc Hán như ご案内(ごあんない), ご連絡(ごれんらく). Vì vậy 「ご待ちする」 không tồn tại.',
+    'Sai. Cũng là tôn kính ngữ (お + Vます + になる) nên chỉ hành động của khách, và dạng ます lại không nối được tự nhiên với 「またのご来店を心より」.',
+    'Đúng. Mẫu khiêm nhường ngữ: お + Vます(bỏ ます) + する / しております = (tôi) xin làm ~ (hành động của mình hướng đến người trên). ご来店(ごらいてん) = việc đến cửa hàng của khách; 心より(こころより) = từ tận đáy lòng. Cả câu: "Chúng tôi rất mong được đón quý khách lần sau."',
+  ],
+  2: [
+    'Sai. な dùng sau tính từ な hoặc để nối danh từ trong câu như 「プロの選手な」 không tự nhiên; sau 限り(かぎり) phải là 「N である限り」.',
+    'Sai. "X" trong đề nghĩa là không điền gì; 「プロの選手限り」 thiếu động từ nối nên không thành mẫu ngữ pháp đúng.',
+    'Đúng. Mẫu: N である限り / Vる限り = chừng nào còn là ~ / chừng nào còn ~ (điều kiện kéo dài). プロの選手(せんしゅ) = vận động viên chuyên nghiệp; 努力(どりょく) = nỗ lực; 当然(とうぜん) = đương nhiên. Cả câu: "Chừng nào còn là vận động viên chuyên nghiệp thì nỗ lực là điều đương nhiên."',
+    'Sai. です là dạng lịch sự, không đứng trước 限り (限り phải đi với dạng thông thường như である, Vる).',
+  ],
+  3: [
+    'Sai. もって(持って) = cầm, mang; không phải cách đọc của 配って.',
+    'Đúng. 配る(くばる) = phát, phân phát. 配って = dạng て của 配る. この資料(しりょう) = tài liệu này. Cả câu: "Xin hãy phát tài liệu này."',
+    'Sai. そこなって(損なって) không phải cách đọc của 配; 損なう(そこなう) = làm hỏng, gây tổn hại.',
+    'Sai. とまって(止まって/泊まって) = dừng lại / ở trọ; chữ 配 không đọc như vậy.',
+  ],
+  4: [
+    'Đúng. 苦しむ(くるしむ) = đau khổ, khổ sở; 苦しんで = dạng て. 将来(しょうらい) = tương lai. Cả câu: "Cô ấy đang khổ sở vì chuyện tương lai của mình."',
+    'Sai. くむしんで không phải từ trong tiếng Nhật, nên không phải cách đọc của 苦しんで.',
+    'Sai. なやしんで là sai; nếu muốn nói trăn trở thì dùng 悩む(なやむ) → 悩んで(なやんで), không phải 苦しんで.',
+    'Sai. ことしんで không tồn tại trong tiếng Nhật.',
+  ],
+  5: [
+    'Sai. Vế sau 今は思い出せない (bây giờ không nhớ ra) không ăn khớp với cấu trúc 「～といったら」 (nói đến ~ thì thật là ~, nhấn mạnh mức độ).',
+    'Sai. Nghĩa vẫn hợp nhưng mẫu ～といったら đòi hỏi vế sau diễn tả mức độ cực đoan; とてもさびしかった là cách nói bình thường chứ không phải cảm xúc nói không nên lời.',
+    'Sai. 今忘れた (vừa mới quên) không đi với ～といったら và không hợp nghĩa nói về "lúc mới ở một mình".',
+    'Đúng. Mẫu: N といったら ～ほどだ / ～くらいだ = nói đến N thì (mức độ) đến nỗi ~. 言葉にならない(ことばにならない) = không diễn đạt thành lời; さびしさ = nỗi cô đơn. Cả câu: "Nói đến nỗi cô đơn lúc mới bắt đầu sống một mình thì không sao diễn tả bằng lời."',
+  ],
+  6: [
+    'Sai. 延期(えんき) = hoãn lại, không hợp với 「一人一人の～は大切にされなければなりません」.',
+    'Sai. 誤解(ごかい) = hiểu lầm; không ai "được trân trọng" một sự hiểu lầm.',
+    'Đúng. 個性(こせい) = cá tính, nét riêng. 一人一人(ひとりひとり) = từng người một; 大切(たいせつ)にされる = được trân trọng. Cả câu: "Cá tính của từng người phải được trân trọng."',
+    'Sai. 比較(ひかく) = so sánh; nghĩa không hợp với câu.',
+  ],
+  7: [
+    'Sai. 「感動(かんどう)する」 đi với trợ từ に (～に感動する), không dùng が cho đối tượng gây cảm động.',
+    'Sai. "X" là không điền trợ từ; thiếu trợ từ thì 「この映画感動した」 không đúng ngữ pháp.',
+    'Đúng. Mẫu: N に感動する = cảm động trước N. 映画(えいが) = phim. Cả câu: "Tôi cảm động trước bộ phim này."',
+    'Sai. を đi với tha động từ trực tiếp (映画を見る), còn 感動する đi với に.',
+  ],
+  8: [
+    'Sai. 別の計画を立てた (đã lập kế hoạch khác) đúng thì nhưng không nhấn mạnh việc chuẩn bị sẵn cho tình huống có thể xảy ra như ～に備えて yêu cầu.',
+    'Sai. 立てる必要がある (cần phải lập kế hoạch khác) nói về sự cần thiết chung chung, không diễn đạt việc đã chuẩn bị trước.',
+    'Sai. 立てたい (muốn lập) chỉ là mong muốn, không phải việc đã làm để phòng bị.',
+    'Đúng. Mẫu: Vて + おく = làm sẵn từ trước (chuẩn bị cho tương lai). ～場合(ばあい)に備(そな)えて = phòng khi ~. 予想外(よそうがい) = ngoài dự đoán; トラブル = rắc rối. Cả câu: "Phòng khi có rắc rối ngoài dự đoán, chúng tôi đã lập sẵn kế hoạch khác."',
+  ],
+  9: [
+    'Sai. ネット(net) = mạng, lưới; không dùng để nói "được chọn làm ~ của đội tuyển".',
+    'Sai. フットサル = futsal (bóng đá trong nhà); đề nói về "đội tuyển bóng đá Nhật" nên không hợp.',
+    'Sai. チームプレイ = chơi đồng đội (cách chơi), không thể "được chọn làm chơi đồng đội".',
+    'Đúng. メンバー(member) = thành viên. N に選(えら)ばれる = được chọn làm N (bị động của 選ぶ). Cả câu: "Anh ấy được chọn làm thành viên đội tuyển bóng đá quốc gia Nhật."',
+  ],
+  10: [
+    'Đúng. Mẫu: (người) に + (vật) を + すすめる = giới thiệu / khuyên (ai đó) dùng cái gì. すすめてくれる = (ai đó) giới thiệu cho mình. 辞書(じしょ) = từ điển; 兄(あに) = anh trai mình. Cả câu: "Anh trai tôi đã giới thiệu cho tôi cuốn từ điển này."',
+    'Sai. が là chủ ngữ; nếu dùng が thì thành "tôi giới thiệu" đảo ngược nghĩa với 「～てくれた」 (người khác làm cho mình).',
+    'Sai. を đi với 辞書 (đối tượng được giới thiệu), còn 私 là người nhận nên phải dùng に.',
+    'Sai. へ chỉ hướng di chuyển, không dùng cho người nhận lời giới thiệu.',
+  ],
+  11: [
+    'Đúng. で chỉ địa điểm diễn ra hành động: 外で子供たちが騒いでいる. 外(そと) = bên ngoài; わいわい = ồn ào vui vẻ. Cả câu: "Bên ngoài bọn trẻ đang nô đùa ồn ào."',
+    'Sai. に dùng cho nơi tồn tại (外にいる), không dùng chỉ nơi diễn ra hành động ồn ào.',
+    'Sai. から = từ (điểm xuất phát), không hợp nghĩa.',
+    'Sai. は là trợ từ chủ đề; 外は子供たちが… cũng được nhưng nghĩa nhấn mạnh tương phản, không hợp với cấu trúc đã cho.',
+  ],
+  12: [
+    'Sai. ものですから (vì ~ nên) dùng giải thích lý do của người nói, văn nói; không phù hợp để viết biển cảnh báo.',
+    'Sai. もので cũng là cách giải thích lý do cá nhân, không dùng trên biển báo.',
+    'Đúng. N につき = vì ~ (văn viết, biển báo, thông báo). 工事中(こうじちゅう) = đang thi công; 通行止め(つうこうどめ) = cấm đi lại. Cả câu: "Vì đang thi công nên đường này bị cấm."',
+    'Sai. からこそ nhấn mạnh lý do (chính vì ~ nên), không dùng trong biển báo thông thường.',
+  ],
+  13: [
+    'Đúng. Mẫu: Naな / Nの + だけあって = đúng là ~ nên (khen ngợi, hợp lý). Trong đề dạng chuẩn 好きなだけあって; ở các phương án chỉ có 好き là gần dạng đó nhất. 好き(すき) = thích; 車(くるま) = ô tô. Cả câu: "Đúng là người thích xe nên anh ấy hiểu biết rõ về xe." (Lưu ý: đề thiếu な nên đáp án mang tính suy luận.)',
+    'Sai. 好きだ + だけあって thành 「好きだだけあって」 sai ngữ pháp vì trùng だ.',
+    'Sai. 好きである + だけあって không dùng tự nhiên; だけあって đi với dạng danh từ/tính từ な (好きな) chứ không với である.',
+    'Sai. 好きじゃない = không thích; mâu thuẫn với vế sau "biết rõ về xe".',
+  ],
+  14: [
+    'Sai. 「私は結婚する」 mâu thuẫn với ～ない限りは (chừng nào bố chưa đồng ý thì …) — vế sau phải là điều không thể xảy ra.',
+    'Sai. 「家を出るつもりだ」 là ý định, nhưng mẫu ～ない限り đòi hỏi vế sau là kết quả không thể thực hiện.',
+    'Sai. 父を納得してください (hãy thuyết phục bố) là mệnh lệnh, không hợp vế sau của ～限りは.',
+    'Đúng. Mẫu: Vない限り(は) ～ない/できない = chừng nào chưa ~ thì không thể ~. 許(ゆる)す = cho phép, đồng ý; 結婚(けっこん) = kết hôn. Cả câu: "Chừng nào bố chưa đồng ý cho kết hôn thì tôi không thể cưới."',
+  ],
+  15: [
+    'Sai. 寄付(きふ) = quyên góp, không phải nguyên nhân làm về nhà trễ.',
+    'Sai. 消費(しょうひ) = tiêu dùng, không liên quan.',
+    'Sai. 期待(きたい) = kỳ vọng; không hợp "のせいで".',
+    'Đúng. 渋滞(じゅうたい) = kẹt xe. ～のせいで = vì ~ (lý do xấu). 帰宅(きたく) = về nhà; 予定(よてい) = dự định. Cả câu: "Vì kẹt xe nên tôi về nhà muộn hơn dự định tới 3 tiếng."',
+  ],
+  16: [
+    'Sai. 「あんなにきれいな」 phải có danh từ đi sau; kết thúc bằng っけ thì không nối với な.',
+    'Sai. きれいだ là dạng thông thường nhưng ～っけ ở câu hỏi nhớ lại thường dùng thì quá khứ (だった).',
+    'Sai. きれい thiếu だった nên không nối được với っけ.',
+    'Đúng. Mẫu: thể thông thường + っけ = nhỉ? (nhớ lại điều đã biết). Quá khứ của tính từ な: きれいだった + っけ. 彼女(かのじょ) = cô ấy; 前(まえ)から = từ trước. Cả câu: "Cô ấy từ trước đến giờ đã xinh như thế này nhỉ?" (ngạc nhiên vì thấy cô ấy thay đổi).',
+  ],
+  17: [
+    'Đúng. 捨てる(すてる) = vứt bỏ; 捨てて = dạng て. 要(い)らない = không cần; もの = đồ vật. Cả câu: "Hãy vứt những thứ không cần đi."',
+    'Sai. 挿(さ)す = cắm, gài; không đọc là すてる.',
+    'Sai. 持(も)つ = cầm, mang; không đọc là すてる.',
+    'Sai. 握(にぎ)る = nắm; không đọc là すてる.',
+  ],
+  18: [
+    'Đúng. Mẫu: Vる + に限(かぎ)る = ~ là tốt nhất. 温泉(おんせん) = suối nước nóng; 体の調子(ちょうし)が悪い = cơ thể không khỏe. Cả câu: "Khi cơ thể không khỏe thì ngâm suối nước nóng là tốt nhất."',
+    'Sai. はいった là thì quá khứ; に限る đi với dạng từ điển (Vる), không dùng dạng た.',
+    'Sai. はいり là dạng bỏ ます, không đi trực tiếp trước に限る.',
+    'Sai. はいらなく là dạng phủ định chưa hoàn chỉnh (入らなくて), không hợp nghĩa "tốt nhất là ngâm".',
+  ],
+  19: [
+    'Sai. 言うので (vì nói là ~) dùng chỉ lý do; ở đây vế sau trái ngược nên cần ～のに.',
+    'Sai. 言えば (nếu nói) là điều kiện, không diễn đạt sự trái ngược giữa vế đầu và vế sau.',
+    'Đúng. Mẫu: ～と言うのに = vậy mà (trái ngược). 出発(しゅっぱつ) = xuất phát; 準備(じゅんび) = chuẩn bị. Cả câu: "Nghe nói 1 tiếng nữa là khởi hành đi du lịch vậy mà vẫn chưa chuẩn bị gì."',
+    'Sai. 言う (dạng từ điển) không nối được với vế sau trái ngược.',
+  ],
+  20: [
+    'Sai. せいあい là cách đọc tưởng tượng; chữ 再会 không đọc như vậy.',
+    'Sai. せいかい (正解 = đáp án đúng) là từ khác.',
+    'Đúng. 再会(さいかい) = gặp lại. Chữ 再(さい) = lại; 会(かい) = gặp. 小学校(しょうがっこう) = trường tiểu học; クラスメート = bạn cùng lớp. Cả câu: "Tôi gặp lại bạn cùng lớp thời tiểu học."',
+    'Sai. さいあい không tồn tại; (最愛 là さいあい nhưng nghĩa là người yêu nhất).',
+  ],
+  21: [
+    'Sai. 表現(ひょうげん) = biểu hiện, cách diễn đạt; không hợp "と～している".',
+    'Đúng. 後悔(こうかい) = hối hận. もっと勉強しておけばよかった = giá mà học nhiều hơn. Cả câu: "Điểm kiểm tra thấp, tôi hối hận vì đã không học nhiều hơn."',
+    'Sai. 努力(どりょく) = nỗ lực; nghĩa đối lập với "thấy tiếc vì không học".',
+    'Sai. 期待(きたい) = kỳ vọng, không hợp với "と思っている/している" ở đây.',
+  ],
+  22: [
+    'Sai. 着き場 là cách ghép không có trong tiếng Nhật.',
+    'Sai. 着き易 không có nghĩa trong tiếng Nhật.',
+    'Đúng. 置き場(おきば) = chỗ để đồ. ゴミ置き場 = nơi để rác. 冷蔵庫(れいぞうこ) = tủ lạnh. Cả câu: "Tủ lạnh cũ hãy mang đến chỗ để rác."',
+    'Sai. 置き易 không có nghĩa trong tiếng Nhật (易 đọc là やすい: dễ).',
+  ],
+  23: [
+    'Đúng. 回答(かいとう) = trả lời (khảo sát). アンケートに回答する = trả lời bảng khảo sát. 全部(ぜんぶ)で30人 = tổng cộng 30 người. Cả câu: "Số người trả lời khảo sát tổng cộng là 30 người."',
+    'Sai. 許可(きょか) = cho phép; không hợp với khảo sát.',
+    'Sai. 印刷(いんさつ) = in ấn; không hợp.',
+    'Sai. 追加(ついか) = thêm vào; không hợp.',
+  ],
+  24: [
+    'Sai. よごれす không tồn tại; 汚れる(よごれる) là tự động từ, còn 汚す(よごす) là tha động từ.',
+    'Đúng. 汚す(よごす) = làm bẩn, làm ô uế. 父(ちち) = bố (của mình); 名(な)を汚す = làm ô danh. Cả câu: "Như vậy sẽ làm ô danh của cha."',
+    'Sai. おぼす không phải cách đọc của 汚す.',
+    'Sai. おぼえす không tồn tại; 覚える(おぼえる) = nhớ, là từ khác.',
+  ],
+  25: [
+    'Sai. いいかも (có lẽ tốt) không diễn đạt sự tiếc nuối khi người kia đã sắp về.',
+    'Đúng. Mẫu: Vば + いいのに = giá mà ~ thì tốt (mong muốn hoặc trách nhẹ). ゆっくりする = thong thả, ở lại thêm. Cả câu: "Về rồi sao? Giá mà ở lại thêm chút nữa thì hay."',
+    'Sai. よかったこと không phải cách nói tự nhiên với 〜ば.',
+    'Sai. よかったもの cũng không tự nhiên; ばよかったのに mới là mẫu hoàn chỉnh.',
+  ],
+  26: [
+    'Sai. わいわいする = ồn ào vui nhộn (nhiều người cùng), không phải cảm xúc khi sắp đến một buổi hòa nhạc của riêng mình.',
+    'Sai. いらいらする = bực bội, sốt ruột.',
+    'Đúng. わくわくする = hồi hộp, háo hức (mong đợi điều vui). コンサート = buổi hòa nhạc; 始まる(はじまる) = bắt đầu. Cả câu: "Buổi hòa nhạc sắp bắt đầu" → háo hức.',
+    'Sai. ほっとする = nhẹ nhõm (thở phào).',
+  ],
+  27: [
+    'Sai. けんかする(喧嘩) = cãi nhau; không phải nghĩa của 気に入る.',
+    'Sai. おこる = tức giận.',
+    'Đúng. 気(き)に入(い)る = ưng ý, thích. 好(す)きになる = trở nên thích. Gần nghĩa nhất.',
+    'Sai. がまんする = chịu đựng.',
+  ],
+  28: [
+    'Đúng. 戦争(せんそう) = chiến tranh. 1900年(せんきゅうひゃくねん) = năm 1900; 起(お)こる = xảy ra. Cả câu: "Năm 1900 đã xảy ra chiến tranh."',
+    'Sai. 大会(たいかい) = đại hội, giải đấu.',
+    'Sai. 地震(じしん) = động đất.',
+    'Sai. 会議(かいぎ) = cuộc họp.',
+  ],
+  29: [
+    'Đúng. 小論文(しょうろんぶん) = bài luận ngắn. 書き方(かきかた) = cách viết. Chữ 小(しょう) + 論(ろん) + 文(ぶん). Cả câu: "Tôi đang đọc cuốn sách tên là Cách viết bài luận ngắn."',
+    'Sai. ころんぶん: chữ 小 không đọc là ころ.',
+    'Sai. しょろんぶん: thiếu âm dài (しょう → しょ), sai trường âm.',
+    'Sai. こそんぶん không tồn tại.',
+  ],
+  30: [
+    'Đúng. Mẫu: Vている + うちに(～てくる) = trong lúc đang ~ thì dần dần ~. 分かってきました = dần dần hiểu ra. ルール = luật chơi; やきゅう(野球) = bóng chày. Cả câu: "Ban đầu tôi không hiểu luật bóng chày, nhưng trong lúc xem trận đấu trên TV thì dần dần hiểu ra."',
+    'Sai. とても楽しかったです mô tả cảm xúc, không nối với vế trước "ban đầu không hiểu luật".',
+    'Sai. 面白いと思いました (nghĩ là thú vị) không thể hiện sự thay đổi dần của việc "hiểu ra".',
+    'Sai. したくなりました (muốn chơi) không khớp với "không hiểu luật".',
+  ],
+  31: [
+    'Sai. 開発(かいはつ) = phát triển, khai thác.',
+    'Sai. 計算(けいさん) = tính toán.',
+    'Đúng. 誤解(ごかい) = hiểu lầm. 誤解される = bị hiểu lầm. はっきり言わない = không nói rõ. Cả câu: "Nếu không nói rõ thì có thể bị hiểu lầm nên cần chú ý."',
+    'Sai. 個性(こせい) = cá tính; không hợp với bị động.',
+  ],
+  32: [
+    'Sai. 歩きにくい = khó đi (do điều kiện), không nói "chưa biết đi".',
+    'Đúng. 歩けない = không đi được (thể khả năng phủ định). Con nhà tôi còn nhỏ nên chưa đi được. うちの子(こ) = con nhà mình; まだ = vẫn chưa. Cả câu: "Con nhà tôi vẫn chưa biết đi."',
+    'Sai. 歩ける = có thể đi; trái nghĩa với まだ.',
+    'Sai. 歩きがたい = khó đi (văn viết, cảm xúc), không hợp.',
+  ],
+  33: [
+    'Sai. さいきん (細菌 vi khuẩn / 最近 gần đây): chữ 最新 không đọc như vậy.',
+    'Sai. ざいきん không có nghĩa tương ứng.',
+    'Đúng. 最新(さいしん) = mới nhất. ファッション = thời trang. Cả câu: "Tôi muốn biết thời trang mới nhất."',
+    'Sai. ざいしん không tồn tại.',
+  ],
+  34: [
+    'Sai. お例(おれい) không phải chữ viết đúng của lời cảm ơn; 例(れい) = ví dụ.',
+    'Sai. お社(おやしろ) = đền thờ, không phải おれい.',
+    'Sai. お写 không có nghĩa.',
+    'Đúng. お礼(おれい) = lời cảm ơn, quà cảm ơn. 手紙(てがみ) = thư. Cả câu: "Hãy viết thư cảm ơn."',
+  ],
+  35: [
+    'Sai. について = về (chủ đề), không dùng chỉ tư cách.',
+    'Sai. を通して(をとおして) = thông qua, suốt (thời gian) — không hợp với nghề nghiệp.',
+    'Đúng. Mẫu: N として = với tư cách là N. 教師(きょうし) = giáo viên; 数学(すうがく) = toán học. Cả câu: "Bố tôi làm việc ở trường cấp ba với tư cách giáo viên toán."',
+    'Sai. にとって = đối với (quan điểm của ai); không chỉ tư cách.',
+  ],
+  36: [
+    'Sai. 埋(う)め立(た)て = lấp (đất); không đi với 風.',
+    'Đúng. 吹(ふ)く = thổi (gió). 吹いて + います = đang thổi. 台風(たいふう) = bão; 近(ちか)づく = đến gần. Cả câu: "Vì bão đang đến gần nên gió rất mạnh đang thổi."',
+    'Sai. 湿(しめ)る = ẩm ướt; không đi với 風が.',
+    'Sai. 延(の)びる = kéo dài.',
+  ],
+  37: [
+    'Sai. 地方(ちほう) = địa phương, vùng; không hợp với "viết nhật ký mỗi ngày".',
+    'Sai. 一生(いっしょう) = cả đời.',
+    'Đúng. 出来事(できごと) = sự việc xảy ra. 日記(にっき) = nhật ký. Cả câu: "Tôi viết nhật ký về những sự việc xảy ra mỗi ngày."',
+    'Sai. 瞬間(しゅんかん) = khoảnh khắc.',
+  ],
+  38: [
+    'Sai. 請求(せいきゅう) = yêu cầu thanh toán.',
+    'Sai. 幸運(こううん) = may mắn.',
+    'Đúng. 代表(だいひょう) = đại diện. N を代表して = thay mặt N. スピーチ = bài phát biểu. Cả câu: "Thay mặt cả lớp, bạn I sẽ phát biểu."',
+    'Sai. 再開(さいかい) = bắt đầu lại.',
+  ],
+  39: [
+    'Sai. 開発(かいはつ) = phát triển.',
+    'Sai. 実感(じっかん) = cảm nhận thực tế; không đi với 泣いてしまう.',
+    'Sai. 期待(きたい) = kỳ vọng.',
+    'Đúng. 感動(かんどう) = cảm động. ～して泣(な)いてしまう = cảm động đến phát khóc. Cả câu: "Xem bộ phim đó, tôi cảm động đến bật khóc."',
+  ],
+  40: [
+    'Sai. 資源(しげん) + が めぐまれている: が không dùng ở mẫu này.',
+    'Sai. で chỉ phương tiện/địa điểm, không đi với 恵まれる.',
+    'Đúng. Mẫu: N に恵(めぐ)まれる = được ban cho, may mắn có N. 資源(しげん) = tài nguyên; 島(しま) = đảo. Cả câu: "Hòn đảo ấy được thiên nhiên ban cho nhiều tài nguyên biển."',
+    'Sai. を không đi với 恵まれる (bị động).',
+  ],
+  41: [
+    'Sai. 豊(ゆた)か + だった = "giàu có"; không hợp ngữ cảnh "tìm được quán ngay".',
+    'Sai. 大変(たいへん) = vất vả, nghiêm trọng; ngược nghĩa với việc "tìm được quán ngay lập tức".',
+    'Đúng. 幸運(こううん) = may mắn. すぐに見つかった = tìm thấy ngay. Cả câu: "Tìm được nhà hàng mới ngay thật là may mắn."',
+    'Sai. 平気(へいき) = bình thản, không sao.',
+  ],
+  42: [
+    'Đúng. 美しい(うつくしい) = đẹp. 景色(けしき) = phong cảnh; 海(うみ) = biển. Cả câu: "Phong cảnh biển nhìn từ khách sạn thật sự rất đẹp."',
+    'Sai. うらやましい = đáng ghen tị, thèm muốn.',
+    'Sai. むしあつい(蒸し暑い) = oi bức.',
+    'Sai. かたい(硬い) = cứng.',
+  ],
+  43: [
+    'Sai. 日本についてよく知っている nói về kiến thức, không phải điều trách móc đi với くせに (trái với kỳ vọng).',
+    'Đúng. Mẫu: N のくせに = dù là N mà (trách móc). 日本人(にほんじん)のくせに日本語がおかしい = dù là người Nhật mà tiếng Nhật lại lạ. Cả câu: "Anh Satou là người Nhật mà tiếng Nhật lại kỳ lạ nhỉ."',
+    'Sai. 日本語がしゃべれるね (nói được tiếng Nhật nhỉ) là điều đương nhiên với người Nhật nên không hợp くせに.',
+    'Sai. 日本が好きだ không tạo ra sự trái ngược với 日本人.',
+  ],
+  44: [
+    'Sai. 「で」 nghĩa là bằng/ở; 発展する không dùng で chỉ hướng.',
+    'Sai. まで = đến tận (giới hạn); không hợp với 発展.',
+    'Đúng. 発展(はってん) = phát triển, mở rộng. 商社(しょうしゃ) = công ty thương mại; 海外(かいがい) = nước ngoài. Cả câu: "Công ty thương mại đó đã phát triển ra thị trường nước ngoài." (Đề không có bình luận nên đáp án do mình tự phân tích.)',
+    'Sai. に cũng có thể đi với 発展 nhưng nhấn điểm đến tĩnh, ít tự nhiên hơn へ ở nghĩa "mở rộng ra hướng".',
+  ],
+}
+
+export const READING = {
+  translation:
+`Hokkaido vào mùa đông lạnh và có nhiều tuyết. Ở Sapporo, người ta tận dụng tuyết đó để tổ chức "Lễ hội tuyết Sapporo" vào đầu tháng 2 hằng năm. Bắt đầu từ công viên Odori, ở nhiều địa điểm có thể xem các bức tượng được làm bằng tuyết. Lễ hội tuyết bắt đầu từ việc học sinh cấp hai dùng tuyết được vứt ở bãi đổ tuyết để làm tượng tuyết. Ngày nay lễ hội được biết đến là sự kiện tiêu biểu của Hokkaido mùa đông.
+Câu 1: Chọn câu đúng. Câu 2: Điền từ đúng vào chỗ trống (1).
+(Chú thích: 流れ込み = chảy vào; 潟 = đầm phá, đầm lầy.)`,
+  1: [
+    'Đúng. Bài viết: 今では冬の北海道を代表するイベントとして知られています = ngày nay là sự kiện tiêu biểu của Hokkaido mùa đông. 代表的(だいひょうてき) = mang tính đại diện.',
+    'Sai. Bài không nói về việc trồng cây nhiều bằng tuyết; 木(き) = cây, 植(う)える = trồng.',
+    'Sai. Bài nói 中学生(ちゅうがくせい) = học sinh cấp hai (không phải 高校生 = học sinh cấp ba) làm tượng tuyết.',
+    'Sai. Bài nói Hokkaido mùa đông lạnh và nhiều tuyết (寒くて雪が多い), không phải ấm và ít tuyết.',
+  ],
+  2: [
+    'Đúng. 行(おこな)われる = được tổ chức, diễn ra (bị động của 行う). 「さっぽろ雪まつり」が行われます = Lễ hội tuyết Sapporo được tổ chức.',
+    'Sai. 栽培(さいばい)される = được trồng trọt; không dùng cho lễ hội.',
+    'Sai. 流(なが)れる = chảy; không hợp với 雪まつり.',
+    'Sai. 恵(めぐ)まれる = được ban cho; không hợp với chủ ngữ 雪まつり.',
+  ],
+}
