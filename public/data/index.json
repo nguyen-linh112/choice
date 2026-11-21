@@ -33,5 +33,15 @@
     "id": "jpd326",
     "name": "JPD326 - Tiếng Nhật trung cấp",
     "file": "jpd326.json"
+  },
+  {
+    "id": "prm392",
+    "name": "PRM392 - Lập trình Android",
+    "file": "prm392.json"
+  },
+  {
+    "id": "prm393",
+    "name": "PRM393 - Lập trình Flutter",
+    "file": "prm393.json"
   }
 ]

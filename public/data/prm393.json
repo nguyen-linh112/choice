@@ -1,0 +1,1376 @@
+{
+  "id": "prm393",
+  "name": "PRM393 - Lập trình Flutter",
+  "sections": [
+    {
+      "key": "choice",
+      "label": "Trắc nghiệm"
+    }
+  ],
+  "sets": [
+    {
+      "id": "su26-fe",
+      "name": "Đề SU26 - FE",
+      "sections": {
+        "choice": {
+          "exam": {
+            "questionCount": 50,
+            "durationMinutes": 60
+          },
+          "questions": [
+            {
+              "id": "prm393-su26fe-01",
+              "question": "Which Dart feature supports object-oriented programming?",
+              "options": [
+                {
+                  "text": "Widgets",
+                  "correct": false,
+                  "explain": "Sai. Widget là \"viên gạch\" dựng giao diện trong Flutter, không phải tính năng lập trình hướng đối tượng (OOP) của ngôn ngữ Dart."
+                },
+                {
+                  "text": "Classes and objects",
+                  "correct": true,
+                  "explain": "Đúng. Class (lớp) là bản thiết kế, object (đối tượng) là sản phẩm làm từ bản thiết kế đó (như khuôn bánh và cái bánh). Đây chính là nền móng của OOP trong Dart."
+                },
+                {
+                  "text": "Hot reload",
+                  "correct": false,
+                  "explain": "Sai. Hot reload là tính năng của công cụ: sửa code xong thấy giao diện đổi ngay mà không chạy lại app. Nó giúp lập trình nhanh chứ không phải khái niệm OOP."
+                },
+                {
+                  "text": "Layout builders",
+                  "correct": false,
+                  "explain": "Sai. Layout builder là widget dùng để dựng giao diện theo kích thước màn hình, không liên quan đến OOP."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-02",
+              "question": "Which method retrieves data from SharedPreferences?",
+              "options": [
+                {
+                  "text": "get()",
+                  "correct": true,
+                  "explain": "Đúng. SharedPreferences là \"cuốn sổ ghi nhớ\" nhỏ lưu cặp khóa-giá trị. Muốn lấy ra thì gọi get() kèm khóa (thực tế là getString / getInt / getBool... đều bắt đầu bằng get)."
+                },
+                {
+                  "text": "read()",
+                  "correct": false,
+                  "explain": "Sai. read() không phải phương thức lấy dữ liệu của SharedPreferences (read() có ở Provider, không phải ở đây)."
+                },
+                {
+                  "text": "fetch()",
+                  "correct": false,
+                  "explain": "Sai. fetch() thường dùng để gọi dữ liệu từ mạng (API), không phải đọc sổ ghi nhớ trong máy."
+                },
+                {
+                  "text": "load()",
+                  "correct": false,
+                  "explain": "Sai. load() hay dùng cho việc nạp file hoặc tài nguyên, không phải tên hàm lấy giá trị của SharedPreferences."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-03",
+              "question": "What is Flutter primarily used for?",
+              "options": [
+                {
+                  "text": "Designing databases for mobile apps",
+                  "correct": false,
+                  "explain": "Sai. Thiết kế cơ sở dữ liệu là việc của SQL/Firebase..., không phải mục đích chính của Flutter."
+                },
+                {
+                  "text": "Creating native applications from a single codebase",
+                  "correct": true,
+                  "explain": "Đúng. Flutter là bộ công cụ của Google: viết MỘT bộ code (bằng Dart) rồi chạy trên Android, iOS, web... giống như một công thức nấu được nhiều bếp dùng chung."
+                },
+                {
+                  "text": "Developing server-side applications only",
+                  "correct": false,
+                  "explain": "Sai. Flutter không dành riêng cho phía máy chủ (server); phần server dùng Node.js, Java, Python..."
+                },
+                {
+                  "text": "Building operating systems for mobile devices",
+                  "correct": false,
+                  "explain": "Sai. Flutter làm ứng dụng, không làm hệ điều hành. Hệ điều hành di động là Android hay iOS."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-04",
+              "question": "Why should state be kept as local as possible?",
+              "options": [
+                {
+                  "text": "Better animations",
+                  "correct": false,
+                  "explain": "Sai. Giữ state ở gần nơi dùng không phải để làm animation đẹp hơn."
+                },
+                {
+                  "text": "Reduce unnecessary rebuilds",
+                  "correct": true,
+                  "explain": "Đúng. State (trạng thái) nằm càng \"cục bộ\" thì khi nó đổi, chỉ phần nhỏ liên quan được vẽ lại. Như bật đèn trong đúng một phòng thay vì bật cả tòa nhà, tránh rebuild không cần thiết và tiết kiệm hiệu năng."
+                },
+                {
+                  "text": "Simplify UI",
+                  "correct": false,
+                  "explain": "Sai. Không có chuyện giữ state cục bộ để làm giao diện đơn giản hơn; đây là lợi ích về hiệu năng."
+                },
+                {
+                  "text": "Improve navigation",
+                  "correct": false,
+                  "explain": "Sai. Điều hướng giữa các màn hình không phụ thuộc vào việc state cục bộ hay toàn cục."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-05",
+              "question": "Which command builds a release APK?",
+              "options": [
+                {
+                  "text": "flutter run",
+                  "correct": false,
+                  "explain": "Sai. \"flutter run\" chạy app để thử (debug) trên máy/giả lập, chưa phải đóng gói bản phát hành."
+                },
+                {
+                  "text": "flutter build apk",
+                  "correct": true,
+                  "explain": "Đúng. \"flutter build apk\" tạo file APK (gói cài đặt Android). Mặc định đây là bản release để đưa lên cửa hàng hoặc gửi cho người dùng."
+                },
+                {
+                  "text": "flutter doctor",
+                  "correct": false,
+                  "explain": "Sai. \"flutter doctor\" là lệnh kiểm tra máy đã cài đủ công cụ chưa (như bác sĩ khám sức khỏe cho môi trường)."
+                },
+                {
+                  "text": "flutter clean",
+                  "correct": false,
+                  "explain": "Sai. \"flutter clean\" xóa các file build cũ để dọn dẹp, không tạo APK."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-06",
+              "question": "What happens after successful login?",
+              "options": [
+                {
+                  "text": "App closes",
+                  "correct": false,
+                  "explain": "Sai. Đăng nhập thành công thì người dùng được vào dùng app, không phải app tự đóng lại."
+                },
+                {
+                  "text": "User session starts",
+                  "correct": true,
+                  "explain": "Đúng. Đăng nhập xong thì app mở một phiên làm việc (session) cho người dùng, thường kèm lưu token để nhận ra họ ở các lần sau."
+                },
+                {
+                  "text": "Theme changes",
+                  "correct": false,
+                  "explain": "Sai. Đổi theme (giao diện sáng/tối) không phải kết quả tự nhiên của việc đăng nhập."
+                },
+                {
+                  "text": "Navigation resets",
+                  "correct": false,
+                  "explain": "Sai. Điều hướng thường chuyển sang màn hình chính, không phải bị \"reset\" như một hậu quả của đăng nhập thành công."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-07",
+              "question": "Which widget is an example of implicit animation?",
+              "options": [
+                {
+                  "text": "AnimatedContainer",
+                  "correct": true,
+                  "explain": "Đúng. AnimatedContainer là animation \"ngầm\" (implicit): bạn chỉ đổi thuộc tính (màu, kích thước) thì Flutter tự làm hiệu ứng chuyển mượt. Giống như nhấn nút thang máy là nó tự chạy, bạn không phải điều khiển từng tầng."
+                },
+                {
+                  "text": "AnimationController",
+                  "correct": false,
+                  "explain": "Sai. AnimationController là animation \"tường minh\" (explicit): bạn phải tự điều khiển bắt đầu, dừng, lặp. Giống như tự lái xe số sàn."
+                },
+                {
+                  "text": "Tween",
+                  "correct": false,
+                  "explain": "Sai. Tween chỉ mô tả khoảng giá trị đầu - cuối của animation; dùng cùng AnimationController chứ không tự chạy."
+                },
+                {
+                  "text": "Ticker",
+                  "correct": false,
+                  "explain": "Sai. Ticker là bộ \"đồng hồ nhịp\" phát tín hiệu mỗi khung hình cho animation tường minh, không phải widget animation ngầm."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-08",
+              "question": "What is the primary responsibility of the setState() method?",
+              "options": [
+                {
+                  "text": "Persist data",
+                  "correct": false,
+                  "explain": "Sai. setState() không lưu dữ liệu lâu dài; muốn lưu phải dùng SharedPreferences hay database."
+                },
+                {
+                  "text": "Trigger widget rebuild",
+                  "correct": true,
+                  "explain": "Đúng. setState() báo cho Flutter biết \"dữ liệu vừa đổi\" để vẽ lại (rebuild) widget. Giống như báo cô giáo viết lại bảng sau khi đổi nội dung."
+                },
+                {
+                  "text": "Navigate screens",
+                  "correct": false,
+                  "explain": "Sai. Chuyển màn hình do Navigator đảm nhiệm."
+                },
+                {
+                  "text": "Handle async tasks",
+                  "correct": false,
+                  "explain": "Sai. Xử lý tác vụ bất đồng bộ dùng async/await, Future; setState() không làm việc đó."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-09",
+              "question": "Why is clean architecture beneficial?",
+              "options": [
+                {
+                  "text": "Fewer files",
+                  "correct": false,
+                  "explain": "Sai. Clean architecture thường chia nhiều lớp nên có nhiều file hơn chứ không ít hơn."
+                },
+                {
+                  "text": "Easier maintenance and testing",
+                  "correct": true,
+                  "explain": "Đúng. Kiến trúc sạch chia app thành các lớp độc lập, nên sửa một phần ít ảnh hưởng phần khác và dễ viết test. Giống tủ đồ chia ngăn: tìm và sửa đồ dễ hơn nhiều."
+                },
+                {
+                  "text": "Better UI",
+                  "correct": false,
+                  "explain": "Sai. Kiến trúc không làm giao diện đẹp hơn; đó là việc của thiết kế UI."
+                },
+                {
+                  "text": "Faster builds",
+                  "correct": false,
+                  "explain": "Sai. Kiến trúc không giúp biên dịch nhanh hơn; thậm chí có thể thêm vài lớp trung gian."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-10",
+              "question": "What is Dart primarily designed for in the Flutter ecosystem?",
+              "options": [
+                {
+                  "text": "Database management",
+                  "correct": false,
+                  "explain": "Sai. Dart không sinh ra để quản trị cơ sở dữ liệu."
+                },
+                {
+                  "text": "User interface development",
+                  "correct": false,
+                  "explain": "Sai. Dart có dùng để dựng UI, nhưng mô tả này quá hẹp: Dart là ngôn ngữ lập trình đa dụng, UI chỉ là một phần công việc."
+                },
+                {
+                  "text": "General-purpose programming with UI focus",
+                  "correct": true,
+                  "explain": "Đúng. Dart là ngôn ngữ đa dụng (general-purpose) do Google tạo ra, được tối ưu để làm giao diện (UI) cho Flutter: biên dịch nhanh, hot reload."
+                },
+                {
+                  "text": "Network security",
+                  "correct": false,
+                  "explain": "Sai. Dart không phải công cụ bảo mật mạng."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-11",
+              "question": "What does the build() method return in a widget?",
+              "options": [
+                {
+                  "text": "A screen",
+                  "correct": false,
+                  "explain": "Sai. Một \"màn hình\" là cả trang do nhiều widget ghép lại; build() chỉ trả về cây widget mô tả giao diện, không phải cả màn hình."
+                },
+                {
+                  "text": "A widget tree describing the UI",
+                  "correct": true,
+                  "explain": "Đúng. build() trả về cây widget (widget tree): bản mô tả \"giao diện nên trông thế nào\". Giống bản vẽ kiến trúc, chưa phải ngôi nhà đã xây xong."
+                },
+                {
+                  "text": "Application state",
+                  "correct": false,
+                  "explain": "Sai. State (trạng thái) được giữ trong class State, không phải thứ build() trả về."
+                },
+                {
+                  "text": "Rendered pixels",
+                  "correct": false,
+                  "explain": "Sai. Pixel thực tế do bộ máy vẽ (rendering engine) tạo ra, không phải build() trả về."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-12",
+              "question": "Which Flutter test focuses on UI components?",
+              "options": [
+                {
+                  "text": "Unit test",
+                  "correct": false,
+                  "explain": "Sai. Unit test kiểm tra một hàm/lớp logic riêng lẻ, không dựng giao diện."
+                },
+                {
+                  "text": "Widget test",
+                  "correct": true,
+                  "explain": "Đúng. Widget test dựng một widget trong môi trường thử rồi kiểm tra nó hiển thị và phản ứng đúng (bấm nút, nhập chữ...). Đây là loại test dành cho UI."
+                },
+                {
+                  "text": "Integration test",
+                  "correct": false,
+                  "explain": "Sai. Integration test chạy cả app từ đầu đến cuối như người dùng thật; phạm vi rộng hơn, không chỉ riêng thành phần UI."
+                },
+                {
+                  "text": "Load test",
+                  "correct": false,
+                  "explain": "Sai. Load test kiểm tra khả năng chịu tải (nhiều người cùng dùng), không phải test cho UI."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-13",
+              "question": "What causes unnecessary widget rebuilds?",
+              "options": [
+                {
+                  "text": "State changes",
+                  "correct": false,
+                  "explain": "Sai. State đổi là lúc cần rebuild để cập nhật giao diện, đó là rebuild cần thiết."
+                },
+                {
+                  "text": "Overusing setState()",
+                  "correct": true,
+                  "explain": "Đúng. Gọi setState() quá nhiều hoặc ở widget quá lớn khiến cả cây widget bị vẽ lại không cần thiết. Giống việc sơn lại cả căn nhà chỉ vì một cái ghế bị trầy."
+                },
+                {
+                  "text": "Using Provider",
+                  "correct": false,
+                  "explain": "Sai. Provider được thiết kế để chỉ rebuild phần thật sự phụ thuộc dữ liệu, giúp giảm rebuild."
+                },
+                {
+                  "text": "Using const widgets",
+                  "correct": false,
+                  "explain": "Sai. Widget const được tạo một lần, Flutter bỏ qua khi rebuild nên giảm rebuild, không gây ra rebuild thừa."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-14",
+              "question": "What happens if a non-nullable variable is not initialized in Dart?",
+              "options": [
+                {
+                  "text": "The app runs normally",
+                  "correct": false,
+                  "explain": "Sai. Dart có \"null safety\" nên không để biến không-null chạy mà chưa có giá trị."
+                },
+                {
+                  "text": "A runtime exception occurs",
+                  "correct": false,
+                  "explain": "Sai. Lỗi khi chạy (runtime) xảy ra với biến kiểu \"late\" chưa khởi tạo; còn biến non-nullable thông thường thì Dart đã chặn từ lúc biên dịch."
+                },
+                {
+                  "text": "A compile-time error occurs",
+                  "correct": true,
+                  "explain": "Đúng. Biến non-nullable (không được null) bắt buộc phải có giá trị ngay. Nếu không, Dart báo lỗi ngay lúc biên dịch (compile-time) và không cho chạy."
+                },
+                {
+                  "text": "The value becomes null automatically",
+                  "correct": false,
+                  "explain": "Sai. Biến non-nullable thì không bao giờ tự thành null; muốn cho phép null phải khai báo thêm dấu ? (ví dụ String?)."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-15",
+              "question": "Why is separating UI and state logic recommended?",
+              "options": [
+                {
+                  "text": "Reduce code size",
+                  "correct": false,
+                  "explain": "Sai. Tách UI và logic thường làm tăng số file chứ không giảm dung lượng code."
+                },
+                {
+                  "text": "Improve maintainability",
+                  "correct": true,
+                  "explain": "Đúng. Tách giao diện khỏi logic xử lý giúp mỗi phần có một nhiệm vụ rõ ràng, dễ đọc, dễ sửa, dễ test. Như bếp và phòng ăn tách riêng: mỗi nơi gọn gàng, dễ quản lý."
+                },
+                {
+                  "text": "Faster execution",
+                  "correct": false,
+                  "explain": "Sai. Không làm app chạy nhanh hơn."
+                },
+                {
+                  "text": "Better animations",
+                  "correct": false,
+                  "explain": "Sai. Không liên quan đến animation."
+                }
+              ],
+              "note": "Bình luận của câu này chưa tải kịp trong video, đáp án do mình tự phân tích. Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-16",
+              "question": "Why should architecture be decided early?",
+              "options": [
+                {
+                  "text": "Avoid UI work",
+                  "correct": false,
+                  "explain": "Sai. Chọn kiến trúc sớm không làm bạn bớt việc giao diện."
+                },
+                {
+                  "text": "Reduce refactoring cost",
+                  "correct": true,
+                  "explain": "Đúng. Chọn khung kiến trúc từ đầu tránh việc phải đập đi xây lại khi app đã lớn; sửa kiến trúc về sau rất tốn công."
+                },
+                {
+                  "text": "Improve animations",
+                  "correct": false,
+                  "explain": "Sai. Kiến trúc không liên quan đến việc làm animation hay hiệu ứng."
+                },
+                {
+                  "text": "Change theme",
+                  "correct": false,
+                  "explain": "Sai. Đổi theme là việc nhỏ, làm bất cứ lúc nào, không cần quyết định sớm."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-17",
+              "question": "What does golden testing verify?",
+              "options": [
+                {
+                  "text": "API responses",
+                  "correct": false,
+                  "explain": "Sai. Phản hồi API được kiểm tra bằng test dữ liệu hoặc test tích hợp, không phải golden test."
+                },
+                {
+                  "text": "UI appearance consistency",
+                  "correct": true,
+                  "explain": "Đúng. Golden test chụp ảnh giao diện lần đầu làm \"mẫu chuẩn\" (golden), các lần sau so sánh ảnh mới với mẫu để biết UI có vô tình bị đổi không. Như chơi trò \"tìm điểm khác biệt\"."
+                },
+                {
+                  "text": "Database state",
+                  "correct": false,
+                  "explain": "Sai. Trạng thái cơ sở dữ liệu không được kiểm tra bằng golden test."
+                },
+                {
+                  "text": "Authentication",
+                  "correct": false,
+                  "explain": "Sai. Xác thực (đăng nhập) không được kiểm tra bằng golden test."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-18",
+              "question": "Which Flutter tool helps debug network requests?",
+              "options": [
+                {
+                  "text": "DevTools",
+                  "correct": true,
+                  "explain": "Đúng. DevTools là bộ công cụ chẩn đoán của Flutter, trong đó có tab Network để xem các yêu cầu mạng của app."
+                },
+                {
+                  "text": "Inspector",
+                  "correct": false,
+                  "explain": "Sai. Widget Inspector chỉ để xem cấu trúc cây widget và bố cục, không xem yêu cầu mạng (tab Network của DevTools mới xem được)."
+                },
+                {
+                  "text": "Emulator",
+                  "correct": false,
+                  "explain": "Sai. Emulator là máy ảo để chạy app, không phải công cụ gỡ lỗi mạng."
+                },
+                {
+                  "text": "Hot reload",
+                  "correct": false,
+                  "explain": "Sai. Hot reload chỉ nạp lại code đã sửa nhanh chóng, không phân tích mạng."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-19",
+              "question": "Which platforms can Flutter applications target using a single codebase?",
+              "options": [
+                {
+                  "text": "Android only",
+                  "correct": false,
+                  "explain": "Sai. Flutter không bị giới hạn ở Android."
+                },
+                {
+                  "text": "iOS only",
+                  "correct": false,
+                  "explain": "Sai. Flutter không chỉ chạy trên iOS."
+                },
+                {
+                  "text": "Android, iOS, web, and desktop",
+                  "correct": true,
+                  "explain": "Đúng. Một bộ code Flutter có thể build ra app cho Android, iOS, web và desktop (Windows, macOS, Linux). Một công thức nấu được nhiều bếp."
+                },
+                {
+                  "text": "Web servers only",
+                  "correct": false,
+                  "explain": "Sai. Flutter không dành để chạy trên máy chủ web (server); web ở đây là giao diện chạy trên trình duyệt."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-20",
+              "question": "Which widget reacts to async data from local storage?",
+              "options": [
+                {
+                  "text": "FutureBuilder",
+                  "correct": true,
+                  "explain": "Đúng. FutureBuilder đợi một Future (kết quả đến sau một lúc, như đọc dữ liệu từ bộ nhớ) rồi vẽ giao diện. Đọc dữ liệu cục bộ chỉ cho ra kết quả một lần nên rất hợp. Như đặt món rồi đợi món ra."
+                },
+                {
+                  "text": "StreamBuilder",
+                  "correct": false,
+                  "explain": "Sai. StreamBuilder dành cho luồng dữ liệu liên tục (nhiều giá trị theo thời gian, như chat, vị trí), không phải đọc một lần từ bộ nhớ."
+                },
+                {
+                  "text": "ListView",
+                  "correct": false,
+                  "explain": "Sai. ListView chỉ là danh sách cuộn, không tự phản ứng với dữ liệu bất đồng bộ."
+                },
+                {
+                  "text": "Provider",
+                  "correct": false,
+                  "explain": "Sai. Provider là công cụ quản lý state, không phải widget chờ dữ liệu từ bộ nhớ."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-21",
+              "question": "Why are widgets lightweight in Flutter?",
+              "options": [
+                {
+                  "text": "They manage system resources",
+                  "correct": false,
+                  "explain": "Sai. Quản lý tài nguyên hệ thống là việc của Flutter engine, không phải của widget."
+                },
+                {
+                  "text": "They are immutable descriptions",
+                  "correct": true,
+                  "explain": "Đúng. Widget chỉ là bản mô tả bất biến (immutable) giao diện, rất nhẹ để tạo và hủy liên tục, còn phần nặng (vẽ) do Element/RenderObject xử lý. Giống tờ giấy ghi yêu cầu, không phải căn nhà."
+                },
+                {
+                  "text": "They store UI state",
+                  "correct": false,
+                  "explain": "Sai. State được lưu trong đối tượng State riêng, widget thì không lưu."
+                },
+                {
+                  "text": "They handle rendering directly",
+                  "correct": false,
+                  "explain": "Sai. Việc vẽ lên màn hình do RenderObject đảm nhiệm, không phải widget."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-22",
+              "question": "What problem does state hoisting address?",
+              "options": [
+                {
+                  "text": "API delay",
+                  "correct": false,
+                  "explain": "Sai. Độ trễ API không liên quan đến state hoisting."
+                },
+                {
+                  "text": "State duplication",
+                  "correct": true,
+                  "explain": "Đúng. State hoisting là \"nâng\" state lên widget cha để các widget con dùng chung một nguồn dữ liệu. Nhờ đó không bị trùng lặp (duplication) mỗi nơi giữ một bản. Như để một cuốn sổ chung thay vì mỗi người ghi một cuốn."
+                },
+                {
+                  "text": "Theme conflict",
+                  "correct": false,
+                  "explain": "Sai. Xung đột theme không phải vấn đề của state hoisting."
+                },
+                {
+                  "text": "Navigation error",
+                  "correct": false,
+                  "explain": "Sai. Lỗi điều hướng không liên quan."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-23",
+              "question": "What happens when setState() is called in a StatefulWidget?",
+              "options": [
+                {
+                  "text": "The app restarts",
+                  "correct": false,
+                  "explain": "Sai. setState() không khởi động lại cả app."
+                },
+                {
+                  "text": "The widget tree is rebuilt",
+                  "correct": true,
+                  "explain": "Đúng. Gọi setState() thì Flutter chạy lại build() để dựng lại cây widget phản ánh dữ liệu mới."
+                },
+                {
+                  "text": "Data is saved permanently",
+                  "correct": false,
+                  "explain": "Sai. setState() chỉ đổi dữ liệu trong bộ nhớ, không lưu vĩnh viễn."
+                },
+                {
+                  "text": "Navigation occurs",
+                  "correct": false,
+                  "explain": "Sai. Điều hướng chỉ xảy ra khi gọi Navigator."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-24",
+              "question": "Which pattern is commonly used for scalable state management?",
+              "options": [
+                {
+                  "text": "MVC",
+                  "correct": false,
+                  "explain": "Sai. MVC là mô hình truyền thống, không phải mẫu quản lý state phổ biến cho app Flutter lớn."
+                },
+                {
+                  "text": "BLoC",
+                  "correct": true,
+                  "explain": "Đúng. BLoC (Business Logic Component) tách logic khỏi giao diện bằng luồng sự kiện (event) vào, trạng thái (state) ra. Rõ ràng nên mở rộng app lớn rất tốt."
+                },
+                {
+                  "text": "Singleton",
+                  "correct": false,
+                  "explain": "Sai. Singleton chỉ đảm bảo có một thể hiện duy nhất, không phải mẫu quản lý state có khả năng mở rộng."
+                },
+                {
+                  "text": "Factory",
+                  "correct": false,
+                  "explain": "Sai. Factory là mẫu tạo đối tượng, không quản lý state."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-25",
+              "question": "Which input type improves user experience for emails?",
+              "options": [
+                {
+                  "text": "TextInputType.number",
+                  "correct": false,
+                  "explain": "Sai. TextInputType.number hiện bàn phím số, không có ký tự @."
+                },
+                {
+                  "text": "TextInputType.emailAddress",
+                  "correct": true,
+                  "explain": "Đúng. TextInputType.emailAddress hiện bàn phím có sẵn ký tự @ và dấu chấm, nhập email nhanh và thuận tiện."
+                },
+                {
+                  "text": "TextInputType.text",
+                  "correct": false,
+                  "explain": "Sai. TextInputType.text là bàn phím chữ thông thường, không tối ưu cho email."
+                },
+                {
+                  "text": "TextInputType.url",
+                  "correct": false,
+                  "explain": "Sai. TextInputType.url tối ưu cho địa chỉ web (có dấu / và .com), không dành cho email."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-26",
+              "question": "Which widget allows both scrolling and app bars to interact?",
+              "options": [
+                {
+                  "text": "ListView",
+                  "correct": false,
+                  "explain": "Sai. ListView chỉ là danh sách cuộn, không điều phối cuộn cùng thanh app bar thu gọn."
+                },
+                {
+                  "text": "CustomScrollView",
+                  "correct": true,
+                  "explain": "Đúng. CustomScrollView cho ghép nhiều \"mảnh\" cuộn (slivers), ví dụ SliverAppBar thu nhỏ lại khi cuộn danh sách. Nhờ đó thanh tiêu đề và nội dung cuộn ăn khớp nhau."
+                },
+                {
+                  "text": "GridView",
+                  "correct": false,
+                  "explain": "Sai. GridView là lưới cuộn, không điều phối với app bar."
+                },
+                {
+                  "text": "Stack",
+                  "correct": false,
+                  "explain": "Sai. Stack xếp chồng các widget lên nhau, không phải widget cuộn."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-27",
+              "question": "Which method resets all form fields?",
+              "options": [
+                {
+                  "text": "clear()",
+                  "correct": false,
+                  "explain": "Sai. clear() thường xóa nội dung một TextEditingController, không đặt lại cả biểu mẫu."
+                },
+                {
+                  "text": "reset()",
+                  "correct": true,
+                  "explain": "Đúng. FormState.reset() đặt lại tất cả ô của Form về giá trị ban đầu, như bấm nút \"Làm lại\" trên một phiếu đăng ký."
+                },
+                {
+                  "text": "dispose()",
+                  "correct": false,
+                  "explain": "Sai. dispose() giải phóng tài nguyên khi widget bị hủy, không đặt lại ô nhập."
+                },
+                {
+                  "text": "remove()",
+                  "correct": false,
+                  "explain": "Sai. remove() dùng để gỡ phần tử khỏi tập hợp, không đặt lại biểu mẫu."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-28",
+              "question": "Why is secure authentication critical in mobile apps?",
+              "options": [
+                {
+                  "text": "UI quality",
+                  "correct": false,
+                  "explain": "Sai. Xác thực an toàn không phải để làm giao diện đẹp hơn."
+                },
+                {
+                  "text": "Protect user data",
+                  "correct": true,
+                  "explain": "Đúng. Xác thực (đăng nhập) an toàn để chỉ đúng người được xem dữ liệu của mình, tránh bị lộ hay bị kẻ xấu lấy mất. Như khóa cửa nhà."
+                },
+                {
+                  "text": "Reduce code",
+                  "correct": false,
+                  "explain": "Sai. Không liên quan đến việc giảm số dòng code."
+                },
+                {
+                  "text": "Improve speed",
+                  "correct": false,
+                  "explain": "Sai. Bảo mật nhiều khi còn làm chậm hơn một chút; không phải để tăng tốc."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-29",
+              "question": "Which HTTP method is used to send new data to a server?",
+              "options": [
+                {
+                  "text": "GET",
+                  "correct": false,
+                  "explain": "Sai. GET dùng để lấy dữ liệu (đọc), không phải gửi dữ liệu mới."
+                },
+                {
+                  "text": "DELETE",
+                  "correct": false,
+                  "explain": "Sai. DELETE dùng để xóa tài nguyên."
+                },
+                {
+                  "text": "POST",
+                  "correct": true,
+                  "explain": "Đúng. POST dùng để gửi dữ liệu mới lên server (ví dụ tạo tài khoản, đăng bài). Nhớ: POST = đăng/gửi, GET = lấy."
+                },
+                {
+                  "text": "HEAD",
+                  "correct": false,
+                  "explain": "Sai. HEAD giống GET nhưng chỉ lấy phần tiêu đề (header), không có nội dung."
+                }
+              ],
+              "note": "Một bình luận ghi chú thêm: gửi dữ liệu mới → POST, lấy dữ liệu → GET. Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-30",
+              "question": "What is the main goal of performance optimization in Flutter apps?",
+              "options": [
+                {
+                  "text": "Improve UI colors",
+                  "correct": false,
+                  "explain": "Sai. Màu sắc là chuyện thiết kế, không phải mục tiêu của tối ưu hiệu năng."
+                },
+                {
+                  "text": "Ensure smooth and responsive UI",
+                  "correct": true,
+                  "explain": "Đúng. Tối ưu hiệu năng nhằm giữ app mượt (khoảng 60 khung hình/giây) và phản hồi nhanh khi người dùng chạm hay cuộn."
+                },
+                {
+                  "text": "Reduce code size",
+                  "correct": false,
+                  "explain": "Sai. Giảm dung lượng code không phải mục tiêu chính của tối ưu hiệu năng."
+                },
+                {
+                  "text": "Add features",
+                  "correct": false,
+                  "explain": "Sai. Thêm tính năng là việc phát triển, không phải tối ưu."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-31",
+              "question": "Which widget pattern protects authenticated routes?",
+              "options": [
+                {
+                  "text": "Navigator",
+                  "correct": false,
+                  "explain": "Sai. Navigator chỉ là công cụ chuyển màn hình; bản thân nó không kiểm tra đã đăng nhập chưa."
+                },
+                {
+                  "text": "Guard",
+                  "correct": true,
+                  "explain": "Đúng. Route Guard (người gác cổng) kiểm tra điều kiện, ví dụ đã đăng nhập chưa, trước khi cho vào màn hình. Chưa đăng nhập thì chuyển sang trang login. Như bảo vệ kiểm vé trước cửa. (Đây là cách gọi trong đề; thực tế hay làm bằng redirect của go_router.)"
+                },
+                {
+                  "text": "Route protection",
+                  "correct": false,
+                  "explain": "Sai. Cụm \"route protection\" là mục tiêu chung chứ không phải tên chuẩn của một mẫu widget."
+                },
+                {
+                  "text": "Middleware",
+                  "correct": false,
+                  "explain": "Sai. Middleware là thuật ngữ phổ biến ở phía server, không phải mẫu bảo vệ route điển hình trong Flutter."
+                }
+              ],
+              "note": "Đề dùng thuật ngữ chung (Guard); trong Flutter thật thường dùng redirect/route guard của go_router hoặc kiểm tra trước khi điều hướng. Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-32",
+              "question": "What does the final keyword indicate in Dart?",
+              "options": [
+                {
+                  "text": "The variable can be reassigned later",
+                  "correct": false,
+                  "explain": "Sai. Biến có thể gán lại là biến thường (var); final thì không gán lại được."
+                },
+                {
+                  "text": "The variable value is fixed after assignment",
+                  "correct": true,
+                  "explain": "Đúng. final nghĩa là gán giá trị một lần duy nhất; sau đó không đổi được. Giống viết bằng bút mực: viết rồi không xóa sửa."
+                },
+                {
+                  "text": "The variable is global",
+                  "correct": false,
+                  "explain": "Sai. Biến toàn cục là biến khai báo ngoài mọi hàm, không do final quyết định."
+                },
+                {
+                  "text": "The variable is private",
+                  "correct": false,
+                  "explain": "Sai. Biến private trong Dart được đánh dấu bằng dấu gạch dưới _ ở đầu tên, không phải từ khóa final."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-33",
+              "question": "What does status code 200 indicate?",
+              "options": [
+                {
+                  "text": "Client error",
+                  "correct": false,
+                  "explain": "Sai. Lỗi từ phía người dùng là mã 4xx (ví dụ 404)."
+                },
+                {
+                  "text": "Server error",
+                  "correct": false,
+                  "explain": "Sai. Lỗi từ phía server là mã 5xx (ví dụ 500)."
+                },
+                {
+                  "text": "Success",
+                  "correct": true,
+                  "explain": "Đúng. Mã 200 nghĩa là OK, yêu cầu thành công. Nhớ: 2xx = thành công."
+                },
+                {
+                  "text": "Redirect",
+                  "correct": false,
+                  "explain": "Sai. Chuyển hướng (redirect) là mã 3xx (ví dụ 301)."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-34",
+              "question": "Why is immutability important in BLoC states?",
+              "options": [
+                {
+                  "text": "UI speed",
+                  "correct": false,
+                  "explain": "Sai. Bất biến (immutable) không phải để UI nhanh hơn."
+                },
+                {
+                  "text": "Predictable state changes",
+                  "correct": true,
+                  "explain": "Đúng. State bất biến thì mỗi lần đổi là tạo một state MỚI chứ không sửa trực tiếp state cũ. Nhờ vậy thay đổi dễ theo dõi, so sánh và dự đoán, BLoC cũng biết khi nào cần vẽ lại."
+                },
+                {
+                  "text": "Memory usage",
+                  "correct": false,
+                  "explain": "Sai. Bất biến không nhằm tiết kiệm bộ nhớ (còn có thể tạo nhiều đối tượng mới hơn)."
+                },
+                {
+                  "text": "Theme control",
+                  "correct": false,
+                  "explain": "Sai. Không liên quan đến theme."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-35",
+              "question": "What does crossAxisAlignment control?",
+              "options": [
+                {
+                  "text": "Vertical alignment in Column",
+                  "correct": false,
+                  "explain": "Sai. Trong Column, trục chính chạy dọc; chỉnh căn dọc (vị trí từ trên xuống) là việc của mainAxisAlignment."
+                },
+                {
+                  "text": "Horizontal alignment in Column",
+                  "correct": true,
+                  "explain": "Đúng. crossAxisAlignment là căn theo trục ngang (trục phụ) của Column: trái, giữa, phải. Còn Row thì ngược lại (căn dọc). Nhớ: Column = dọc là trục chính, ngang là trục phụ."
+                },
+                {
+                  "text": "Child order",
+                  "correct": false,
+                  "explain": "Sai. Thứ tự các con do thứ tự trong danh sách children quyết định."
+                },
+                {
+                  "text": "Widget size",
+                  "correct": false,
+                  "explain": "Sai. Kích thước widget do ràng buộc (constraints) và size quyết định."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-36",
+              "question": "What is the role of v-sync in Flutter?",
+              "options": [
+                {
+                  "text": "Sync data",
+                  "correct": false,
+                  "explain": "Sai. Đồng bộ dữ liệu không liên quan đến vsync."
+                },
+                {
+                  "text": "Optimize animation resources",
+                  "correct": true,
+                  "explain": "Đúng. vsync (TickerProvider) gắn animation với nhịp làm tươi màn hình, và dừng animation khi màn hình bị ẩn để đỡ tốn tài nguyên. Giống đèn giao thông chỉ nháy khi có người nhìn."
+                },
+                {
+                  "text": "Control layout",
+                  "correct": false,
+                  "explain": "Sai. Bố cục do layout xử lý, không phải vsync."
+                },
+                {
+                  "text": "Handle navigation",
+                  "correct": false,
+                  "explain": "Sai. Điều hướng không dùng vsync."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-37",
+              "question": "What is the main goal of testing in Flutter apps?",
+              "options": [
+                {
+                  "text": "Improve UI design",
+                  "correct": false,
+                  "explain": "Sai. Test không phải để thay đổi thiết kế UI."
+                },
+                {
+                  "text": "Ensure app quality and correctness",
+                  "correct": true,
+                  "explain": "Đúng. Mục tiêu của kiểm thử là bảo đảm app chạy đúng và chất lượng, phát hiện lỗi sớm trước khi tới tay người dùng."
+                },
+                {
+                  "text": "Speed up builds",
+                  "correct": false,
+                  "explain": "Sai. Test không làm quá trình build nhanh hơn."
+                },
+                {
+                  "text": "Manage state",
+                  "correct": false,
+                  "explain": "Sai. Quản lý state là việc của kiến trúc, không phải mục tiêu của test."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-38",
+              "question": "Why is understanding the widget lifecycle important?",
+              "options": [
+                {
+                  "text": "Improve API performance",
+                  "correct": false,
+                  "explain": "Sai. Hiểu vòng đời widget không làm API nhanh hơn."
+                },
+                {
+                  "text": "Manage UI updates correctly",
+                  "correct": true,
+                  "explain": "Đúng. Biết widget được tạo, cập nhật, hủy ở thời điểm nào (initState, build, dispose) giúp bạn cập nhật giao diện đúng chỗ và tránh lỗi rò rỉ bộ nhớ."
+                },
+                {
+                  "text": "Deploy apps faster",
+                  "correct": false,
+                  "explain": "Sai. Không liên quan đến tốc độ triển khai."
+                },
+                {
+                  "text": "Reduce file size",
+                  "correct": false,
+                  "explain": "Sai. Không liên quan đến kích thước file."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-39",
+              "question": "Why are forms important in mobile applications?",
+              "options": [
+                {
+                  "text": "UI decoration",
+                  "correct": false,
+                  "explain": "Sai. Form không phải đồ trang trí."
+                },
+                {
+                  "text": "User data collection",
+                  "correct": true,
+                  "explain": "Đúng. Biểu mẫu (form) là nơi thu thập dữ liệu người dùng nhập vào (đăng ký, đăng nhập, thanh toán) và kiểm tra tính hợp lệ."
+                },
+                {
+                  "text": "State management",
+                  "correct": false,
+                  "explain": "Sai. Form không phải công cụ quản lý state của app."
+                },
+                {
+                  "text": "Navigation",
+                  "correct": false,
+                  "explain": "Sai. Điều hướng giữa màn hình do Navigator đảm nhiệm."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-40",
+              "question": "Which Flutter plugin provides SQLite support?",
+              "options": [
+                {
+                  "text": "hive",
+                  "correct": false,
+                  "explain": "Sai. Hive là cơ sở dữ liệu NoSQL dạng khóa-giá trị, không phải SQLite."
+                },
+                {
+                  "text": "moor",
+                  "correct": false,
+                  "explain": "Sai. Moor (nay là Drift) là thư viện ORM xây trên SQLite chứ không phải plugin SQLite gốc mà đề muốn nói."
+                },
+                {
+                  "text": "sqflite",
+                  "correct": true,
+                  "explain": "Đúng. sqflite là plugin SQLite phổ biến nhất của Flutter: tạo bảng, thêm, sửa, xóa bằng câu lệnh SQL trên máy."
+                },
+                {
+                  "text": "shared_preferences",
+                  "correct": false,
+                  "explain": "Sai. shared_preferences chỉ lưu cặp khóa-giá trị nhỏ, không phải SQLite."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-41",
+              "question": "When is it most appropriate to customize themes in a Flutter app?",
+              "options": [
+                {
+                  "text": "After API integration",
+                  "correct": false,
+                  "explain": "Sai. Tùy biến theme không nên đợi sau khi tích hợp API."
+                },
+                {
+                  "text": "During UI/UX design phase",
+                  "correct": true,
+                  "explain": "Đúng. Theme (màu sắc, font) quyết định phong cách cả app nên nên xác định ngay ở giai đoạn thiết kế UI/UX để mọi màn hình thống nhất."
+                },
+                {
+                  "text": "Only at deployment",
+                  "correct": false,
+                  "explain": "Sai. Đợi đến lúc phát hành mới đổi theme là quá muộn."
+                },
+                {
+                  "text": "Only for testing",
+                  "correct": false,
+                  "explain": "Sai. Theme không chỉ dùng cho việc kiểm thử."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-42",
+              "question": "Which HTTP header is commonly used for authorization?",
+              "options": [
+                {
+                  "text": "Content-Type",
+                  "correct": false,
+                  "explain": "Sai. Content-Type cho biết định dạng dữ liệu gửi đi (ví dụ JSON)."
+                },
+                {
+                  "text": "Accept",
+                  "correct": false,
+                  "explain": "Sai. Accept cho biết định dạng dữ liệu bạn muốn nhận về."
+                },
+                {
+                  "text": "Authorization",
+                  "correct": true,
+                  "explain": "Đúng. Header Authorization mang thông tin xác thực (ví dụ \"Bearer <token>\") để server biết bạn là ai và có quyền không."
+                },
+                {
+                  "text": "Cache-Control",
+                  "correct": false,
+                  "explain": "Sai. Cache-Control điều khiển cách lưu đệm (cache), không liên quan xác thực."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-43",
+              "question": "Why is passing context important in navigation?",
+              "options": [
+                {
+                  "text": "Access theme",
+                  "correct": false,
+                  "explain": "Sai. Theme cũng truy cập qua context, nhưng đó không phải lý do chính khi nói về điều hướng."
+                },
+                {
+                  "text": "Access Navigator",
+                  "correct": true,
+                  "explain": "Đúng. Navigator.of(context) cần BuildContext để biết đang ở đâu trong cây widget và tìm ra Navigator quản lý các màn hình. Vì thế điều hướng cần truyền context."
+                },
+                {
+                  "text": "Access state",
+                  "correct": false,
+                  "explain": "Sai. State không được lấy qua việc điều hướng."
+                },
+                {
+                  "text": "Access layout",
+                  "correct": false,
+                  "explain": "Sai. Layout không phải lý do cần context cho điều hướng."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-44",
+              "question": "What is the main benefit of Flutter's widget-based architecture?",
+              "options": [
+                {
+                  "text": "Widgets are only used for layout design",
+                  "correct": false,
+                  "explain": "Sai. Widget dùng cho tất cả (cả giao diện lẫn hành vi), không chỉ dựng bố cục."
+                },
+                {
+                  "text": "Widgets allow code reuse across platforms",
+                  "correct": true,
+                  "explain": "Đúng. Mọi thứ trong Flutter đều là widget, ghép lại như lắp Lego, và dùng chung cho nhiều nền tảng, nên tái sử dụng code rất nhiều."
+                },
+                {
+                  "text": "Widgets automatically manage databases",
+                  "correct": false,
+                  "explain": "Sai. Widget không tự quản lý cơ sở dữ liệu."
+                },
+                {
+                  "text": "Widgets replace backend services",
+                  "correct": false,
+                  "explain": "Sai. Widget là giao diện (frontend), không thay thế dịch vụ phía sau (backend)."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-45",
+              "question": "Which Dart data structure is best suited for storing an ordered collection of items?",
+              "options": [
+                {
+                  "text": "Set",
+                  "correct": false,
+                  "explain": "Sai. Set (tập hợp) không có thứ tự theo vị trí và không lặp phần tử."
+                },
+                {
+                  "text": "Map",
+                  "correct": false,
+                  "explain": "Sai. Map lưu cặp khóa-giá trị (như từ điển), không phải một dãy có thứ tự."
+                },
+                {
+                  "text": "List",
+                  "correct": true,
+                  "explain": "Đúng. List là danh sách có thứ tự: phần tử xếp theo chỉ số 0, 1, 2... và cho phép trùng. Rất hợp để lưu \"một dãy các mục\"."
+                },
+                {
+                  "text": "Queue",
+                  "correct": false,
+                  "explain": "Sai. Queue (hàng đợi) có thứ tự vào trước ra trước nhưng không dùng để lưu và truy cập tổng quát như List."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-46",
+              "question": "Which Flutter widget reacts to authentication state changes?",
+              "options": [
+                {
+                  "text": "FutureBuilder",
+                  "correct": false,
+                  "explain": "Sai. FutureBuilder chỉ chờ một kết quả một lần."
+                },
+                {
+                  "text": "StreamBuilder",
+                  "correct": true,
+                  "explain": "Đúng. Trạng thái đăng nhập (đăng nhập/đăng xuất) thay đổi liên tục theo thời gian, thích hợp với Stream. StreamBuilder cập nhật giao diện mỗi khi luồng phát giá trị mới. Như màn hình điện tử báo chuyến bay."
+                },
+                {
+                  "text": "ListView",
+                  "correct": false,
+                  "explain": "Sai. ListView chỉ là danh sách cuộn."
+                },
+                {
+                  "text": "Form",
+                  "correct": false,
+                  "explain": "Sai. Form chỉ gom ô nhập liệu, không theo dõi đăng nhập."
+                }
+              ],
+              "note": "Một bình luận ghi chú: widget phản ứng với thay đổi trạng thái đăng nhập → StreamBuilder. Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-47",
+              "question": "Which widget rebuilds automatically during animation?",
+              "options": [
+                {
+                  "text": "AnimatedBuilder",
+                  "correct": true,
+                  "explain": "Đúng. AnimatedBuilder vẽ lại phần con của nó ở mỗi khung hình của animation, nên rất hợp để chạy hiệu ứng mượt mà."
+                },
+                {
+                  "text": "FutureBuilder",
+                  "correct": false,
+                  "explain": "Sai. FutureBuilder rebuild khi Future có kết quả, không theo từng khung hình."
+                },
+                {
+                  "text": "StreamBuilder",
+                  "correct": false,
+                  "explain": "Sai. StreamBuilder rebuild khi Stream phát giá trị mới, không phải theo animation."
+                },
+                {
+                  "text": "LayoutBuilder",
+                  "correct": false,
+                  "explain": "Sai. LayoutBuilder rebuild khi kích thước cha đổi, không phải khi animation chạy."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-48",
+              "question": "What is the main purpose of the Container widget?",
+              "options": [
+                {
+                  "text": "Navigation",
+                  "correct": false,
+                  "explain": "Sai. Điều hướng là việc của Navigator."
+                },
+                {
+                  "text": "Layout, styling, and positioning",
+                  "correct": true,
+                  "explain": "Đúng. Container là \"hộp đa năng\": đặt kích thước, màu nền, viền, khoảng cách (padding/margin) và vị trí cho widget con."
+                },
+                {
+                  "text": "State management",
+                  "correct": false,
+                  "explain": "Sai. Container không quản lý state."
+                },
+                {
+                  "text": "Network requests",
+                  "correct": false,
+                  "explain": "Sai. Gọi mạng không phải việc của Container."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-49",
+              "question": "Which step is required before running a Flutter app for the first time?",
+              "options": [
+                {
+                  "text": "Publishing the app",
+                  "correct": false,
+                  "explain": "Sai. Xuất bản là bước cuối, làm sau khi app đã xong."
+                },
+                {
+                  "text": "Setting up the Flutter SDK",
+                  "correct": true,
+                  "explain": "Đúng. Phải cài Flutter SDK (và công cụ đi kèm) trước thì mới biên dịch và chạy được app Flutter. Như phải có bếp rồi mới nấu được."
+                },
+                {
+                  "text": "Configuring a database",
+                  "correct": false,
+                  "explain": "Sai. Cấu hình database là tùy chọn, không bắt buộc trước khi chạy lần đầu."
+                },
+                {
+                  "text": "Writing backend APIs",
+                  "correct": false,
+                  "explain": "Sai. Không bắt buộc phải viết API backend trước khi chạy app."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            },
+            {
+              "id": "prm393-su26fe-50",
+              "question": "Which practice improves API security?",
+              "options": [
+                {
+                  "text": "Hardcoding keys",
+                  "correct": false,
+                  "explain": "Sai. Viết cứng (hardcode) khóa API trong code rất nguy hiểm vì khóa dễ bị lộ."
+                },
+                {
+                  "text": "Using HTTPS",
+                  "correct": true,
+                  "explain": "Đúng. HTTPS mã hóa dữ liệu truyền giữa app và server nên người ngoài không đọc trộm được. Như gửi thư trong phong bì dán kín."
+                },
+                {
+                  "text": "Ignoring errors",
+                  "correct": false,
+                  "explain": "Sai. Bỏ qua lỗi che giấu vấn đề và có thể bỏ lọt kẽ hở bảo mật."
+                },
+                {
+                  "text": "Using globals",
+                  "correct": false,
+                  "explain": "Sai. Biến toàn cục dễ bị đọc/sửa tùy tiện nên không giúp bảo mật."
+                }
+              ],
+              "note": "Đáp án tham khảo: lấy theo bình luận trên FUOverflow, có đối chiếu lại bằng kiến thức; chưa phải đáp án chính thức. Nếu thấy lệch thì tự kiểm tra lại."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
